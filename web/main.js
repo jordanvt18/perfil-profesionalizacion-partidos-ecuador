@@ -1,9 +1,30 @@
-const API_BASE = "http://localhost:8000"; // Para demo local: FastAPI corriendo en puerto 8000
+import { demoAggregates, demoCandidates, demoTurnout } from "./demo-data.js";
+
+// Si estamos en GitHub Pages (dominio github.io), usamos datos de demo.
+// Si estamos en local (localhost), usamos la API real en puerto 8000.
+const isLocal = window.location.hostname === "localhost";
+const API_BASE = isLocal ? "http://localhost:8000" : ""; // cadena vacía = modo demo
 
 let map;
 let provincesLayer;
 
 async function fetchJSON(path) {
+  if (!API_BASE) {
+    // Modo demo: devolvemos datos de ejemplo sin llamar a API real
+    if (path.startsWith("/aggregates")) {
+      return { aggregates: demoAggregates };
+    }
+    if (path.startsWith("/candidates")) {
+      return { candidates: demoCandidates };
+    }
+    if (path.startsWith("/turnout")) {
+      return { turnout: demoTurnout };
+    }
+    if (path.startsWith("/parties")) {
+      return { parties: ["PARTIDO A", "PARTIDO B"] };
+    }
+  }
+
   const resp = await fetch(`${API_BASE}${path}`);
   if (!resp.ok) {
     throw new Error(`Error al llamar API: ${resp.status}`);
@@ -24,14 +45,14 @@ async function initSelectors() {
     partySelect.appendChild(opt);
   });
 
-  [2021, 2023, 2025].forEach((y) => {
+  [2017, 2021, 2025].forEach((y) => {
     const opt = document.createElement("option");
     opt.value = y;
     opt.textContent = y;
     yearSelect.appendChild(opt);
   });
 
-  const provinces = ["Guayas", "Pichincha", "Manabí"]; // Placeholder, reemplazar con API/geometrías reales
+  const provinces = ["Guayas", "Pichincha", "Manabí"]; // Demo; reemplazar con API/geometrías reales
   provinces.forEach((prov) => {
     const opt = document.createElement("option");
     opt.value = prov;
