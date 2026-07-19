@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil profesionalización – Partidos Ecuador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Perfil de profesionalización de partidos – Ecuador</h1>
+        <p>
+          Visualización interactiva del índice de profesionalización de candidatos y
+          la participación histórica por provincia y cantón.
+        </p>
+      </header>
+      <main>
+        <section id="map-section">
+          <div id="map"></div>
+        </section>
+        <aside id="control-panel">
+          <div class="controls">
+            <label for="party-select">Partido:</label>
+            <select id="party-select"></select>
+
+            <label for="year-select">Año:</label>
+            <select id="year-select"></select>
+
+            <label for="province-select">Provincia:</label>
+            <select id="province-select"></select>
+          </div>
+
+          <div id="academic-bars" class="panel-block">
+            <h2>Niveles académicos por partido</h2>
+            <div id="academic-bars-chart"></div>
+          </div>
+
+          <div id="turnout-series" class="panel-block">
+            <h2>Participación histórica por cantón</h2>
+            <div id="turnout-series-chart"></div>
+          </div>
+        </aside>
+      </main>
+
+      <div id="candidate-modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="modal-close">&times;</span>
+          <div id="candidate-details"></div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Proyecto académico – índice de profesionalización de partidos en Ecuador.
+        </p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

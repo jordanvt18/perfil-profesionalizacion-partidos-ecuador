@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+addopts = "-q"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
