@@ -12,6 +12,7 @@ Repositorio reproducible para calcular y analizar un índice de profesionalizaci
 - `data/processed/`: tablas normalizadas, índices y agregados en formato Parquet.
 - `notebooks/analysis.ipynb`: análisis estadístico y visualizaciones de diagnóstico.
 - `METHODOLOGY.md`: detalle metodológico del índice y supuestos.
+- `docs/sources.md`: registro de fuentes oficiales, fechas de descarga y licencias.
 - `docker-compose.yml` y `Dockerfile`: entorno reproducible para API y ETL.
 - `.github/workflows/`: configuración de CI para lint, tests y deploy.
 
@@ -20,3 +21,36 @@ Repositorio reproducible para calcular y analizar un índice de profesionalizaci
 - Calcular un índice de profesionalización por candidato (0-100) basado en grado académico y experiencia pública.
 - Agregar el índice por partido y provincia.
 - Visualizar interactivamente la relación entre profesionalización por partido y participación histórica por recinto/cantón/provincia.
+
+## Demo local
+
+Para ver la demo interactiva del proyecto en tu máquina:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/jordanvt18/perfil-profesionalizacion-partidos-ecuador.git
+   cd perfil-profesionalizacion-partidos-ecuador
+   ```
+
+2. Levanta la API y la base de datos con Docker:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+   Esto iniciará FastAPI en `http://localhost:8000` (configurado en `web/main.js`).
+
+3. Sirve el frontend estático desde la carpeta `web/` (por ejemplo con Python):
+
+   ```bash
+   cd web
+   python -m http.server 5500
+   ```
+
+4. Abre la demo en tu navegador:
+
+   - URL: `http://localhost:5500/index.html`
+   - Selecciona partido, año y provincia en el panel derecho para actualizar el mapa Leaflet, las barras de niveles académicos y la serie temporal de participación.
+
+> Nota: asegúrate de haber cargado datos reales en la base de datos (candidatos, turnout, agregados) antes de usar la demo para análisis sustantivo.

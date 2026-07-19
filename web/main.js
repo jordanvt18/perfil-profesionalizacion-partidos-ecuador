@@ -1,4 +1,4 @@
-const API_BASE = "https://example-api-url.com"; // Reemplazar con URL real de despliegue
+const API_BASE = "http://localhost:8000"; // Para demo local: FastAPI corriendo en puerto 8000
 
 let map;
 let provincesLayer;
