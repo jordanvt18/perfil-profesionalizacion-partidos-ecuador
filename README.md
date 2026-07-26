@@ -18,7 +18,7 @@ Repositorio reproducible para calcular y analizar el **índice de profesionaliza
 
 ## 🗺️ Demo interactiva
 
-[![GitHub Pages](https://img.shields.io/badge/Live_Demo-Ver_en_GitHub_Pages-00D9FF?style=flat-square&logo=github)](https://jordanvt18.github.io)
+[![GitHub Pages](https://img.shields.io/badge/Live_Demo-Ver_en_GitHub_Pages-00D9FF?style=flat-square&logo=github)](https://jordanvt18.github.io/perfil-profesionalizacion-partidos-ecuador/)
 
 **552 candidatos/as** generados sobre 14 partidos nacionales + movimientos locales, cubriendo las 24 provincias del Ecuador:
 - **92** candidatos/as a Prefecturas
@@ -81,7 +81,7 @@ Abre `http://localhost:5500/index.html`
 
 ## ⚠️ Disclaimer
 
-Proyecto académico y de investigación ciudadana. No constituye recomendación de voto ni evaluación definitiva de personas o partidos. Los datos demo son sintéticos y representativos — diseñados para demostrar la metodología antes de integrar fuentes oficiales del CNE.
+Proyecto académico y de investigación ciudadana. No constituye recomendación de voto ni evaluación definitiva de personas o partidos. Los datos demo son sintéticos y representativos — diseñados únicamente para fines de análisis y visualización.
 
 ## 📝 Licencia
 
