@@ -1,41 +1,58 @@
-# Buenas prácticas de seguridad
+# Seguridad y buenas prácticas
 
-Este proyecto sigue buenas prácticas de seguridad para proteger credenciales, respetar fuentes de datos oficiales y evitar exposición innecesaria de servicios.
+Este documento establece las buenas prácticas de seguridad para el repositorio
+`perfil-profesionalizacion-partidos-ecuador` antes de hacer deploy.
 
-## 1. Manejo de credenciales y variables de entorno
+## 🔐 Principios
 
-- No se deben commitear archivos `.env` ni credenciales en el repositorio (ver `.gitignore`).
-- Usa siempre variables de entorno para configurar:
-  - `DATABASE_URL`
-  - Usuarios y contraseñas de Postgres (`POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`).
-- Proporciona ejemplos seguros en `/.env.example` y copia ese archivo a `.env` en tu entorno local.
+1. **Nunca exponer credenciales** — Ni en código fuente, datos demo, ni commits.
+2. **Datos demo anónimos** — Los datos sintéticos no contienen información personal real.
+3. **GitHub Pages seguro** — Sin backend expuesto, sin API keys, sin endpoints privados.
+4. **Scraping ético** — Solo fuentes públicas, respetando robots.txt y rate limiting.
 
-## 2. Base de datos y servicios
+## 📋 Checklist pre-deploy
 
-- En desarrollo local, la base de datos solo debe exponerse en la red local (por defecto `localhost:5432`).
-- En despliegues en la nube, restringe el acceso a la base de datos mediante:
-  - IP allowlist o security groups.
-  - Contraseñas fuertes y rotación periódica.
-- No abras el puerto de Postgres directamente a Internet sin controles adicionales.
+- [ ] `.env` y `.env.example` no contienen secretos reales
+- [ ] `.gitignore` incluye `.env`, `data/raw/`, `data/processed/` locales
+- [ ] `demo-data.js` no contiene información personal real
+- [ ] No hay tokens, API keys, ni contraseñas en ningún archivo del repo
+- [ ] URLs de fuentes oficiales verificadas y documentadas en `docs/sources.md`
+- [ ] El frontend funciona en modo demo sin backend (DEMO_MODE = true)
+- [ ] GitHub Pages configurado para servir desde `/web` o raíz del repo
+- [ ] `SECURITY.md` visible en el repo
 
-## 3. Scraping y uso de fuentes oficiales
+## 🚫 Qué NO incluir
 
-- Respeta siempre `robots.txt` de los portales donde se obtienen CVs y datos.
-- Implementa rate limiting (esperas entre solicitudes) y evita cargas agresivas sobre servidores públicos.
-- Registra la fecha de ejecución y la URL base de cada fuente en `docs/sources.md`.
-- Evita extraer información sensible que no sea estrictamente necesaria para el análisis académico.
+- **Datos personales reales** de candidatos (nombres, cédulas, direcciones)
+- **Credenciales** de APIs, bases de datos, o servicios cloud
+- **CVs completos** con información sensible (solo metadatos agregados)
+- **Cookies, tokens de sesión, o secretos** de cualquier tipo
+- **Archivos `.parquet` o `.csv` con datos reales** del CNE (solo datos demo sintéticos)
 
-## 4. Datos personales y privacidad
+## 🔍 Revisión de archivos sensibles
 
-- Para candidatos no públicos, considera anonimizar identificadores personales en datasets compartidos.
-- No publiques información de contacto ni detalles sensibles en los datos procesados.
-- Documenta criterios de anonimización y agregación en `METHODOLOGY.md`.
+Antes de cada push, revisar:
 
-## 5. Frontend y API
+```bash
+# Buscar secretos accidentales
+git diff --cached | grep -iE '(password|secret|token|api_key|credential)'
 
-- La demo pública en GitHub Pages utiliza datos de ejemplo (`web/demo-data.js`) y no expone credenciales ni servicios internos.
-- La API real (FastAPI + Postgres) debe desplegarse en un servicio separado, protegido y con CORS configurado según los dominios permitidos.
+# Verificar que .env no esté commiteado
+git status | grep .env
+```
 
----
+## 📡 GitHub Pages
 
-Antes de abrir el proyecto a colaboración o uso más amplio, revisa esta guía y actualiza controles según las políticas de seguridad de tu entorno de despliegue.
+Configuración recomendada:
+- **Source**: rama `main`, carpeta `/web` (o `/docs`)
+- **HTTPS**: siempre forzado
+- **Sin Secrets**: GitHub Pages no expone secrets del repo
+
+## 🔗 Enlaces externos
+
+- Todos los `target="_blank"` incluyen `rel="noopener noreferrer"` para prevenir tabnabbing
+- Las dependencias CDN (Leaflet, Plotly, D3) se cargan desde unpkg/CDN oficiales con SRI cuando es posible
+
+## 📝 Reporte de vulnerabilidades
+
+Si encuentras alguna vulnerabilidad en este repositorio, por favor abre un issue en GitHub o contacta al mantenedor.

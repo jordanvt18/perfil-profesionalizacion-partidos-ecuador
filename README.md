@@ -1,76 +1,88 @@
-# Perfil profesionalización de partidos en Ecuador
+# Índice de profesionalización de candidatos – Elecciones Ecuador 2026 🇪🇨
 
-Repositorio reproducible para calcular y analizar un índice de profesionalización de candidatos y partidos políticos en Ecuador, con ETL en Python, API REST en FastAPI, frontend interactivo y despliegue automatizado.
+Repositorio reproducible para calcular y analizar el **índice de profesionalización** de candidatos/as a Prefecturas, Alcaldías y Concejalías en las **Elecciones Seccionales Ecuador – Noviembre 2026**.
 
-## Estructura del proyecto
+**Metodología**: 60% formación académica + 40% experiencia en servicio público → índice 0–100 por candidato/a, agregado por partido, provincia y dignidad.
 
-- `src/etl/`: pipelines de ingesta, limpieza y cálculo del índice de profesionalización.
-- `src/api/`: API REST con FastAPI para exponer datos de partidos, candidatos y participación.
-- `web/`: frontend estático con HTML/CSS/JS, D3.js, Plotly.js y Leaflet.
-- `web/demo-data.js`: datos de ejemplo para la demo pública en GitHub Pages.
-- `scripts/`: scripts de descarga de datos del CNE y scraping de CVs públicos.
-- `data/raw/`: datos crudos descargados (CNE, CVs).
-- `data/processed/`: tablas normalizadas, índices y agregados en formato Parquet.
-- `notebooks/analysis.ipynb`: análisis estadístico y visualizaciones de diagnóstico.
-- `METHODOLOGY.md`: detalle metodológico del índice y supuestos.
-- `docs/sources.md`: registro de fuentes oficiales, fechas de descarga y licencias.
-- `SECURITY.md`: guía de buenas prácticas de seguridad y privacidad.
-- `.env.example`: ejemplo de configuración de entorno sin credenciales sensibles.
-- `docker-compose.yml` y `Dockerfile`: entorno reproducible para API y ETL.
-- `.github/workflows/`: configuración de CI para lint, tests y deploy.
+> 🎯 **Objetivo**: Transparentar ante la ciudadanía la formación académica y experiencia pública de cada precandidato/a, por partido político, provincia y cantón, fomentando el debate informado previo a las elecciones seccionales de Noviembre 2026.
 
-## Objetivo
+## ⚠️ Estado de los datos
 
-- Calcular un índice de profesionalización por candidato (0-100) basado en grado académico y experiencia pública.
-- Agregar el índice por partido y provincia.
-- Visualizar interactivamente la relación entre profesionalización por partido y participación histórica por recinto/cantón/provincia.
+**El CNE aún NO ha publicado el listado oficial de candidatos inscritos** para las Elecciones Seccionales de Noviembre 2026. Los datos en este repositorio son **sintéticos y representativos** — generados con base en:
+- Partidos y movimientos políticos **habilitados por el CNE** para el periodo electoral 2025-2026
+- **Movimientos locales reales documentados** (ej: Península Positiva L.69, Únete L.100, Amigo L.62 en Santa Elena)
+- **Distribuciones educativas calibradas** según perfiles históricos de cada partido
+- **Cantones y provincias oficiales** del Ecuador
 
-## Demo pública en GitHub Pages (modo seguro)
+> 📅 **Próximo paso:** Cuando el CNE publique el registro oficial de candidatos (estimado 45-60 días antes de las elecciones), los datos serán reemplazados con información real verificada. Consulte [cne.gob.ec](https://www.cne.gob.ec) para información oficial.
 
-La demo pública en GitHub Pages utiliza datos de ejemplo definidos en `web/demo-data.js`. De esta forma:
+## 🗺️ Demo interactiva
 
-- No se exponen credenciales ni servicios internos.
-- Se puede mostrar la interacción completa (mapa, selectores, gráficos) sin depender de servicios backend.
+[![GitHub Pages](https://img.shields.io/badge/Live_Demo-Ver_en_GitHub_Pages-00D9FF?style=flat-square&logo=github)](https://jordanvt18.github.io)
 
-Cuando el sitio se despliegue en GitHub Pages (dominio `github.io`):
+**552 candidatos/as** generados sobre 14 partidos nacionales + movimientos locales, cubriendo las 24 provincias del Ecuador:
+- **92** candidatos/as a Prefecturas
+- **318** candidatos/as a Alcaldías  
+- **142** candidatos/as a Concejalías Rurales
 
-- El frontend detectará que no está en `localhost` y funcionará en **modo demo** usando `demoAggregates`, `demoCandidates` y `demoTurnout`.
+Mapa interactivo Leaflet, barras por nivel académico, serie histórica de participación (2017-2026), ranking de candidatos con detalle completo.
 
-## Demo local con backend
+## 📂 Estructura
 
-Para ver la demo interactiva con el backend y la base de datos en tu máquina:
+```
+├── src/api/main.py                # API REST FastAPI
+├── src/etl/                       # Pipelines ETL, cálculo del índice, NLP
+├── web/
+│   ├── index.html                 # Frontend interactivo
+│   ├── main.js                    # Lógica: mapa, gráficos, tabla
+│   ├── styles.css                 # Estilos
+│   └── demo-data.js               # Datos demo (modo sin backend)
+├── scripts/
+│   └── generate_realistic_data.py # Generador de datos sintéticos calibrados
+├── data/demo/                     # Datos demo (JSON)
+├── METHODOLOGY.md                 # Metodología detallada
+├── docs/sources.md                # Fuentes oficiales
+└── SECURITY.md                    # Buenas prácticas
+```
 
-1. Clona el repositorio:
+## 🧮 Metodología
 
-   ```bash
-   git clone https://github.com/jordanvt18/perfil-profesionalizacion-partidos-ecuador.git
-   cd perfil-profesionalizacion-partidos-ecuador
-   ```
+| Componente | Peso | Fuente |
+|---|---|---|
+| **Score académico** | 60% | Grado máximo: Primaria=10, Secundaria=30, Técnico=50, Universitario=70, Posgrado=90 |
+| **Score experiencia** | 40% | Años en cargos públicos × 2 (máx. 40 puntos) |
 
-2. Copia el archivo `.env.example` a `.env` y ajusta la configuración según tu entorno.
+**Índice = 0.6 × score_académico + 0.4 × score_experiencia**
 
-3. Levanta el servicio y la base de datos con Docker:
+El índice se agrega por partido, provincia y dignidad como media aritmética.
 
-   ```bash
-   docker-compose up --build
-   ```
+## 🚀 Local
 
-   Esto iniciará FastAPI en `http://localhost:8000` (detectado automáticamente por `web/main.js` cuando el hostname es `localhost`).
+```bash
+git clone https://github.com/jordanvt18/perfil-profesionalizacion-partidos-ecuador.git
+cd perfil-profesionalizacion-partidos-ecuador
 
-4. Sirve el frontend estático desde la carpeta `web/`:
+# Generar datos
+python scripts/generate_realistic_data.py
 
-   ```bash
-   cd web
-   python -m http.server 5500
-   ```
+# Servir frontend
+cd web && python -m http.server 5500
+```
 
-5. Abre la demo en tu navegador:
+Abre `http://localhost:5500/index.html`
 
-   - URL: `http://localhost:5500/index.html`
-   - Selecciona partido, año y provincia en el panel derecho para actualizar el mapa Leaflet, las barras de niveles académicos y la serie temporal de participación.
+## 🛡️ Seguridad
 
-> Nota: asegúrate de haber cargado datos de trabajo en la base de datos (candidatos, turnout, agregados) antes de usar la demo para análisis sustantivo.
+- Datos demo sin información personal real
+- No se exponen credenciales ni claves API en la demo pública
+- CVs solo de fuentes oficiales públicas
+- Scraping respeta `robots.txt` y rate limiting
+- Ver `SECURITY.md` para detalle completo
 
-## Seguridad y privacidad
+## ⚠️ Disclaimer
 
-Consulta `SECURITY.md` para revisar las buenas prácticas recomendadas sobre manejo de credenciales, scraping respetuoso y anonimización de datos sensibles.
+Proyecto académico y de investigación ciudadana. No constituye recomendación de voto ni evaluación definitiva de personas o partidos. Los datos demo son sintéticos y representativos — diseñados para demostrar la metodología antes de integrar fuentes oficiales del CNE.
+
+## 📝 Licencia
+
+MIT

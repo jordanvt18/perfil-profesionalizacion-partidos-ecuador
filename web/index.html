@@ -1,69 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil profesionalización – Partidos Ecuador</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <header>
-        <h1>Perfil de profesionalización de partidos – Ecuador</h1>
-        <p>
-          Visualización interactiva del índice de profesionalización de candidatos y
-          la participación histórica por provincia y cantón.
-        </p>
-      </header>
-      <main>
-        <section id="map-section">
-          <div id="map"></div>
-        </section>
-        <aside id="control-panel">
-          <div class="controls">
-            <label for="party-select">Partido:</label>
-            <select id="party-select"></select>
-
-            <label for="year-select">Año:</label>
-            <select id="year-select"></select>
-
-            <label for="province-select">Provincia:</label>
-            <select id="province-select"></select>
-          </div>
-
-          <div id="academic-bars" class="panel-block">
-            <h2>Niveles académicos por partido</h2>
-            <div id="academic-bars-chart"></div>
-          </div>
-
-          <div id="turnout-series" class="panel-block">
-            <h2>Participación histórica por cantón</h2>
-            <div id="turnout-series-chart"></div>
-          </div>
-        </aside>
-      </main>
-
-      <div id="candidate-modal" class="modal hidden">
-        <div class="modal-content">
-          <span id="modal-close">&times;</span>
-          <div id="candidate-details"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precandidatos Ecuador 2026 — Indice de Profesionalizacion</title>
+  <meta name="description" content="Herramienta ciudadana: indice de profesionalizacion de precandidatos a Prefecturas, Alcaldias y Concejalias. Elecciones Seccionales Ecuador, Nov 2026. Datos sinteticos hasta publicacion oficial del CNE." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Indice de profesionalizacion de precandidatos – <span>Elecciones Seccionales 2026</span></h1>
+      <p>
+        Herramienta ciudadana para evaluar la formacion academica y experiencia publica de precandidatos/as
+        a <strong>Prefecturas, Alcaldias y Concejalias</strong>.
+      </p>
+      <div id="disclaimer-banner">
+        <strong>IMPORTANTE:</strong> <span class="real-count">39 precandidatos CONFIRMADOS</span> por medios ecuatorianos
+        (El Universo, Primicias, Expreso, Extra, Ecuavisa, Diario La Hora, El Comercio, La Prensa) +
+        230 sinteticos no confirmados. <strong style="color:#ef4444">RC, SUMA, ID y RETO estan BLOQUEADOS por el CNE</strong>
+        (requieren alianzas). El CNE aun no publica el listado oficial de inscritos.
+        Datos en constante actualizacion. Consulte <a href="https://www.cne.gob.ec" target="_blank" rel="noopener">cne.gob.ec</a> para informacion oficial.
+        <br><em>Columnas: verde = CONFIRMADO | amarillo = sintetico no verificado</em>
       </div>
+    </header>
 
-      <footer>
-        <p>
-          Proyecto académico – índice de profesionalización de partidos en Ecuador.
-        </p>
-      </footer>
+    <!-- Summary Stats -->
+    <section id="summary-stats">
+      <div class="stat-card">
+        <span class="stat-number" id="stat-avg">-</span>
+        <span class="stat-label">Indice promedio</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-candidates">-</span>
+        <span class="stat-label">Candidatos/as</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-parties">-</span>
+        <span class="stat-label">Partidos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-best">-</span>
+        <span class="stat-label">Mejor promedio</span>
+      </div>
+    </section>
+
+    <!-- Main: Map + Sidebar -->
+    <main id="main-section">
+      <section id="map-section">
+        <div id="map"></div>
+      </section>
+
+      <aside id="control-panel">
+        <div class="controls">
+          <label for="dignidad-select">Dignidad</label>
+          <select id="dignidad-select"></select>
+
+          <label for="party-select">Partido politico</label>
+          <select id="party-select"></select>
+
+          <label for="province-select">Provincia</label>
+          <select id="province-select"></select>
+
+          <label for="canton-select">Canton</label>
+          <select id="canton-select"></select>
+
+          <label for="year-select">Ano electoral</label>
+          <select id="year-select"></select>
+        </div>
+
+        <div class="panel-block">
+          <h3>Niveles academicos</h3>
+          <div id="academic-bars-chart"></div>
+        </div>
+
+        <div class="panel-block">
+          <h3>Participacion historica</h3>
+          <div id="turnout-series-chart"></div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Candidates Table -->
+    <section id="candidates-section">
+      <div class="section-header">
+        <h2>Ranking de candidatos</h2>
+        <span id="candidates-count"></span>
+      </div>
+      <div id="candidates-table-wrapper">
+        <table id="candidates-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Partido</th>
+              <th>Dignidad</th>
+              <th>Provincia</th>
+              <th>Canton</th>
+              <th>Educacion</th>
+              <th>Exp.</th>
+              <th>Indice</th>
+              <th>Fuente</th>
+            </tr>
+          </thead>
+          <tbody id="candidates-table-body"></tbody>
+        </table>
+      </div>
+      <p class="table-footer"><em>Click en cualquier fila para ver el detalle completo.</em></p>
+    </section>
+
+    <!-- Modal -->
+    <div id="candidate-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close">&times;</span>
+        <div id="candidate-details"></div>
+      </div>
     </div>
 
-    <script src="main.js"></script>
-  </body>
+    <footer>
+      <p>
+        Proyecto academico — <strong>Datos sinteticos representativos.</strong> El CNE aun no publica el listado oficial
+        de precandidatos inscritos para las elecciones seccionales de Noviembre 2026.
+        Los datos seran actualizados cuando el CNE publique el registro oficial en
+        <a href="https://www.cne.gob.ec" target="_blank" rel="noopener">cne.gob.ec</a>.
+      </p>
+      <p class="footer-small">
+        Elecciones Seccionales: Prefecturas · Alcaldias · Concejalias — Ecuador, Noviembre 2026 ·
+        <a href="https://github.com/jordanvt18/perfil-profesionalizacion-partidos-ecuador" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
 </html>
