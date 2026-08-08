@@ -44,11 +44,11 @@ CANTONES = {
 # fuente: media outlet or source
 
 REAL = [
-    # ═══ SANTA ELENA (user confirmed + verified) ═══
-    {"nombre":"Jose Daniel Villao","party":"ADN (Accion Democratica Nacional)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":10,"fuente":"Usuario confirmo"},
-    {"nombre":"Maria del Carmen Aquino","party":"Amigo (Lista 62)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"Usuario confirmo"},
-    {"nombre":"Andres Arturo Aguilar Villarroel","party":"Peninsula Positiva (Lista 69)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"posgrado","years":12,"fuente":"Usuario confirmo"},
-    {"nombre":"Ricardo Javier Vinueza Iniga","party":"Movimiento Unete (Lista 100)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":5,"fuente":"Usuario confirmo"},
+    # ═══ SANTA ELENA (confirmados por El Universo) ═══
+    {"nombre":"Jose Daniel Villao","party":"ADN (Accion Democratica Nacional)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":10,"fuente":"El Universo"},
+    {"nombre":"Maria del Carmen Aquino","party":"Amigo (Lista 62)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"El Universo"},
+    {"nombre":"Andres Arturo Aguilar Villarroel","party":"Peninsula Positiva (Lista 69)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"posgrado","years":12,"fuente":"El Universo"},
+    {"nombre":"Ricardo Javier Vinueza Iniga","party":"Movimiento Unete (Lista 100)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":5,"fuente":"El Universo"},
 
     # ═══ QUITO ALCALDIA (verified profiles) ═══
     # Gabriela Sommerfeld: Ing. Comercial PUCE, MSc. UDLA. Asambleista 2021-2023, Ministra de Turismo 2023-2025

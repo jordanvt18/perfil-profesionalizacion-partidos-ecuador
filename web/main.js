@@ -178,7 +178,7 @@ function updateCandidatesTable(cands) {
       <td>${c.provincia}</td>
       <td>${c.canton||"-"}</td>
       <td>${DG[c.max_degree]||c.max_degree}</td>
-      <td>${c.years_public_service}a</td>
+      <td>${c.years_public_service} años</td>
       <td><span class="prof-badge" style="background:${colorFor(c.profesionalizacion)}">${c.profesionalizacion?.toFixed(1)}</span></td>
       <td><span class="source-badge ${(c.fuente||'').includes('Confirmado')?'source-confirmed':'source-synthetic'}">${(c.fuente||'').includes('Confirmado')?'CONFIRMADO':'sintetico'}</span></td>
     </tr>`).join("");
@@ -206,7 +206,7 @@ function showModal(c) {
       <tr><td><b>Provincia</b></td><td>${c.provincia}</td></tr>
       <tr><td><b>Canton</b></td><td>${c.canton||"-"}</td></tr>
       <tr><td><b>Educacion</b></td><td>${DG[c.max_degree]||c.max_degree}</td></tr>
-      <tr><td><b>Serv. publico</b></td><td>${c.years_public_service} anos</td></tr>
+      <tr><td><b>Serv. público</b></td><td>${c.years_public_service} años</td></tr>
       <tr><td><b>Fuente</b></td><td style="${(c.fuente||'').includes('Confirmado')?'color:#22c55e':'color:#f59e0b'}">${c.fuente||'No verificada'}</td></tr>
     </table>`;
   $("candidate-modal").classList.remove("hidden");
@@ -226,7 +226,7 @@ function initSelectors() {
   fill("party-select","Todos los partidos",parties.parties);
   fill("province-select","Todas las provincias",provs.provinces);
   fill("canton-select","Todos los cantones",cantones.cantones);
-  fill("year-select","Todos los anos",years.years);
+  fill("year-select","Todos los años",years.years);
   $("year-select").value="2026";
   // Cascade province->canton
   $("province-select").addEventListener("change",()=>{
