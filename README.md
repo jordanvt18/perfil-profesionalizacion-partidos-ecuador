@@ -41,8 +41,7 @@ Mapa interactivo Leaflet, barras por nivel académico, serie histórica de parti
 │   └── generate_realistic_data.py # Generador de datos sintéticos calibrados
 ├── data/demo/                     # Datos demo (JSON)
 ├── METHODOLOGY.md                 # Metodología detallada
-├── docs/sources.md                # Fuentes oficiales
-└── SECURITY.md                    # Buenas prácticas
+└── docs/sources.md                # Fuentes oficiales
 ```
 
 ## 🧮 Metodología
@@ -70,14 +69,6 @@ cd web && python -m http.server 5500
 ```
 
 Abre `http://localhost:5500/index.html`
-
-## 🛡️ Seguridad
-
-- Datos demo sin información personal real
-- No se exponen credenciales ni claves API en la demo pública
-- CVs solo de fuentes oficiales públicas
-- Scraping respeta `robots.txt` y rate limiting
-- Ver `SECURITY.md` para detalle completo
 
 ## ⚠️ Disclaimer
 
