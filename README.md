@@ -33,15 +33,19 @@ Mapa interactivo Leaflet, barras por nivel académico, serie histórica de parti
 ├── src/api/main.py                # API REST FastAPI
 ├── src/etl/                       # Pipelines ETL, cálculo del índice, NLP
 ├── web/
-│   ├── index.html                 # Frontend interactivo
+│   ├── index.html                 # Frontend profesionalización
+│   ├── congruencia.html           # Frontend mapa de congruencia
 │   ├── main.js                    # Lógica: mapa, gráficos, tabla
 │   ├── styles.css                 # Estilos
 │   └── demo-data.js               # Datos demo (modo sin backend)
 ├── scripts/
 │   └── generate_realistic_data.py # Generador de datos sintéticos calibrados
 ├── data/demo/                     # Datos demo (JSON)
+├── config/                        # Configuración de taxonomía y pesos
 ├── METHODOLOGY.md                 # Metodología detallada
-└── docs/sources.md                # Fuentes oficiales
+├── docs/sources.md                # Fuentes oficiales (profesionalización)
+├── docs/congruencia-sources.md    # Fuentes de datos para congruencia
+└── README.md                      # Este documento
 ```
 
 ## 🧮 Metodología
@@ -69,6 +73,175 @@ cd web && python -m http.server 5500
 ```
 
 Abre `http://localhost:5500/index.html`
+
+---
+
+# Mapa de Congruencia Programa-Votantes 🗳️📊
+
+## Objetivo
+
+El **Mapa de Congruencia Programa-Votantes** es una herramienta de análisis político que mide el grado de **alineación entre las propuestas de los partidos políticos y las prioridades de la ciudadanía** en el Ecuador. Para cada partido, se construyen dos vectores — el **vector de programa** (qué propone el partido) y el **vector de prioridades** (qué demanda la ciudadanía) — y se calcula la **similitud coseno** entre ambos, produciendo un **índice de congruencia de 0 a 100**.
+
+> 🎯 **Objetivo**: Cuantificar y visualizar qué tan bien representan los programas de gobierno las prioridades reales de los votantes, por partido, provincia y cantón, permitiendo a la ciudadanía comparar oferencia política vs. demanda ciudadana.
+
+## Cálculo del puntaje de congruencia
+
+### 1. Taxonomía de 10 temas
+
+Se define una taxonomía de **10 dimensiones temáticas** que cubren el espectro de la agenda pública ecuatoriana:
+
+| # | Tema | Descripción |
+|---|------|-------------|
+| 1 | **Empleo y economía** | Política laboral, crecimiento económico, inversión, emprendimiento |
+| 2 | **Educación** | Cobertura, calidad educativa, infraestructura escolar, educación superior |
+| 3 | **Salud** | Acceso a servicios médicos, infraestructura hospitalaria, medicamentos |
+| 4 | **Seguridad ciudadana** | Delincuencia, políticas de seguridad, justicia, prevención |
+| 5 | **Infraestructura y servicios** | Vías, agua potable, alcantarillado, electricidad, conectividad |
+| 6 | **Medio ambiente** | Gestión ambiental, áreas protegidas, cambio climático, extracción |
+| 7 | **Corrupción y transparencia** | Rendición de cuentas, lucha anti-corrupción, institucionalidad |
+| 8 | **Agricultura y desarrollo rural** | Sector agropecuario, riego, crédito rural, soberanía alimentaria |
+| 9 | **Turismo y cultura** | Promoción turística, patrimonio cultural, industrias creativas |
+| 10 | **Derechos sociales** | Grupos de atención prioritaria, género, inclusión, pueblos y nacionalidades |
+
+### 2. Vectores de programa y prioridades
+
+Cada partido se representa con un **vector de programa** de 10 dimensiones:
+
+```
+program_vector = [econo, educ, salud, seguri, infras, ambien, corrup, agri, turis, derech]
+```
+
+Cada componente refleja la **proporción de menciones** del tema en el programa de gobierno, normalizada para que la suma del vector sea 1.
+
+La ciudadanía se representa con un **vector de prioridades** de 10 dimensiones:
+
+```
+priority_vector = [econo, educ, salud, seguri, infras, ambien, corrup, agri, turis, derech]
+```
+
+Cada componente refleja la **proporción de ciudadanos** que identifican el tema como su principal prioridad, extraída de encuestas, sondeos municipales y datos proxy (peticiones ciudadanas, quejas municipales, redes sociales).
+
+### 3. Similitud coseno → Índice 0–100
+
+La congruencia se calcula como la **similitud coseno** entre ambos vectores:
+
+```
+congruencia = (program_vector · priority_vector) / (||program_vector|| × ||priority_vector||)
+```
+
+El resultado se escala de [-1, 1] a [0, 100]:
+
+```
+congruencia_100 = (congruencia + 1) / 2 × 100
+```
+
+Una congruencia de **100** indica alineación perfecta entre programa y prioridades; una de **0** indica oposición total.
+
+## Pipeline ETL
+
+El pipeline de extracción, transformación y carga sigue estos pasos:
+
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│  Programas de    │    │  Encuestas y     │    │  Geo-indices     │
+│  gobierno (PDF)  │    │  sondeos (CSV)   │    │  INEC (JSON)     │
+└────────┬────────┘    └────────┬─────────┘    └────────┬────────┘
+         │                      │                        │
+         ▼                      ▼                        │
+┌─────────────────┐    ┌──────────────────┐             │
+│  NLP Extraction │    │  Prioridades     │             │
+│  (spaCy + LDA)  │    │  Ciudadanas      │             │
+│  → program_vec  │    │  → priority_vec  │             │
+└────────┬────────┘    └────────┬─────────┘             │
+         │                      │                        │
+         └──────────┬───────────┘                        │
+                    ▼                                    │
+         ┌──────────────────┐                            │
+         │  Cálculo de       │◄───────────────────────────┘
+         │  Congruencia      │
+         │  (cosine sim)     │
+         └────────┬──────────┘
+                  ▼
+         ┌──────────────────┐
+         │  Datos agregados │
+         │  por partido,    │
+         │  provincia, cantón│
+         └──────────────────┘
+```
+
+**Pasos detallados:**
+
+1. **Extracción de programas**: Descarga de PDFs de planes de gobierno desde sitios web de partidos. Procesamiento con `pdfminer.six` para extraer texto.
+2. **Clasificación temática NLP**: Uso de `spaCy` (modelo `es_core_news_sm`) para tokenización y NER, coincidencia de palabras clave por tema, y refinamiento con LDA (Latent Dirichlet Allocation) vía `scikit-learn`.
+3. **Construcción del vector de programa**: Conteo de menciones por tema → normalización a proporciones.
+4. **Extracción de prioridades ciudadanas**: Procesamiento de encuestas (INEC, universidades, NGOs) y datos proxy (peticiones en portales municipales, redes sociales) → vector de prioridades.
+5. **Cálculo de congruencia**: Similitud coseno entre `program_vector` y `priority_vector` → escala 0–100.
+6. **Intervalos de confianza**: Bootstrap con 1000 repeticiones para estimar intervalos al 95%.
+7. **Agregación territorial**: Resultados por partido, provincia, cantón y recinto electoral.
+
+## Endpoints de la API para congruencia
+
+La API FastAPI expone los siguientes endpoints para congruencia:
+
+| Endpoint | Método | Parámetros | Descripción |
+|----------|--------|------------|-------------|
+| `/congruencia/parties` | GET | — | Lista de partidos con datos de congruencia |
+| `/congruencia/themes` | GET | — | Taxonomía de 10 temas con descripciones |
+| `/congruencia/scores` | GET | `party`, `province`, `canton` | Puntajes de congruencia filtrables |
+| `/congruencia/program-vector` | GET | `party` | Vector de programa (10 dimensiones) por partido |
+| `/congruencia/priority-vector` | GET | `province`, `canton` | Vector de prioridades ciudadanas territorial |
+| `/congruencia/compare` | GET | `party`, `province` | Comparación lado a lado: programa vs. prioridades |
+| `/congruencia/geo` | GET | `level` (provincia/cantón) | Datos geográficos para visualización en mapa |
+
+**Ejemplo de uso:**
+
+```bash
+# Obtener congruencia de un partido en una provincia
+curl "http://localhost:8000/congruencia/scores?party=CREO&province=Pichincha"
+
+# Comparar vectores de programa y prioridades
+curl "http://localhost:8000/congruencia/compare?party=CREO&province=Pichincha"
+```
+
+## Cómo ejecutar el frontend de congruencia
+
+```bash
+# Opción A: Servidor estático (modo demo, sin backend)
+cd web && python -m http.server 5500
+# Abrir http://localhost:5500/congruencia.html
+
+# Opción B: Con backend FastAPI
+pip install -r requirements.txt
+uvicorn src.api.main:app --reload --port 8000
+# Abrir http://localhost:8000/static/congruencia.html
+```
+
+El frontend de congruencia (`congruencia.html`) ofrece:
+- 🗺️ **Mapa coroplético** de Ecuador por provincia/cantón mostrando el índice de congruencia
+- 📊 **Gráfico de barras** comparando vector de programa vs. vector de prioridades
+- 🏛️ **Selector de partido** para comparar múltiples ofertas políticas
+- 📋 **Tabla de ranking** de partidos por congruencia
+
+## Fuentes de datos y limitaciones
+
+### Fuentes sugeridas
+
+Las fuentes de datos para el módulo de congruencia se documentan en detalle en [`docs/congruencia-sources.md`](docs/congruencia-sources.md). Incluyen:
+- **Programas de gobierno**: Sitios web de partidos, boletines del CNE, PDFs de campaña
+- **Prioridades ciudadanas**: Encuestas INEC, sondeos universitarios, ONGs, sondeos municipales
+- **Datos proxy**: Peticiones ciudadanas, portales de quejas municipales, redes sociales
+- **Indicadores locales**: Pobreza, empleo, acceso a servicios (INEC)
+- **Geografía electoral**: GeoJSON del CNE con recintos, cantones y provincias
+
+### Limitaciones
+
+- **Datos proxy**: En ausencia de encuestas directas, se utilizan datos proxy (quejas municipales, redes sociales) que pueden no representar fielmente las prioridades de toda la población.
+- **Sesgo de taxonomía**: La taxonomía de 10 temas puede no capturar todas las dimensiones relevantes del debate político ecuatoriano (ej: migración, relaciones internacionales).
+- **Extracción NLP**: La clasificación automática de temas puede cometer errores, especialmente con lenguaje político ambiguo o programas poco estructurados.
+- **Cobertura desigual**: No todos los partidos publican programas completos; no todas las provincias tienen encuestas de opinión disponibles.
+- **Temporalidad**: Las prioridades ciudadanas cambian con el ciclo electoral y eventos coyunturales; los datos deben actualizarse periódicamente.
+- **Escalado de coseno**: La transformación de [-1,1] a [0,100] puede comprimir el rango útil; interpretar con cautela.
+- **El índice no mide calidad**: Un partido puede ser congruente (mencionar lo que la gente quiere) pero tener propuestas de baja calidad. La congruencia mide alineación temática, no idoneidad de políticas.
 
 ## ⚠️ Disclaimer
 

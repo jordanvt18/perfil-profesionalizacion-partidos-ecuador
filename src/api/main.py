@@ -8,6 +8,9 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from .congruencia import router as congruencia_router
+from .congruencia import flat_router as congruencia_flat_router
+
 app = FastAPI(
     title="Índice de Profesionalización – Ecuador",
     description="API para consultar el índice de profesionalización de candidatos y partidos políticos",
@@ -99,10 +102,18 @@ def get_turnout(
 def root():
     return {
         "app": "Índice de Profesionalización de Partidos – Ecuador",
-        "endpoints": ["/parties", "/provinces", "/years", "/aggregates", "/candidates", "/turnout"],
+        "endpoints": [
+            "/parties", "/provinces", "/years", "/aggregates", "/candidates", "/turnout",
+            "/themes", "/canton/{canton_id}/priorities", "/candidate/{candidate_id}/program",
+            "/match", "/party/{party_id}/aggregates",
+            "/congruencia/map", "/congruencia/ranking", "/congruencia/themes-graph",
+        ],
         "docs": "/docs",
     }
 
+
+app.include_router(congruencia_router)
+app.include_router(congruencia_flat_router)
 
 # Montar frontend estático si existe
 web_dir = Path("web")

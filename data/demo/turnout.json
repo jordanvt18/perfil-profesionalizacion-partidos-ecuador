@@ -1,0 +1,2486 @@
+[
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2017,
+    "turnout": 84.8
+  },
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2019,
+    "turnout": 75.9
+  },
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2021,
+    "turnout": 79.2
+  },
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2023,
+    "turnout": 80.4
+  },
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2025,
+    "turnout": 78.4
+  },
+  {
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "year": 2026,
+    "turnout": 80.1
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2017,
+    "turnout": 73.0
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2019,
+    "turnout": 76.0
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2021,
+    "turnout": 72.5
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2023,
+    "turnout": 75.0
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2025,
+    "turnout": 85.9
+  },
+  {
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "year": 2026,
+    "turnout": 80.4
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2017,
+    "turnout": 81.8
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2019,
+    "turnout": 79.6
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2021,
+    "turnout": 86.4
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2023,
+    "turnout": 80.5
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2025,
+    "turnout": 84.6
+  },
+  {
+    "province": "Azuay",
+    "canton": "Paute",
+    "year": 2026,
+    "turnout": 72.0
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2017,
+    "turnout": 86.0
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2019,
+    "turnout": 77.4
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2021,
+    "turnout": 78.1
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2023,
+    "turnout": 86.5
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2025,
+    "turnout": 87.9
+  },
+  {
+    "province": "Azuay",
+    "canton": "Sigsig",
+    "year": 2026,
+    "turnout": 87.4
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2017,
+    "turnout": 87.0
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2019,
+    "turnout": 79.8
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2021,
+    "turnout": 72.5
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2023,
+    "turnout": 83.6
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2025,
+    "turnout": 77.7
+  },
+  {
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "year": 2026,
+    "turnout": 74.1
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2017,
+    "turnout": 79.1
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2019,
+    "turnout": 86.3
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2021,
+    "turnout": 81.8
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2023,
+    "turnout": 72.7
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2025,
+    "turnout": 83.4
+  },
+  {
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "year": 2026,
+    "turnout": 74.2
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2017,
+    "turnout": 85.4
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2019,
+    "turnout": 79.1
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2021,
+    "turnout": 78.1
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2023,
+    "turnout": 76.6
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2025,
+    "turnout": 77.0
+  },
+  {
+    "province": "Canar",
+    "canton": "Azogues",
+    "year": 2026,
+    "turnout": 83.7
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2017,
+    "turnout": 74.8
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2019,
+    "turnout": 76.1
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2021,
+    "turnout": 72.7
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2023,
+    "turnout": 86.6
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2025,
+    "turnout": 76.2
+  },
+  {
+    "province": "Canar",
+    "canton": "La Troncal",
+    "year": 2026,
+    "turnout": 76.9
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2017,
+    "turnout": 77.6
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2019,
+    "turnout": 79.9
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2021,
+    "turnout": 84.7
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2023,
+    "turnout": 76.0
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2025,
+    "turnout": 79.5
+  },
+  {
+    "province": "Canar",
+    "canton": "Biblian",
+    "year": 2026,
+    "turnout": 79.3
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2017,
+    "turnout": 76.7
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2019,
+    "turnout": 74.3
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2021,
+    "turnout": 83.7
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2023,
+    "turnout": 78.5
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2025,
+    "turnout": 80.1
+  },
+  {
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "year": 2026,
+    "turnout": 81.1
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2017,
+    "turnout": 83.3
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2019,
+    "turnout": 78.9
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2021,
+    "turnout": 76.8
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2023,
+    "turnout": 85.8
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2025,
+    "turnout": 74.3
+  },
+  {
+    "province": "Carchi",
+    "canton": "Mira",
+    "year": 2026,
+    "turnout": 75.2
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2017,
+    "turnout": 75.6
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2019,
+    "turnout": 80.8
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2021,
+    "turnout": 79.0
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2023,
+    "turnout": 80.0
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2025,
+    "turnout": 72.8
+  },
+  {
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "year": 2026,
+    "turnout": 81.8
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2017,
+    "turnout": 72.7
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2019,
+    "turnout": 85.7
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2021,
+    "turnout": 76.0
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2023,
+    "turnout": 79.5
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2025,
+    "turnout": 86.9
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "year": 2026,
+    "turnout": 81.5
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2017,
+    "turnout": 84.9
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2019,
+    "turnout": 81.7
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2021,
+    "turnout": 77.5
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2023,
+    "turnout": 82.6
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2025,
+    "turnout": 84.6
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "year": 2026,
+    "turnout": 72.3
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2017,
+    "turnout": 77.3
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2019,
+    "turnout": 75.7
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2021,
+    "turnout": 86.6
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2023,
+    "turnout": 86.3
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2025,
+    "turnout": 74.9
+  },
+  {
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "year": 2026,
+    "turnout": 78.5
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2017,
+    "turnout": 81.6
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2019,
+    "turnout": 81.9
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2021,
+    "turnout": 77.3
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2023,
+    "turnout": 84.9
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2025,
+    "turnout": 82.5
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "year": 2026,
+    "turnout": 77.7
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2017,
+    "turnout": 85.3
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2019,
+    "turnout": 73.9
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2021,
+    "turnout": 80.4
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2023,
+    "turnout": 73.8
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2025,
+    "turnout": 85.5
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "year": 2026,
+    "turnout": 79.3
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2017,
+    "turnout": 86.0
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2019,
+    "turnout": 87.9
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2021,
+    "turnout": 87.6
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2023,
+    "turnout": 78.7
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2025,
+    "turnout": 87.7
+  },
+  {
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "year": 2026,
+    "turnout": 82.8
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2017,
+    "turnout": 74.6
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2019,
+    "turnout": 86.4
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2021,
+    "turnout": 83.0
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2023,
+    "turnout": 75.3
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2025,
+    "turnout": 82.3
+  },
+  {
+    "province": "El Oro",
+    "canton": "Machala",
+    "year": 2026,
+    "turnout": 81.5
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2017,
+    "turnout": 72.6
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2019,
+    "turnout": 86.5
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2021,
+    "turnout": 77.1
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2023,
+    "turnout": 83.5
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2025,
+    "turnout": 83.5
+  },
+  {
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "year": 2026,
+    "turnout": 80.6
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2017,
+    "turnout": 77.1
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2019,
+    "turnout": 80.3
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2021,
+    "turnout": 76.6
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2023,
+    "turnout": 74.0
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2025,
+    "turnout": 74.4
+  },
+  {
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "year": 2026,
+    "turnout": 85.0
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2017,
+    "turnout": 79.4
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2019,
+    "turnout": 85.5
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2021,
+    "turnout": 76.5
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2023,
+    "turnout": 73.5
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2025,
+    "turnout": 73.5
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "year": 2026,
+    "turnout": 85.4
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2017,
+    "turnout": 85.6
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2019,
+    "turnout": 73.6
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2021,
+    "turnout": 82.8
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2023,
+    "turnout": 85.5
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2025,
+    "turnout": 76.3
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "year": 2026,
+    "turnout": 85.0
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2017,
+    "turnout": 77.0
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2019,
+    "turnout": 81.0
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2021,
+    "turnout": 79.4
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2023,
+    "turnout": 80.4
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2025,
+    "turnout": 81.8
+  },
+  {
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "year": 2026,
+    "turnout": 73.7
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2017,
+    "turnout": 78.5
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2019,
+    "turnout": 76.9
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2021,
+    "turnout": 85.1
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2023,
+    "turnout": 81.6
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2025,
+    "turnout": 86.6
+  },
+  {
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "year": 2026,
+    "turnout": 76.5
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2017,
+    "turnout": 76.5
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2019,
+    "turnout": 73.4
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2021,
+    "turnout": 78.2
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2023,
+    "turnout": 78.8
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2025,
+    "turnout": 72.8
+  },
+  {
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "year": 2026,
+    "turnout": 79.3
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2017,
+    "turnout": 74.3
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2019,
+    "turnout": 86.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2021,
+    "turnout": 79.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2023,
+    "turnout": 85.9
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2025,
+    "turnout": 75.0
+  },
+  {
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "year": 2026,
+    "turnout": 76.6
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2017,
+    "turnout": 82.7
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2019,
+    "turnout": 76.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2021,
+    "turnout": 79.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2023,
+    "turnout": 79.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2025,
+    "turnout": 78.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Daule",
+    "year": 2026,
+    "turnout": 79.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2017,
+    "turnout": 82.7
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2019,
+    "turnout": 81.5
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2021,
+    "turnout": 76.7
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2023,
+    "turnout": 79.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2025,
+    "turnout": 86.1
+  },
+  {
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "year": 2026,
+    "turnout": 83.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2017,
+    "turnout": 74.2
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2019,
+    "turnout": 78.9
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2021,
+    "turnout": 84.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2023,
+    "turnout": 84.0
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2025,
+    "turnout": 79.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Duran",
+    "year": 2026,
+    "turnout": 85.0
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2017,
+    "turnout": 86.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2019,
+    "turnout": 78.3
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2021,
+    "turnout": 82.4
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2023,
+    "turnout": 84.0
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2025,
+    "turnout": 79.0
+  },
+  {
+    "province": "Guayas",
+    "canton": "Milagro",
+    "year": 2026,
+    "turnout": 79.8
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2017,
+    "turnout": 77.5
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2019,
+    "turnout": 76.7
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2021,
+    "turnout": 84.9
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2023,
+    "turnout": 86.9
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2025,
+    "turnout": 74.6
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "year": 2026,
+    "turnout": 74.9
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2017,
+    "turnout": 74.1
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2019,
+    "turnout": 81.8
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2021,
+    "turnout": 82.7
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2023,
+    "turnout": 76.2
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2025,
+    "turnout": 87.0
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "year": 2026,
+    "turnout": 75.0
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2017,
+    "turnout": 75.6
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2019,
+    "turnout": 84.0
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2021,
+    "turnout": 74.0
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2023,
+    "turnout": 74.4
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2025,
+    "turnout": 84.4
+  },
+  {
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "year": 2026,
+    "turnout": 75.7
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2017,
+    "turnout": 79.7
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2019,
+    "turnout": 74.4
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2021,
+    "turnout": 77.4
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2023,
+    "turnout": 87.1
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2025,
+    "turnout": 85.6
+  },
+  {
+    "province": "Loja",
+    "canton": "Loja",
+    "year": 2026,
+    "turnout": 72.9
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2017,
+    "turnout": 78.5
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2019,
+    "turnout": 84.5
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2021,
+    "turnout": 81.6
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2023,
+    "turnout": 82.0
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2025,
+    "turnout": 73.7
+  },
+  {
+    "province": "Loja",
+    "canton": "Catamayo",
+    "year": 2026,
+    "turnout": 81.0
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2017,
+    "turnout": 78.5
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2019,
+    "turnout": 84.0
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2021,
+    "turnout": 72.9
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2023,
+    "turnout": 81.1
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2025,
+    "turnout": 74.1
+  },
+  {
+    "province": "Loja",
+    "canton": "Saraguro",
+    "year": 2026,
+    "turnout": 75.2
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2017,
+    "turnout": 85.9
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2019,
+    "turnout": 73.4
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2021,
+    "turnout": 79.3
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2023,
+    "turnout": 79.2
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2025,
+    "turnout": 84.9
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "year": 2026,
+    "turnout": 73.9
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2017,
+    "turnout": 72.7
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2019,
+    "turnout": 87.5
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2021,
+    "turnout": 78.9
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2023,
+    "turnout": 75.5
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2025,
+    "turnout": 72.7
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "year": 2026,
+    "turnout": 88.0
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2017,
+    "turnout": 86.3
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2019,
+    "turnout": 86.2
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2021,
+    "turnout": 80.9
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2023,
+    "turnout": 76.1
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2025,
+    "turnout": 80.7
+  },
+  {
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "year": 2026,
+    "turnout": 81.8
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2017,
+    "turnout": 76.6
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2019,
+    "turnout": 76.9
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2021,
+    "turnout": 87.3
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2023,
+    "turnout": 75.5
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2025,
+    "turnout": 78.9
+  },
+  {
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "year": 2026,
+    "turnout": 75.3
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2017,
+    "turnout": 79.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2019,
+    "turnout": 84.9
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2021,
+    "turnout": 75.4
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2023,
+    "turnout": 79.4
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2025,
+    "turnout": 79.3
+  },
+  {
+    "province": "Manabi",
+    "canton": "Manta",
+    "year": 2026,
+    "turnout": 76.0
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2017,
+    "turnout": 80.6
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2019,
+    "turnout": 76.3
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2021,
+    "turnout": 87.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2023,
+    "turnout": 80.1
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2025,
+    "turnout": 72.4
+  },
+  {
+    "province": "Manabi",
+    "canton": "Chone",
+    "year": 2026,
+    "turnout": 73.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2017,
+    "turnout": 81.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2019,
+    "turnout": 84.7
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2021,
+    "turnout": 83.4
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2023,
+    "turnout": 76.5
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2025,
+    "turnout": 74.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Montecristi",
+    "year": 2026,
+    "turnout": 74.2
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2017,
+    "turnout": 73.4
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2019,
+    "turnout": 86.8
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2021,
+    "turnout": 86.1
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2023,
+    "turnout": 86.5
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2025,
+    "turnout": 74.3
+  },
+  {
+    "province": "Manabi",
+    "canton": "Pedernales",
+    "year": 2026,
+    "turnout": 82.9
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2017,
+    "turnout": 76.2
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2019,
+    "turnout": 74.2
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2021,
+    "turnout": 73.6
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2023,
+    "turnout": 81.3
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2025,
+    "turnout": 84.6
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "year": 2026,
+    "turnout": 76.0
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2017,
+    "turnout": 78.0
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2019,
+    "turnout": 75.6
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2021,
+    "turnout": 74.6
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2023,
+    "turnout": 83.5
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2025,
+    "turnout": 75.3
+  },
+  {
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "year": 2026,
+    "turnout": 72.7
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2017,
+    "turnout": 79.6
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2019,
+    "turnout": 83.4
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2021,
+    "turnout": 72.0
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2023,
+    "turnout": 79.9
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2025,
+    "turnout": 86.5
+  },
+  {
+    "province": "Napo",
+    "canton": "Tena",
+    "year": 2026,
+    "turnout": 80.6
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2017,
+    "turnout": 79.7
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2019,
+    "turnout": 81.4
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2021,
+    "turnout": 86.2
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2023,
+    "turnout": 76.5
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2025,
+    "turnout": 73.0
+  },
+  {
+    "province": "Napo",
+    "canton": "Archidona",
+    "year": 2026,
+    "turnout": 77.3
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2017,
+    "turnout": 74.7
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2019,
+    "turnout": 79.5
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2021,
+    "turnout": 85.5
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2023,
+    "turnout": 80.3
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2025,
+    "turnout": 74.0
+  },
+  {
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "year": 2026,
+    "turnout": 74.4
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2017,
+    "turnout": 81.9
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2019,
+    "turnout": 75.1
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2021,
+    "turnout": 77.6
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2023,
+    "turnout": 84.3
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2025,
+    "turnout": 78.5
+  },
+  {
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "year": 2026,
+    "turnout": 72.3
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2017,
+    "turnout": 83.4
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2019,
+    "turnout": 73.4
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2021,
+    "turnout": 79.8
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2023,
+    "turnout": 72.6
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2025,
+    "turnout": 76.3
+  },
+  {
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "year": 2026,
+    "turnout": 85.7
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2017,
+    "turnout": 83.5
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2019,
+    "turnout": 73.9
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2021,
+    "turnout": 79.9
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2023,
+    "turnout": 82.7
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2025,
+    "turnout": 84.4
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Quito",
+    "year": 2026,
+    "turnout": 83.3
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2017,
+    "turnout": 83.8
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2019,
+    "turnout": 84.3
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2021,
+    "turnout": 87.2
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2023,
+    "turnout": 79.1
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2025,
+    "turnout": 81.8
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "year": 2026,
+    "turnout": 81.0
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2017,
+    "turnout": 80.5
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2019,
+    "turnout": 81.0
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2021,
+    "turnout": 80.4
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2023,
+    "turnout": 73.3
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2025,
+    "turnout": 76.8
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "year": 2026,
+    "turnout": 74.8
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2017,
+    "turnout": 80.7
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2019,
+    "turnout": 87.9
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2021,
+    "turnout": 80.2
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2023,
+    "turnout": 84.2
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2025,
+    "turnout": 74.9
+  },
+  {
+    "province": "Pichincha",
+    "canton": "Pedro Moncayo",
+    "year": 2026,
+    "turnout": 81.6
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2017,
+    "turnout": 72.8
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2019,
+    "turnout": 80.0
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2021,
+    "turnout": 78.9
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2023,
+    "turnout": 82.4
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2025,
+    "turnout": 84.6
+  },
+  {
+    "province": "Pichincha",
+    "canton": "San Miguel de los Bancos",
+    "year": 2026,
+    "turnout": 87.8
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2017,
+    "turnout": 85.8
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2019,
+    "turnout": 75.5
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2021,
+    "turnout": 73.6
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2023,
+    "turnout": 76.4
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2025,
+    "turnout": 74.2
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "year": 2026,
+    "turnout": 74.8
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2017,
+    "turnout": 75.4
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2019,
+    "turnout": 72.7
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2021,
+    "turnout": 76.6
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2023,
+    "turnout": 87.1
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2025,
+    "turnout": 83.4
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "year": 2026,
+    "turnout": 81.6
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2017,
+    "turnout": 74.1
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2019,
+    "turnout": 73.8
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2021,
+    "turnout": 73.3
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2023,
+    "turnout": 73.5
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2025,
+    "turnout": 76.6
+  },
+  {
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "year": 2026,
+    "turnout": 82.0
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2017,
+    "turnout": 74.0
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2019,
+    "turnout": 83.1
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2021,
+    "turnout": 80.3
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2023,
+    "turnout": 74.0
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2025,
+    "turnout": 74.3
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "year": 2026,
+    "turnout": 82.3
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2017,
+    "turnout": 78.6
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2019,
+    "turnout": 80.7
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2021,
+    "turnout": 85.1
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2023,
+    "turnout": 87.4
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2025,
+    "turnout": 76.4
+  },
+  {
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "year": 2026,
+    "turnout": 76.7
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2017,
+    "turnout": 74.7
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2019,
+    "turnout": 82.2
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2021,
+    "turnout": 82.3
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2023,
+    "turnout": 83.7
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2025,
+    "turnout": 83.3
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "year": 2026,
+    "turnout": 81.2
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2017,
+    "turnout": 84.4
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2019,
+    "turnout": 81.2
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2021,
+    "turnout": 77.3
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2023,
+    "turnout": 81.1
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2025,
+    "turnout": 87.6
+  },
+  {
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "year": 2026,
+    "turnout": 72.8
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2017,
+    "turnout": 87.5
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2019,
+    "turnout": 78.0
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2021,
+    "turnout": 79.1
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2023,
+    "turnout": 82.9
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2025,
+    "turnout": 77.5
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "year": 2026,
+    "turnout": 85.4
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2017,
+    "turnout": 87.1
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2019,
+    "turnout": 74.9
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2021,
+    "turnout": 86.2
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2023,
+    "turnout": 84.1
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2025,
+    "turnout": 85.2
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "year": 2026,
+    "turnout": 77.9
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2017,
+    "turnout": 77.4
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2019,
+    "turnout": 83.9
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2021,
+    "turnout": 74.9
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2023,
+    "turnout": 87.0
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2025,
+    "turnout": 86.0
+  },
+  {
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "year": 2026,
+    "turnout": 81.6
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2017,
+    "turnout": 85.7
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2019,
+    "turnout": 85.4
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2021,
+    "turnout": 76.8
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2023,
+    "turnout": 74.9
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2025,
+    "turnout": 79.1
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "year": 2026,
+    "turnout": 81.8
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2017,
+    "turnout": 84.7
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2019,
+    "turnout": 73.3
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2021,
+    "turnout": 74.2
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2023,
+    "turnout": 73.2
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2025,
+    "turnout": 77.1
+  },
+  {
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "year": 2026,
+    "turnout": 82.3
+  }
+]

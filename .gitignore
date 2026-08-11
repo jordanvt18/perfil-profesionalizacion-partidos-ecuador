@@ -1,20 +1,42 @@
-docs/
-data/
-notebooks/
-web/
-src/
-scripts/
-.env
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.sqlite
-*.db
-*.log
-*.parquet
-.output/
-.cache/
-.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# Environment
+.env
 .env.local
 .env.*
+!.env.example
+
+# Data (keep demo data, ignore raw/processed)
+data/raw/
+data/processed/
+*.parquet
+*.sqlite
+*.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Build
+.output/
+.cache/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

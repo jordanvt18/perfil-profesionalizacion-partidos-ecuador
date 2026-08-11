@@ -1,5 +1,5 @@
 // PRECANDIDATOS - Elecciones Seccionales Ecuador, Noviembre 2026
-// Generado: 2026-08-07 22:21
+// Generado: 2026-08-10 21:15
 // CONFIRMADO por medios ecuatorianos: 79 precandidatos
 // SINTETICO no confirmado: 196 precandidatos
 // ATENCION: Izquierda Democratica (ID), Reto, Revolucion Ciudadana (RC5), SUMA estan BLOQUEADOS por el CNE (Agosto 2026)

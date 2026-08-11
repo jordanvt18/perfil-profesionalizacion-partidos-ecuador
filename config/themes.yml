@@ -1,0 +1,137 @@
+# Taxonomía de 10 temas prioritarios para análisis de congruencia política
+# Incluye sinónimos locales ecuatorianos para mejorar la detección NLP
+# Proyecto: Mapa de Congruencia Política - Elecciones Ecuador 2026
+
+themes:
+  - id: salud
+    name: Salud
+    keywords:
+      - "salud"
+      - "hospital"
+      - "centro de salud"
+      - "médico"
+      - "medicina"
+      - "EPS"
+      - "enfermedad"
+      - "atención médica"
+      - "postas"
+      - "dispensario"
+
+  - id: educacion
+    name: Educación
+    keywords:
+      - "educación"
+      - "escuela"
+      - "colegio"
+      - "universidad"
+      - "profesor"
+      - "docente"
+      - "infraestructura escolar"
+      - "becas"
+      - "alfabetización"
+      - "educación inicial"
+
+  - id: agua
+    name: Agua y Saneamiento
+    keywords:
+      - "agua"
+      - "alcantarillado"
+      - "saneamiento"
+      - "potable"
+      - "tratamiento de agua"
+      - "racionamiento"
+      - "acueducto"
+      - "sedapal"
+
+  - id: movilidad
+    name: Movilidad y Transporte
+    keywords:
+      - "transporte"
+      - "movilidad"
+      - "vías"
+      - "carreteras"
+      - "puentes"
+      - "Metro"
+      - "BRT"
+      - "bus"
+      - "transporte público"
+      - "tránsito"
+      - "semáforos"
+
+  - id: empleo
+    name: Empleo y Economía
+    keywords:
+      - "empleo"
+      - "trabajo"
+      - "emprendimiento"
+      - "pymes"
+      - "turismo"
+      - "desempleo"
+      - "informalidad"
+      - "desarrollo económico"
+      - "inversión"
+      - "productividad"
+
+  - id: seguridad
+    name: Seguridad Ciudadana
+    keywords:
+      - "seguridad"
+      - "delincuencia"
+      - "crimen"
+      - "policía"
+      - "cámaras"
+      - "vigilancia"
+      - "prevención"
+      - "extorsión"
+      - "sicariato"
+      - "10 EC"
+
+  - id: vivienda
+    name: Vivienda
+    keywords:
+      - "vivienda"
+      - "barrios"
+      - "urbanización"
+      - "planes de vivienda"
+      - "construcción"
+      - "arrendamiento"
+      - "bono de vivienda"
+      - "mejoramiento barrial"
+
+  - id: ambiente
+    name: Ambiente
+    keywords:
+      - "ambiente"
+      - "contaminación"
+      - "reciclaje"
+      - "áreas protegidas"
+      - "deforestación"
+      - "cambio climático"
+      - "emisiones"
+      - "residuos"
+      - "arborización"
+
+  - id: transparencia
+    name: Transparencia
+    keywords:
+      - "transparencia"
+      - "corrupción"
+      - "rendición de cuentas"
+      - "participación ciudadana"
+      - "ética"
+      - "auditoría"
+      - "control social"
+      - "acceso a información"
+
+  - id: presupuesto
+    name: Presupuesto
+    keywords:
+      - "presupuesto"
+      - "gasto público"
+      - "inversión"
+      - "obras"
+      - "tributos"
+      - "impuestos"
+      - "endeudamiento"
+      - "participación"
+      - "asignación"

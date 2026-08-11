@@ -1,0 +1,2512 @@
+[
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Amigo (Lista 62)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Peninsula Positiva (Lista 69)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 63.6,
+    "n_candidatos": 1,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Unete (Lista 100)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 53.6,
+    "n_candidatos": 2,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 68.4,
+    "n_candidatos": 2,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "SUMA",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 60.0,
+    "n_candidatos": 2,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Quito Honesto (Lista 64)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 2,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Izquierda Democratica (ID)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Izquierda Democratica (ID)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento CREO",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Pichincha",
+    "canton": "Quito",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -0.181,
+    "lon": -78.468
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Cuenca Avanza (Lista 71)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 60.4,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Izquierda Democratica (ID)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 62.0,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 2,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 68.4,
+    "n_candidatos": 1,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 63.6,
+    "n_candidatos": 1,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Guayas",
+    "canton": "Guayaquil",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -2.189,
+    "lon": -79.889
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 60.4,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Manabi",
+    "canton": "Manta",
+    "profesionalizacion_media": 62.0,
+    "n_candidatos": 1,
+    "lat": -0.954,
+    "lon": -80.728
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Manabi",
+    "canton": "Manta",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -0.954,
+    "lon": -80.728
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Reto",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento CREO",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Izquierda Democratica (ID)",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Revolucion Ciudadana (RC5)",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 63.6,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 2,
+    "lat": -1.029,
+    "lon": -79.464
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -1.802,
+    "lon": -79.535
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -1.802,
+    "lon": -79.535
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Loja",
+    "canton": "Loja",
+    "profesionalizacion_media": 53.6,
+    "n_candidatos": 2,
+    "lat": -3.993,
+    "lon": -79.204
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Loja",
+    "canton": "Loja",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -3.993,
+    "lon": -79.204
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Loja",
+    "canton": "Loja",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -3.993,
+    "lon": -79.204
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -0.935,
+    "lon": -78.616
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "profesionalizacion_media": 48.8,
+    "n_candidatos": 2,
+    "lat": -0.935,
+    "lon": -78.616
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "profesionalizacion_media": 51.2,
+    "n_candidatos": 2,
+    "lat": -0.467,
+    "lon": -76.987
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -0.625,
+    "lon": -90.376
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Azuay",
+    "canton": "Cuenca",
+    "profesionalizacion_media": 57.2,
+    "n_candidatos": 1,
+    "lat": -2.897,
+    "lon": -79.005
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "profesionalizacion_media": 34.0,
+    "n_candidatos": 1,
+    "lat": -2.894,
+    "lon": -78.778
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": -2.894,
+    "lon": -78.778
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Azuay",
+    "canton": "Gualaceo",
+    "profesionalizacion_media": 34.0,
+    "n_candidatos": 1,
+    "lat": -2.894,
+    "lon": -78.778
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Azuay",
+    "canton": "Paute",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -2.781,
+    "lon": -78.761
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Azuay",
+    "canton": "Paute",
+    "profesionalizacion_media": 34.8,
+    "n_candidatos": 1,
+    "lat": -2.781,
+    "lon": -78.761
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Azuay",
+    "canton": "Paute",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.781,
+    "lon": -78.761
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Bolivar",
+    "canton": "Guaranda",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": -1.593,
+    "lon": -79.002
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "profesionalizacion_media": 31.6,
+    "n_candidatos": 1,
+    "lat": -1.708,
+    "lon": -79.043
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Bolivar",
+    "canton": "San Miguel",
+    "profesionalizacion_media": 49.6,
+    "n_candidatos": 2,
+    "lat": -1.708,
+    "lon": -79.043
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Canar",
+    "canton": "Azogues",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -2.739,
+    "lon": -78.848
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Canar",
+    "canton": "La Troncal",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 2,
+    "lat": -2.424,
+    "lon": -79.34
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Canar",
+    "canton": "La Troncal",
+    "profesionalizacion_media": 35.6,
+    "n_candidatos": 1,
+    "lat": -2.424,
+    "lon": -79.34
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Canar",
+    "canton": "Biblian",
+    "profesionalizacion_media": 50.8,
+    "n_candidatos": 2,
+    "lat": -2.713,
+    "lon": -78.888
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Canar",
+    "canton": "Biblian",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -2.713,
+    "lon": -78.888
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 66.8,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Carchi",
+    "canton": "Tulcan",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": 0.812,
+    "lon": -77.717
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Carchi",
+    "canton": "Mira",
+    "profesionalizacion_media": 51.2,
+    "n_candidatos": 2,
+    "lat": 0.598,
+    "lon": -78.071
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Carchi",
+    "canton": "Mira",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": 0.598,
+    "lon": -78.071
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 2,
+    "lat": 0.593,
+    "lon": -77.829
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Carchi",
+    "canton": "San Gabriel",
+    "profesionalizacion_media": 34.8,
+    "n_candidatos": 1,
+    "lat": 0.593,
+    "lon": -77.829
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Democracia Si",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 62.8,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 50.8,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Chimborazo",
+    "canton": "Riobamba",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -1.671,
+    "lon": -78.647
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "profesionalizacion_media": 48.0,
+    "n_candidatos": 2,
+    "lat": -1.594,
+    "lon": -78.635
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Chimborazo",
+    "canton": "Guano",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": -1.594,
+    "lon": -78.635
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "profesionalizacion_media": 53.6,
+    "n_candidatos": 2,
+    "lat": -1.731,
+    "lon": -78.759
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Chimborazo",
+    "canton": "Colta",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": -1.731,
+    "lon": -78.759
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "profesionalizacion_media": 38.0,
+    "n_candidatos": 1,
+    "lat": -0.935,
+    "lon": -78.616
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -0.935,
+    "lon": -78.616
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Cotopaxi",
+    "canton": "Latacunga",
+    "profesionalizacion_media": 66.8,
+    "n_candidatos": 1,
+    "lat": -0.935,
+    "lon": -78.616
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 2,
+    "lat": -0.951,
+    "lon": -78.694
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Cotopaxi",
+    "canton": "Pujili",
+    "profesionalizacion_media": 34.8,
+    "n_candidatos": 1,
+    "lat": -0.951,
+    "lon": -78.694
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": -1.047,
+    "lon": -78.59
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -1.047,
+    "lon": -78.59
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Cotopaxi",
+    "canton": "Salcedo",
+    "profesionalizacion_media": 57.2,
+    "n_candidatos": 1,
+    "lat": -1.047,
+    "lon": -78.59
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 38.8,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Pachakutik",
+    "province": "El Oro",
+    "canton": "Machala",
+    "profesionalizacion_media": 57.2,
+    "n_candidatos": 1,
+    "lat": -3.259,
+    "lon": -79.955
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "profesionalizacion_media": 39.6,
+    "n_candidatos": 2,
+    "lat": -3.451,
+    "lon": -79.959
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "El Oro",
+    "canton": "Santa Rosa",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -3.451,
+    "lon": -79.959
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "profesionalizacion_media": 51.2,
+    "n_candidatos": 2,
+    "lat": -3.33,
+    "lon": -79.806
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "El Oro",
+    "canton": "Pasaje",
+    "profesionalizacion_media": 38.8,
+    "n_candidatos": 1,
+    "lat": -3.33,
+    "lon": -79.806
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 38.8,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Democracia Si",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 34.0,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Esmeraldas",
+    "canton": "Esmeraldas",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": 0.95,
+    "lon": -79.654
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": 0.866,
+    "lon": -79.838
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": 0.866,
+    "lon": -79.838
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Esmeraldas",
+    "canton": "Atacames",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": 0.866,
+    "lon": -79.838
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "profesionalizacion_media": 36.4,
+    "n_candidatos": 1,
+    "lat": 0.33,
+    "lon": -79.464
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "profesionalizacion_media": 37.2,
+    "n_candidatos": 1,
+    "lat": 0.33,
+    "lon": -79.464
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Esmeraldas",
+    "canton": "Quininde",
+    "profesionalizacion_media": 38.0,
+    "n_candidatos": 1,
+    "lat": 0.33,
+    "lon": -79.464
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -0.625,
+    "lon": -90.376
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -0.625,
+    "lon": -90.376
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -0.625,
+    "lon": -90.376
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Galapagos",
+    "canton": "Santa Cruz",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 2,
+    "lat": -0.625,
+    "lon": -90.376
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": -0.902,
+    "lon": -89.609
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -0.902,
+    "lon": -89.609
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Galapagos",
+    "canton": "San Cristobal",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -0.902,
+    "lon": -89.609
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Guayas",
+    "canton": "Daule",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": -1.863,
+    "lon": -79.98
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Guayas",
+    "canton": "Daule",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": -1.863,
+    "lon": -79.98
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Guayas",
+    "canton": "Daule",
+    "profesionalizacion_media": 39.6,
+    "n_candidatos": 1,
+    "lat": -1.863,
+    "lon": -79.98
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "profesionalizacion_media": 64.4,
+    "n_candidatos": 1,
+    "lat": -2.024,
+    "lon": -79.724
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -2.024,
+    "lon": -79.724
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Guayas",
+    "canton": "Samborondon",
+    "profesionalizacion_media": 61.2,
+    "n_candidatos": 1,
+    "lat": -2.024,
+    "lon": -79.724
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 31.6,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Imbabura",
+    "canton": "Ibarra",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": 0.351,
+    "lon": -78.122
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": 0.234,
+    "lon": -78.262
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": 0.234,
+    "lon": -78.262
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Imbabura",
+    "canton": "Otavalo",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": 0.234,
+    "lon": -78.262
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": 0.3,
+    "lon": -78.264
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": 0.3,
+    "lon": -78.264
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Imbabura",
+    "canton": "Cotacachi",
+    "profesionalizacion_media": 51.6,
+    "n_candidatos": 1,
+    "lat": 0.3,
+    "lon": -78.264
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Loja",
+    "canton": "Loja",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -3.993,
+    "lon": -79.204
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Loja",
+    "canton": "Loja",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -3.993,
+    "lon": -79.204
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Loja",
+    "canton": "Catamayo",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -4.002,
+    "lon": -79.355
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Loja",
+    "canton": "Catamayo",
+    "profesionalizacion_media": 33.2,
+    "n_candidatos": 1,
+    "lat": -4.002,
+    "lon": -79.355
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Loja",
+    "canton": "Catamayo",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": -4.002,
+    "lon": -79.355
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Loja",
+    "canton": "Saraguro",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -3.621,
+    "lon": -79.239
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Loja",
+    "canton": "Saraguro",
+    "profesionalizacion_media": 60.4,
+    "n_candidatos": 1,
+    "lat": -3.621,
+    "lon": -79.239
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Loja",
+    "canton": "Saraguro",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -3.621,
+    "lon": -79.239
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -1.802,
+    "lon": -79.535
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -1.802,
+    "lon": -79.535
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Los Rios",
+    "canton": "Babahoyo",
+    "profesionalizacion_media": 42.4,
+    "n_candidatos": 2,
+    "lat": -1.802,
+    "lon": -79.535
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Los Rios",
+    "canton": "Quevedo",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": -1.029,
+    "lon": -79.464
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -1.446,
+    "lon": -79.459
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "profesionalizacion_media": 50.8,
+    "n_candidatos": 1,
+    "lat": -1.446,
+    "lon": -79.459
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Los Rios",
+    "canton": "Ventanas",
+    "profesionalizacion_media": 35.6,
+    "n_candidatos": 1,
+    "lat": -1.446,
+    "lon": -79.459
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Democracia Si",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 50.0,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento Construye",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Manabi",
+    "canton": "Portoviejo",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -1.056,
+    "lon": -80.454
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Manabi",
+    "canton": "Manta",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -0.954,
+    "lon": -80.728
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Manabi",
+    "canton": "Chone",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -0.687,
+    "lon": -80.094
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Manabi",
+    "canton": "Chone",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": -0.687,
+    "lon": -80.094
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Manabi",
+    "canton": "Chone",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -0.687,
+    "lon": -80.094
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Democracia Si",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 49.2,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Morona Santiago",
+    "canton": "Macas",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": -2.309,
+    "lon": -78.116
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -2.457,
+    "lon": -78.167
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "profesionalizacion_media": 38.0,
+    "n_candidatos": 1,
+    "lat": -2.457,
+    "lon": -78.167
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Morona Santiago",
+    "canton": "Sucua",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -2.457,
+    "lon": -78.167
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 34.8,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento CREO",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 35.6,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Napo",
+    "canton": "Tena",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -0.99,
+    "lon": -77.815
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Napo",
+    "canton": "Archidona",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -0.904,
+    "lon": -77.81
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Napo",
+    "canton": "Archidona",
+    "profesionalizacion_media": 67.6,
+    "n_candidatos": 1,
+    "lat": -0.904,
+    "lon": -77.81
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Napo",
+    "canton": "Archidona",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -0.904,
+    "lon": -77.81
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": -0.467,
+    "lon": -76.987
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -0.467,
+    "lon": -76.987
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": -0.467,
+    "lon": -76.987
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Orellana",
+    "canton": "Puerto Francisco de Orellana",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": -0.467,
+    "lon": -76.987
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": -0.301,
+    "lon": -76.854
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "profesionalizacion_media": 42.8,
+    "n_candidatos": 1,
+    "lat": -0.301,
+    "lon": -76.854
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Orellana",
+    "canton": "La Joya de los Sachas",
+    "profesionalizacion_media": 48.4,
+    "n_candidatos": 1,
+    "lat": -0.301,
+    "lon": -76.854
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Avanza",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Pastaza",
+    "canton": "Puyo",
+    "profesionalizacion_media": 62.0,
+    "n_candidatos": 1,
+    "lat": -1.481,
+    "lon": -78.003
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": 0.045,
+    "lon": -78.157
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "profesionalizacion_media": 62.8,
+    "n_candidatos": 1,
+    "lat": 0.045,
+    "lon": -78.157
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Pichincha",
+    "canton": "Cayambe",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 1,
+    "lat": 0.045,
+    "lon": -78.157
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": -0.513,
+    "lon": -78.566
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Pichincha",
+    "canton": "Machachi",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 2,
+    "lat": -0.513,
+    "lon": -78.566
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 52.8,
+    "n_candidatos": 2,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Santa Elena",
+    "canton": "Santa Elena",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -2.226,
+    "lon": -80.859
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "profesionalizacion_media": 52.4,
+    "n_candidatos": 1,
+    "lat": -2.233,
+    "lon": -80.9
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "profesionalizacion_media": 62.8,
+    "n_candidatos": 1,
+    "lat": -2.233,
+    "lon": -80.9
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Santa Elena",
+    "canton": "La Libertad",
+    "profesionalizacion_media": 35.6,
+    "n_candidatos": 1,
+    "lat": -2.233,
+    "lon": -80.9
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "profesionalizacion_media": 57.2,
+    "n_candidatos": 2,
+    "lat": -2.214,
+    "lon": -80.966
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Santa Elena",
+    "canton": "Salinas",
+    "profesionalizacion_media": 32.4,
+    "n_candidatos": 1,
+    "lat": -2.214,
+    "lon": -80.966
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 58.0,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 53.2,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Sociedad Patriotica (PSP)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "Santo Domingo",
+    "profesionalizacion_media": 39.6,
+    "n_candidatos": 1,
+    "lat": -0.252,
+    "lon": -79.174
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "profesionalizacion_media": 33.2,
+    "n_candidatos": 1,
+    "lat": 0.001,
+    "lon": -79.382
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": 0.001,
+    "lon": -79.382
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Santo Domingo de los Tsachilas",
+    "canton": "La Concordia",
+    "profesionalizacion_media": 65.2,
+    "n_candidatos": 1,
+    "lat": 0.001,
+    "lon": -79.382
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento CREO",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 58.8,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 66.8,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 55.6,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Sucumbios",
+    "canton": "Lago Agrio",
+    "profesionalizacion_media": 45.2,
+    "n_candidatos": 1,
+    "lat": 0.086,
+    "lon": -76.883
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "profesionalizacion_media": 46.0,
+    "n_candidatos": 1,
+    "lat": -0.168,
+    "lon": -76.644
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": -0.168,
+    "lon": -76.644
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Sucumbios",
+    "canton": "Shushufindi",
+    "profesionalizacion_media": 60.4,
+    "n_candidatos": 1,
+    "lat": -0.168,
+    "lon": -76.644
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Pachakutik",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 47.6,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Tungurahua",
+    "canton": "Ambato",
+    "profesionalizacion_media": 64.4,
+    "n_candidatos": 1,
+    "lat": -1.249,
+    "lon": -78.617
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Avanza",
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "profesionalizacion_media": 44.4,
+    "n_candidatos": 1,
+    "lat": -1.397,
+    "lon": -78.422
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -1.397,
+    "lon": -78.422
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Tungurahua",
+    "canton": "Banos de Agua Santa",
+    "profesionalizacion_media": 56.4,
+    "n_candidatos": 1,
+    "lat": -1.397,
+    "lon": -78.422
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "ADN (Accion Democratica Nacional)",
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "profesionalizacion_media": 54.0,
+    "n_candidatos": 1,
+    "lat": -1.329,
+    "lon": -78.542
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Social Cristiano (PSC)",
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "profesionalizacion_media": 64.4,
+    "n_candidatos": 1,
+    "lat": -1.329,
+    "lon": -78.542
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Tungurahua",
+    "canton": "Pelileo",
+    "profesionalizacion_media": 58.8,
+    "n_candidatos": 1,
+    "lat": -1.329,
+    "lon": -78.542
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Movimiento CREO",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 46.8,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Prefecto/a",
+    "party_normalized": "Democracia Si",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 54.8,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 43.6,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento CREO",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 50.8,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Unidad Popular (UP)",
+    "province": "Zamora Chinchipe",
+    "canton": "Zamora",
+    "profesionalizacion_media": 66.0,
+    "n_candidatos": 1,
+    "lat": -4.069,
+    "lon": -78.957
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Partido Socialista Ecuatoriano (PSE)",
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "profesionalizacion_media": 34.0,
+    "n_candidatos": 1,
+    "lat": -3.835,
+    "lon": -78.759
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Democracia Si",
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "profesionalizacion_media": 33.2,
+    "n_candidatos": 1,
+    "lat": -3.835,
+    "lon": -78.759
+  },
+  {
+    "dignidad": "Alcalde/sa",
+    "party_normalized": "Movimiento Construye",
+    "province": "Zamora Chinchipe",
+    "canton": "Yantzaza",
+    "profesionalizacion_media": 50.8,
+    "n_candidatos": 1,
+    "lat": -3.835,
+    "lon": -78.759
+  }
+]

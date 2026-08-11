@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Congruencia Programa–Votantes — Ecuador 2026</title>
+  <meta name="description" content="Mapa de congruencia entre programas de gobierno y prioridades ciudadanas. Elecciones Seccionales Ecuador, Noviembre 2026." />
+  <link rel="stylesheet" href="congruencia.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- NAV BAR -->
+    <nav class="navbar">
+      <span class="navbar-brand">📊 Observatorio Electoral</span>
+      <a href="index.html" class="navbar-link">Índice de Profesionalización</a>
+      <a href="congruencia.html" class="navbar-link active">Mapa de Congruencia</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <h1>Mapa de Congruencia <span>Programa–Votantes</span></h1>
+      <p>
+        Herramienta ciudadana que compara los programas de gobierno con las prioridades
+        de la población en cada cantón. Mide qué tan alineadas están las propuestas
+        de los/as candidatos/as con las necesidades reales de la ciudadanía.
+      </p>
+      <div id="congruencia-banner">
+        <strong>METODOLOGÍA:</strong> La congruencia se calcula comparando el vector de prioridades ciudadanas
+        (encuestas, consultas, CV) con el vector del programa de gobierno (propuestas, planes de trabajo).
+        <strong style="color:#22c55e">10 dimensiones temáticas</strong> evaluadas.
+        Datos sintéticos para demostración — se actualizarán con datos oficiales del CNE.
+      </div>
+    </header>
+
+    <!-- SUMMARY STATS -->
+    <section id="summary-stats">
+      <div class="stat-card">
+        <span class="stat-number" id="stat-avg-cong">-</span>
+        <span class="stat-label">Congruencia promedio</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-cands">-</span>
+        <span class="stat-label">Candidatos/as</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-parties">-</span>
+        <span class="stat-label">Partidos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="stat-best-cand">-</span>
+        <span class="stat-label">Mayor congruencia</span>
+      </div>
+    </section>
+
+    <!-- MAIN: Map + Sidebar -->
+    <main id="main-section">
+      <section id="map-section">
+        <div id="map"></div>
+      </section>
+
+      <aside id="control-panel">
+        <div class="controls">
+          <label for="party-select">Partido político</label>
+          <select id="party-select"></select>
+
+          <label for="candidate-select">Candidato/a</label>
+          <select id="candidate-select"></select>
+
+          <label for="province-select">Provincia</label>
+          <select id="province-select"></select>
+
+          <label for="canton-select">Cantón</label>
+          <select id="canton-select"></select>
+
+          <label for="year-select">Año electoral</label>
+          <select id="year-select"></select>
+        </div>
+
+        <div class="export-buttons">
+          <button id="export-csv" title="Exportar tabla actual a CSV">📥 Exportar CSV</button>
+          <button id="export-json" title="Exportar datos actuales a JSON">📥 Exportar JSON</button>
+        </div>
+
+        <div class="panel-block">
+          <h3>Gráfico de Radar — Prioridades vs Programa</h3>
+          <div id="radar-chart-container" style="min-height:320px"></div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- COMPARATIVE TABLE -->
+    <section id="candidates-section">
+      <div class="section-header">
+        <h2>Ranking de candidatos por congruencia</h2>
+        <span id="candidates-count"></span>
+      </div>
+      <div id="candidates-table-wrapper">
+        <table id="congruencia-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Partido</th>
+              <th>Provincia</th>
+              <th>Cantón</th>
+              <th>Congruencia</th>
+              <th>3 Temas prioritarios</th>
+            </tr>
+          </thead>
+          <tbody id="candidates-table-body"></tbody>
+        </table>
+      </div>
+      <p class="table-footer"><em>Click en cualquier fila para ver el detalle del radar comparativo.</em></p>
+    </section>
+
+    <!-- THEMES GRAPH -->
+    <section id="charts-section">
+      <div class="chart-container" id="themes-graph-container">
+        <h2>Red de Temas — Co-mentions y Brechas</h2>
+        <p style="font-size:0.72rem;color:#9ca3af;margin-bottom:0.4rem">
+          Nodos = temas · Aristas = frecuencia de co-mentions en programas ·
+          <span style="color:#ef4444">🔴 Rojo = brecha alta (demanda &gt; oferta)</span> ·
+          <span style="color:#22c55e">🟢 Verde = oferta adecuada</span>
+        </p>
+        <svg id="themes-svg"></svg>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="candidate-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close">&times;</span>
+        <div id="candidate-details"></div>
+        <div id="modal-radar" style="min-height:350px;margin-top:0.5rem"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Proyecto académico — <strong>Datos sintéticos representativos.</strong> El CNE aún no publica el listado oficial
+        de precandidatos inscritos para las elecciones seccionales de Noviembre 2026.
+        Los datos serán actualizados cuando el CNE publique el registro oficial en
+        <a href="https://www.cne.gob.ec" target="_blank" rel="noopener">cne.gob.ec</a>.
+      </p>
+      <p class="footer-small">
+        Mapa de Congruencia Programa–Votantes — Elecciones Seccionales Ecuador, Noviembre 2026 ·
+        <a href="index.html">← Ir al Índice de Profesionalización</a>
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="congruencia.js"></script>
+</body>
+</html>

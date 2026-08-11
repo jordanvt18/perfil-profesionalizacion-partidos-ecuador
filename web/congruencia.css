@@ -1,4 +1,8 @@
-/* === RESET === */
+/* ============================================================
+   CONGRUENCIA — Mapa de Congruencia Programa–Votantes
+   Dark theme matching existing styles.css aesthetic
+   ============================================================ */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -44,12 +48,6 @@ body {
   border-bottom-color: #3b82f6;
 }
 
-@media (max-width: 680px) {
-  .navbar { padding: 0 0.75rem; overflow-x: auto; }
-  .navbar-brand { font-size: 0.75rem; margin-right: 0.75rem; }
-  .navbar-link { padding: 0.4rem 0.6rem; font-size: 0.72rem; }
-}
-
 /* === HEADER === */
 header {
   padding: 1rem 1.5rem;
@@ -59,17 +57,14 @@ header {
 header h1 { font-size: 1.3rem; margin-bottom: 0.2rem; }
 header h1 span { color: #3b82f6; }
 header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.35; margin-bottom: 0.6rem; }
-#disclaimer-banner {
-  background: #1e293b; border: 1px solid #f59e0b; border-radius: 0.4rem;
+#congruencia-banner {
+  background: #1e293b; border: 1px solid #3b82f6; border-radius: 0.4rem;
   padding: 0.6rem 0.9rem; font-size: 0.72rem; line-height: 1.5;
-  color: #fcd34d; max-width: 760px;
+  color: #93c5fd; max-width: 760px;
 }
-#disclaimer-banner strong { color: #fbbf24; }
-#disclaimer-banner strong[style] { color: #ef4444; }
-#disclaimer-banner .real-count { color: #22c55e; font-weight: 700; }
-#disclaimer-banner a { color: #60a5fa; text-decoration: underline; }
+#congruencia-banner strong { color: #60a5fa; }
 
-/* === SUMMARY === */
+/* === SUMMARY STATS === */
 #summary-stats {
   display: flex; flex-wrap: wrap;
   border-bottom: 1px solid #1f2937;
@@ -82,7 +77,7 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
 .stat-card + .stat-card { border-left: 1px solid #1f2937; }
 .stat-number { font-size: 1.35rem; font-weight: 700; color: #3b82f6; }
 .stat-label { font-size: 0.68rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.4px; }
-#stat-best { font-size: 0.82rem; color: #22c55e; }
+#stat-best-cand { font-size: 0.82rem; color: #22c55e; }
 
 /* === MAIN LAYOUT === */
 #main-section {
@@ -95,7 +90,7 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
 #map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 #control-panel {
-  flex: 0 0 320px; width: 320px;
+  flex: 0 0 340px; width: 340px;
   padding: 0.75rem; background: #020617;
   border-left: 1px solid #1f2937;
   display: flex; flex-direction: column; gap: 0.5rem;
@@ -118,7 +113,22 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
 .controls select:hover { border-color: #3b82f6; }
 .controls select:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59,130,246,0.15); }
 
-/* === PANEL CHARTS === */
+/* === EXPORT BUTTONS === */
+.export-buttons {
+  display: flex; gap: 0.5rem; margin-top: 0.6rem;
+}
+.export-buttons button {
+  flex: 1; padding: 0.45rem 0.6rem;
+  border-radius: 0.3rem; border: 1px solid #374151;
+  background: #0f172a; color: #e5e7eb;
+  font-size: 0.75rem; cursor: pointer;
+  transition: all 0.2s;
+}
+.export-buttons button:hover {
+  border-color: #3b82f6; background: #1e293b; color: #60a5fa;
+}
+
+/* === PANEL BLOCKS === */
 .panel-block {
   background: #030712; border-radius: 0.4rem;
   padding: 0.6rem; border: 1px solid #1f2937;
@@ -147,20 +157,20 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
   max-height: 380px; overflow: auto;
   border: 1px solid #1f2937; border-radius: 0.4rem;
 }
-#candidates-table {
+#congruencia-table {
   width: 100%; border-collapse: collapse; font-size: 0.78rem;
 }
-#candidates-table thead {
+#congruencia-table thead {
   position: sticky; top: 0; z-index: 2;
 }
-#candidates-table th {
+#congruencia-table th {
   background: #111827; color: #9ca3af;
   font-weight: 600; font-size: 0.68rem; text-transform: uppercase;
   letter-spacing: 0.5px; padding: 0.45rem 0.5rem;
   text-align: left; border-bottom: 1px solid #1f2937;
   white-space: nowrap;
 }
-#candidates-table td {
+#congruencia-table td {
   padding: 0.35rem 0.5rem;
   border-bottom: 1px solid #0f172a;
   white-space: nowrap;
@@ -168,19 +178,34 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
 .candidate-row { cursor: pointer; transition: background 0.12s; }
 .candidate-row:hover { background: #1f2937 !important; }
 .candidate-row:nth-child(even) { background: #0a0f1a; }
-.cand-name  { max-width: 180px; overflow: hidden; text-overflow: ellipsis; }
-.cand-party { max-width: 180px; overflow: hidden; text-overflow: ellipsis; color: #9ca3af; font-size: 0.72rem; }
-.prof-badge {
+.cand-name  { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+.cand-party { max-width: 200px; overflow: hidden; text-overflow: ellipsis; color: #9ca3af; font-size: 0.72rem; }
+.cong-badge {
   display: inline-block; padding: 2px 7px; border-radius: 8px;
   font-weight: 700; font-size: 0.75rem; color: #0f172a;
 }
-.source-badge {
-  display: inline-block; padding: 2px 6px; border-radius: 6px;
-  font-size: 0.62rem; font-weight: 700; text-transform: uppercase;
-}
-.source-confirmed { background: #22c55e33; color: #22c55e; border: 1px solid #22c55e55; }
-.source-synthetic { background: #f59e0b33; color: #f59e0b; border: 1px solid #f59e0b55; }
 .table-footer { margin-top: 0.4rem; font-size: 0.72rem; color: #6b7280; }
+
+/* === CHARTS SECTIONS === */
+#charts-section {
+  display: flex; gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #020617; border-top: 1px solid #1f2937;
+  flex-wrap: wrap;
+}
+.chart-container {
+  flex: 1 1 45%; min-width: 320px;
+  background: #030712; border: 1px solid #1f2937;
+  border-radius: 0.4rem; padding: 0.75rem;
+  min-height: 400px;
+}
+.chart-container h2 {
+  font-size: 0.9rem; font-weight: 600; color: #e5e7eb;
+  margin-bottom: 0.5rem;
+}
+#radar-chart-container { min-height: 420px; }
+#themes-graph-container { min-height: 420px; position: relative; }
+#themes-graph-container svg { width: 100%; height: 380px; }
 
 /* === MODAL === */
 .modal {
@@ -192,7 +217,7 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
 .modal.hidden { display: none; }
 .modal-content {
   background: #020617; border-radius: 0.6rem; padding: 1.25rem;
-  width: 90%; max-width: 480px; border: 1px solid #374151;
+  width: 90%; max-width: 500px; border: 1px solid #374151;
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   max-height: 90vh; overflow-y: auto;
 }
@@ -201,22 +226,23 @@ header p { font-size: 0.82rem; color: #9ca3af; max-width: 700px; line-height: 1.
   line-height: 1; color: #6b7280; transition: color 0.15s;
 }
 #modal-close:hover { color: #ef4444; }
-#candidate-details { margin-top: 0.25rem; }
-#candidate-details h3 { font-size: 1.1rem; margin-bottom: 0.15rem; }
-.modal-dignidad { color: #3b82f6; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.6rem; }
-.candidate-stats { display: flex; gap: 0.5rem; margin: 0.6rem 0; }
-.candidate-stats .stat-item {
-  flex: 1; background: #0f172a; border-radius: 0.4rem;
-  padding: 0.6rem; text-align: center; border: 1px solid #1f2937;
+
+/* === LEAFLET OVERRIDES === */
+.leaflet-popup-content-wrapper {
+  background: #020617 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+  border-radius: 0.4rem !important;
+  font-size: 0.78rem !important;
 }
-.candidate-stats .stat-item .stat-label {
-  display: block; font-size: 0.64rem; color: #6b7280;
-  margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.3px;
+.leaflet-popup-tip { background: #020617 !important; border: 1px solid #374151 !important; }
+.leaflet-container { background: #0f172a !important; }
+.leaflet-control-attribution {
+  background: rgba(2,6,23,0.8) !important;
+  color: #6b7280 !important;
+  font-size: 0.6rem !important;
 }
-.candidate-stats .stat-item .stat-value { font-size: 1rem; font-weight: 700; }
-.detail-table { width: 100%; margin-top: 0.5rem; border-collapse: collapse; }
-.detail-table td { padding: 0.4rem 0; border-bottom: 1px solid #1f2937; font-size: 0.8rem; }
-.detail-table td:first-child { color: #9ca3af; width: 130px; }
+.leaflet-control-attribution a { color: #3b82f6 !important; }
 
 /* === FOOTER === */
 footer {
@@ -237,9 +263,14 @@ footer a { color: #3b82f6; }
     max-height: none; overflow: visible;
   }
   .panel-block { min-height: 220px; }
+  #charts-section { flex-direction: column; }
+  .chart-container { min-width: 100%; }
 }
 
 @media (max-width: 680px) {
+  .navbar { padding: 0 0.75rem; overflow-x: auto; }
+  .navbar-brand { font-size: 0.75rem; margin-right: 0.75rem; }
+  .navbar-link { padding: 0.4rem 0.6rem; font-size: 0.72rem; }
   header { padding: 0.75rem 1rem; }
   header h1 { font-size: 1.05rem; }
   #summary-stats { flex-wrap: wrap; }
@@ -248,10 +279,11 @@ footer a { color: #3b82f6; }
   #map-section { flex: 0 0 300px; min-height: 300px; }
   #control-panel { padding: 0.5rem; }
   .controls select { font-size: 0.75rem; padding: 0.35rem; }
-  #candidates-section { padding: 0.75rem 0.5rem; }
-  #candidates-table { font-size: 0.7rem; }
-  #candidates-table th { font-size: 0.62rem; padding: 0.3rem 0.35rem; }
-  #candidates-table td { padding: 0.25rem 0.35rem; font-size: 0.68rem; }
-  .candidate-stats { flex-direction: column; }
+  #candidates-section, #charts-section { padding: 0.75rem 0.5rem; }
+  #congruencia-table { font-size: 0.7rem; }
+  #congruencia-table th { font-size: 0.62rem; padding: 0.3rem 0.35rem; }
+  #congruencia-table td { padding: 0.25rem 0.35rem; font-size: 0.68rem; }
   .modal-content { padding: 0.75rem; width: 95%; }
+  .chart-container { min-height: 350px; }
+  #themes-graph-container svg { height: 320px; }
 }

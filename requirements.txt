@@ -1,15 +1,41 @@
+# requirements.txt
+# Dependencias del proyecto Índice de Profesionalización + Mapa de Congruencia
+
+# --- Procesamiento de datos ---
 pandas
 geopandas
+pyarrow
+
+# --- HTTP y scraping ---
 requests
 beautifulsoup4
+
+# --- NLP y extracción de texto ---
 spacy
+pdfminer.six
+
+# --- Matching y texto ---
 rapidfuzz
-sqlalchemy
-pyarrow
-statsmodels
+
+# --- Machine Learning y estadística ---
 scikit-learn
+statsmodels
+scipy
+
+# --- Base de datos ---
+sqlalchemy
+psycopg2-binary
+
+# --- API ---
 fastapi
 uvicorn[standard]
-psycopg2-binary
+
+# --- Configuración ---
 python-dotenv
+PyYAML
+
+# --- Análisis de redes ---
+networkx
+
+# --- Visualización ---
 plotly
