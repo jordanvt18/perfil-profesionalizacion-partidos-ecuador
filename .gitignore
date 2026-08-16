@@ -40,3 +40,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Artefacto auxiliar del generador ETL (no lo importa ninguna página)
+web/congruencia-api-data.js
