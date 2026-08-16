@@ -197,8 +197,17 @@ def generate_priority_vectors() -> dict[str, dict[str, float]]:
 
 
 def main():
-    """Genera todos los datos demo y los guarda en archivos."""
+    """Genera todos los datos demo y los guarda en archivos.
+
+    IMPORTANTE: este script NO sobrescribe web/congruencia-demo-data.js.
+    El contrato de exports que espera congruencia.js (TEMAS, PARTIDOS,
+    CANDIDATOS, CO_MENTION_MATRIX, THEME_GAPS, YEARS) lo mantiene
+    scripts/generate_frontend_demo_data.py. Este script genera únicamente
+    JSON de respaldo (data/demo/) y un JS con prefijo congruencia* que
+    ninguna página importa.
+    """
     repo_root = Path(__file__).parent.parent
+    web_dir = repo_root / "web"
 
     # 1. Generar vectores
     program_vectors = generate_program_vectors()

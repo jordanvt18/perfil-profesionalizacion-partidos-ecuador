@@ -1,0 +1,714 @@
+{
+  "meta": {
+    "proceso_electoral": "Elecciones Seccionales y del CPCCS 2026 (adelantadas al 29 de noviembre de 2026)",
+    "dignidades": [
+      "Prefecto/a",
+      "Viceprefecto/a",
+      "Alcalde/sa",
+      "Concejal/a",
+      "Vocal junta parroquial"
+    ],
+    "inscripcion_cne": "2 al 17 de agosto de 2026",
+    "campana_oficial": "12 al 26 de noviembre de 2026",
+    "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
+    "postulaciones_al_15_ago": 17934,
+    "requisito_plan_trabajo": "Cada candidatura debe presentar plan de trabajo (diagnóstico, objetivos generales y específicos, plan de acción) como requisito de inscripción ante el CNE",
+    "nota": "Al 16 de agosto de 2026 ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables y declaraciones oficiales de partidos. Los planes completos serán contrastables tras el cierre de inscripciones y el listado definitivo del CNE.",
+    "fecha_corte": "2026-08-16",
+    "actualizado": "2026-08-16"
+  },
+  "fuentes_clave": [
+    {
+      "nombre": "CNE",
+      "url": "https://www.cne.gob.ec",
+      "tipo": "oficial",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Primicias",
+      "url": "https://www.primicias.ec",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "El Comercio",
+      "url": "https://www.elcomercio.com",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "El Universo",
+      "url": "https://www.eluniverso.com",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Expreso",
+      "url": "https://www.expreso.ec",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Ecuavisa",
+      "url": "https://www.ecuavisa.com",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "El Telégrafo",
+      "url": "https://www.eltelegrafo.com.ec",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Vistazo",
+      "url": "https://www.vistazo.com",
+      "tipo": "medio",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Diario La Hora",
+      "url": "https://www.lahora.com.ec",
+      "tipo": "medio",
+      "nivel": "Medium (bloquea acceso directo)"
+    },
+    {
+      "nombre": "Diario Correo (Machala)",
+      "url": "https://www.diariocorreo.com.ec",
+      "tipo": "medio local",
+      "nivel": "High"
+    },
+    {
+      "nombre": "El Diario / Diario Centro (Manabí)",
+      "url": "https://www.eldiario.ec",
+      "tipo": "medio local",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Sitio oficial ADN",
+      "url": "https://adn-ecuador.org/plan-de-gobierno/",
+      "tipo": "oficial partido",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Sitio oficial RC",
+      "url": "https://revolucionciudadana.com.ec/",
+      "tipo": "oficial partido",
+      "nivel": "High"
+    }
+  ],
+  "planes_partidos": {
+    "ADN (Accion Democratica Nacional)": {
+      "lista": 7,
+      "plan_nacional": "Completo (web oficial, 6 ejes)",
+      "ejes_nacionales": [
+        "Desarrollo Económico y Empleo",
+        "Educación y Cultura",
+        "Salud y Bienestar Social",
+        "Medio Ambiente y Desarrollo Sostenible",
+        "Justicia y DD.HH.",
+        "Participación Ciudadana y Transparencia"
+      ],
+      "ejes_seccionales": {
+        "seguridad": 0.24,
+        "empleo": 0.16,
+        "movilidad": 0.14,
+        "educacion": 0.11,
+        "salud": 0.09,
+        "presupuesto": 0.1,
+        "transparencia": 0.06,
+        "vivienda": 0.05,
+        "ambiente": 0.03,
+        "agua": 0.02
+      },
+      "fuente": "https://adn-ecuador.org/plan-de-gobierno/ + Primicias 19-jul/11-ago 2026 + El Universo 12-jul 2026",
+      "completitud": "parcial seccional"
+    },
+    "Revolucion Ciudadana (RC5)": {
+      "lista": 5,
+      "estado": "Suspendida provisionalmente por TCE (6-mar-2026, caso Caja Chica); compite vía PSE, UP, Todos (L.70), Pachakutik, Renovar",
+      "plan_nacional": "Plataforma nacional 2025 (CNE): seguridad/lucha contra la violencia, empleo, justicia social",
+      "ejes_seccionales": {
+        "seguridad": 0.22,
+        "empleo": 0.18,
+        "salud": 0.14,
+        "educacion": 0.13,
+        "presupuesto": 0.1,
+        "transparencia": 0.08,
+        "vivienda": 0.06,
+        "agua": 0.04,
+        "movilidad": 0.03,
+        "ambiente": 0.02
+      },
+      "fuente": "https://revolucionciudadana.com.ec/ + El Comercio ago-2026 + Vistazo 4-ago-2026",
+      "completitud": "inexistente seccional"
+    },
+    "Partido Social Cristiano (PSC)": {
+      "lista": 6,
+      "plan_nacional": "Plan de trabajo registrado en CNE (proceso 2025)",
+      "ejes_seccionales": {
+        "seguridad": 0.22,
+        "salud": 0.14,
+        "empleo": 0.14,
+        "presupuesto": 0.12,
+        "movilidad": 0.12,
+        "vivienda": 0.08,
+        "educacion": 0.06,
+        "transparencia": 0.05,
+        "ambiente": 0.04,
+        "agua": 0.03
+      },
+      "fuente": "Primicias 2-jul-2026 + La Hora 11-jun-2026",
+      "completitud": "parcial (discurso y perfiles)"
+    },
+    "Movimiento Construye": {
+      "lista": 25,
+      "estado": "Sin evidencia de participación ni plan seccional 2026 en fuentes confiables",
+      "plan_nacional": "Último plan conocido: 'Construir un Ecuador Seguro' (2023, CNE)",
+      "ejes_seccionales": {
+        "seguridad": 0.18,
+        "transparencia": 0.14,
+        "empleo": 0.12,
+        "educacion": 0.11,
+        "salud": 0.1,
+        "ambiente": 0.1,
+        "presupuesto": 0.08,
+        "agua": 0.06,
+        "vivienda": 0.06,
+        "movilidad": 0.05
+      },
+      "fuente": "CNE delegaciones (plan 2023)",
+      "completitud": "inexistente 2026"
+    },
+    "Pachakutik": {
+      "lista": 18,
+      "plan_nacional": "Plan de trabajo registrado en CNE (2025)",
+      "ejes_seccionales": {
+        "ambiente": 0.2,
+        "agua": 0.15,
+        "educacion": 0.12,
+        "transparencia": 0.1,
+        "salud": 0.1,
+        "empleo": 0.09,
+        "vivienda": 0.08,
+        "seguridad": 0.06,
+        "presupuesto": 0.06,
+        "movilidad": 0.04
+      },
+      "fuente": "Primicias 30-jun-2026 + CNE (plan 2025)",
+      "completitud": "parcial (postulados declarados)"
+    },
+    "Movimiento CREO": {
+      "lista": 21,
+      "plan_nacional": "Sin plan publicado; estrategia 'alejarse de los extremos'",
+      "ejes_seccionales": {
+        "empleo": 0.18,
+        "seguridad": 0.14,
+        "transparencia": 0.13,
+        "presupuesto": 0.12,
+        "educacion": 0.1,
+        "salud": 0.09,
+        "movilidad": 0.08,
+        "ambiente": 0.06,
+        "vivienda": 0.05,
+        "agua": 0.05
+      },
+      "fuente": "La Hora 11-jun-2026 + El Universo 12-jul-2026",
+      "completitud": "inexistente plan; parcial estrategia"
+    },
+    "Avanza": {
+      "lista": 8,
+      "plan_nacional": "Sin plan publicado",
+      "ejes_seccionales": {
+        "empleo": 0.16,
+        "seguridad": 0.14,
+        "movilidad": 0.12,
+        "educacion": 0.12,
+        "presupuesto": 0.1,
+        "salud": 0.1,
+        "transparencia": 0.08,
+        "agua": 0.06,
+        "vivienda": 0.06,
+        "ambiente": 0.06
+      },
+      "fuente": "Primicias 29-jun/11-ago 2026 + Expreso 29-jun-2026",
+      "completitud": "inexistente plan; parcial candidaturas"
+    },
+    "Izquierda Democratica (ID)": {
+      "lista": 12,
+      "plan_nacional": "Plan de trabajo registrado en CNE (2025)",
+      "estado": "Sin alianzas con RC ni ADN (líneas rojas)",
+      "ejes_seccionales": {
+        "transparencia": 0.18,
+        "educacion": 0.14,
+        "salud": 0.12,
+        "empleo": 0.11,
+        "ambiente": 0.1,
+        "presupuesto": 0.09,
+        "seguridad": 0.08,
+        "agua": 0.07,
+        "vivienda": 0.06,
+        "movilidad": 0.05
+      },
+      "fuente": "Primicias 26-jun-2026 + CNE (plan 2025)",
+      "completitud": "parcial (plan nacional 2025)"
+    }
+  },
+  "candidaturas": [
+    {
+      "nombre": "Pabel Muñoz",
+      "partido": "Alianza UP (2) + PSE (17) + Todos",
+      "militancia": "RC",
+      "dignidad": "Alcalde (reelección)",
+      "provincia": "Pichincha",
+      "canton": "Quito",
+      "ejes": [
+        "movilidad",
+        "infraestructura",
+        "proyectos sociales"
+      ],
+      "fuente": "Primicias 06-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Harold Burbano",
+      "partido": "ADN (7)",
+      "dignidad": "Alcalde",
+      "provincia": "Pichincha",
+      "canton": "Quito",
+      "ejes": [
+        "seguridad",
+        "orden"
+      ],
+      "fuente": "El Comercio 02-ago / El Telégrafo 12-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Jorge Yunda",
+      "partido": "Avanza (8)",
+      "dignidad": "Alcalde",
+      "provincia": "Pichincha",
+      "canton": "Quito",
+      "ejes": [
+        "seguridad",
+        "empleo"
+      ],
+      "fuente": "Primicias 14-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Giovanna Ubidia",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecta",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 06-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Cynthia Viteri",
+      "partido": "ADN (7)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Guayas",
+      "canton": "Guayaquil",
+      "ejes": [],
+      "fuente": "Primicias/Ecuavisa 12-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Andrés Roche Pesantes",
+      "partido": "PSC (6)",
+      "dignidad": "Alcalde",
+      "provincia": "Guayas",
+      "canton": "Guayaquil",
+      "ejes": [
+        "plan construido desde opinión ciudadana"
+      ],
+      "fuente": "Primicias/Radio Centro 15-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Fiorella Ycaza",
+      "partido": "PSE (17) auspicio correísmo",
+      "dignidad": "Alcaldesa",
+      "provincia": "Guayas",
+      "canton": "Guayaquil",
+      "ejes": [],
+      "fuente": "Ecuavisa/El Diario 13-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High",
+      "nota": "Pendiente de confirmación CNE (listado 9-nov-2026)"
+    },
+    {
+      "nombre": "Susana Santistevan",
+      "partido": "CREO (21)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Guayas",
+      "canton": "Guayaquil",
+      "ejes": [],
+      "fuente": "Primicias 11-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Mónica Luzárraga",
+      "partido": "PSE (17) + Pachakutik (18)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Guayas",
+      "canton": "Guayaquil",
+      "ejes": [],
+      "fuente": "Primicias 10-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Andrés Guschmer",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecto",
+      "provincia": "Guayas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 12-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High",
+      "nota": "Pendiente de confirmación CNE (listado 9-nov-2026)"
+    },
+    {
+      "nombre": "Geraldine Weber",
+      "partido": "CREO (21)",
+      "dignidad": "Prefecta",
+      "provincia": "Guayas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 11-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Paúl Carrasco Carpio",
+      "partido": "Cuencanos como vos (62+Renace 107)",
+      "dignidad": "Alcalde",
+      "provincia": "Azuay",
+      "canton": "Cuenca",
+      "ejes": [],
+      "fuente": "Primicias 14-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Leonardo Morales Ordóñez",
+      "partido": "Avanza (8)",
+      "dignidad": "Alcalde",
+      "provincia": "Azuay",
+      "canton": "Cuenca",
+      "ejes": [],
+      "fuente": "Primicias 14-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Juan Pablo Riquetti",
+      "partido": "PSP (3)",
+      "dignidad": "Alcalde",
+      "provincia": "Azuay",
+      "canton": "Cuenca",
+      "ejes": [],
+      "fuente": "Primicias 14-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Pedro Palacios Ullauri",
+      "partido": "Nueva Generación",
+      "dignidad": "Alcalde",
+      "provincia": "Azuay",
+      "canton": "Cuenca",
+      "ejes": [],
+      "fuente": "Primicias 13-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Juan Cristóbal Lloret",
+      "partido": "La provincia en marcha (33+17+1)",
+      "dignidad": "Alcalde",
+      "provincia": "Azuay",
+      "canton": "Cuenca",
+      "ejes": [],
+      "fuente": "Primicias 14-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Luisa González",
+      "partido": "Pachakutik (18)",
+      "militancia": "RC",
+      "dignidad": "Prefecta",
+      "provincia": "Manabí",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Vistazo 14-ago-2026 / Primicias 15-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Marciana Valdivieso",
+      "partido": "Mejor Ciudad (107)",
+      "dignidad": "Alcaldesa (reelección)",
+      "provincia": "Manabí",
+      "canton": "Manta",
+      "ejes": [],
+      "fuente": "Extra 03-jul-2026 / El Universo",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Diana Caiza",
+      "partido": "Pachakutik (18)",
+      "dignidad": "Alcaldesa (reelección)",
+      "provincia": "Tungurahua",
+      "canton": "Ambato",
+      "ejes": [
+        "continuidad de gestión",
+        "diálogo nacional"
+      ],
+      "fuente": "El Universo / CNE junta provincial",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Lisette Naranjo",
+      "partido": "ADN (7)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Tungurahua",
+      "canton": "Ambato",
+      "ejes": [],
+      "fuente": "Radio Centro Ambato",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Alejandro Lara",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecto",
+      "provincia": "Tungurahua",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Radio Centro Ambato",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Maximiliano Núñez Tomaselli",
+      "partido": "ADN (7)",
+      "dignidad": "Alcalde",
+      "provincia": "Chimborazo",
+      "canton": "Riobamba",
+      "ejes": [
+        "inversión",
+        "reactivación"
+      ],
+      "fuente": "APRComunicación / La Prensa",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Yadira Bayas",
+      "partido": "ADN (7)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Santo Domingo de los Tsachilas",
+      "canton": "Santo Domingo",
+      "ejes": [],
+      "fuente": "El Diario 15-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Wilson Erazo",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecto",
+      "provincia": "Santo Domingo de los Tsachilas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Diario 15-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Roberta Zambrano",
+      "partido": "Correísmo (refugio)",
+      "dignidad": "Alcaldesa",
+      "provincia": "Esmeraldas",
+      "canton": "Esmeraldas",
+      "ejes": [],
+      "fuente": "El Universo",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Julia Angulo Girón",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecta",
+      "provincia": "Esmeraldas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Universo / Megavisión",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Galo Lara Yépez",
+      "partido": "ADN (7)",
+      "dignidad": "Alcalde",
+      "provincia": "Los Rios",
+      "canton": "Quevedo",
+      "ejes": [],
+      "fuente": "Radio Centro 15-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Francisco Cevallos",
+      "partido": "ADN (7)",
+      "dignidad": "Alcalde",
+      "provincia": "Guayas",
+      "canton": "Milagro",
+      "ejes": [],
+      "fuente": "Instagram (acto inscripción) 12-ago-2026",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Álvaro Castillo Monge",
+      "partido": "Avanza (8)",
+      "dignidad": "Alcalde",
+      "provincia": "Imbabura",
+      "canton": "Ibarra",
+      "ejes": [],
+      "fuente": "Imbabura en línea / Notiregión",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Mauricio Larrea",
+      "partido": "Avanza (8)",
+      "dignidad": "Prefecto",
+      "provincia": "Imbabura",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Expectativa / Notiregión",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Steven Ordóñez",
+      "partido": "PHD (67)",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 02-jul-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Darío Macas",
+      "partido": "PLAN (77)",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 02-jul-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "César Encalada",
+      "partido": "CREO (21)",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 02-jul-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Danilo Palacios",
+      "partido": "ADN (7)",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 02-jul-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Joseph Cueva",
+      "partido": "Correísmo",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 02-jul-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Mario Mancino",
+      "partido": "Lista 2",
+      "dignidad": "Prefecto (reelección)",
+      "provincia": "Loja",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Instagram (proclamación)",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Darío Loja Reyes",
+      "partido": "RETO (33)",
+      "dignidad": "Prefecto",
+      "provincia": "Loja",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Facebook (menciona su plan)",
+      "estado": "preliminar",
+      "nivel": "Low"
+    },
+    {
+      "nombre": "Juan Manuel Mantilla",
+      "partido": "RC / Amigo (16)",
+      "dignidad": "Prefecto",
+      "provincia": "Imbabura",
+      "canton": null,
+      "ejes": [],
+      "fuente": "La Hora 29-jun-2026",
+      "estado": "preliminar",
+      "nivel": "Low",
+      "nota": "Excluida de integración: lista Amigo (16) suspendida por TCE; fuente única La Hora (fragmentos). Confirmar lista real con CNE (listado 9-nov-2026)."
+    }
+  ],
+  "bloqueados_cne": [
+    "Revolucion Ciudadana (RC5)",
+    "SUMA",
+    "Izquierda Democratica (ID)",
+    "Reto",
+    "Amigo (16)"
+  ],
+  "notas_discrepancias": [
+    "Viteri cambió de Centro Democrático a ADN (12-ago-2026); Guschmer aparece en registro PSC 15-ago y también como ADN-7 — confirmar sigla definitiva con CNE",
+    "Correísmo Guayaquil: 3 cambios (Molina → Norero → Ycaza)",
+    "Amigo es lista 16, no 62 (la 62 es Renace en Cuenca, alianza 'Cuencanos como vos')",
+    "Cuenca Avanza L.71 y Quito Honesto L.64 no verificables como movimientos políticos",
+    "Paola Pabón (Pichincha): contradicción entre nota de Expreso (descartó) y videos RC (candidata) — sin confirmación CNE"
+  ]
+}

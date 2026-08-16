@@ -4,6 +4,69 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 
 ---
 
+## 0. Elecciones Seccionales 2026 — fuentes verificadas (corte: 16 de agosto de 2026)
+
+### 0.1. Contexto del proceso
+
+| Dato | Valor | Fuente |
+|------|-------|--------|
+| Fecha de comicios | Domingo 29 de noviembre de 2026 | CNE (`cne.gob.ec`) |
+| Inscripción de candidaturas | 2 al 17 de agosto de 2026 | CNE |
+| Listado definitivo de provincias | 24 de septiembre de 2026 | CNE |
+| Listado definitivo de papeletas | 9 de noviembre de 2026 | CNE |
+| Campaña electoral | 12 al 26 de noviembre de 2026 | CNE |
+| Postulaciones registradas (15-ago) | 17.934 | CNE / Primicias |
+
+> ⚠️ **Preliminar**: toda candidatura individual es preliminar hasta el listado oficial del CNE del 9 de noviembre de 2026. La calificación en firme puede excluir nombres.
+
+### 0.2. Fuentes utilizadas para la actualización de datos (agosto 2026)
+
+**Nivel High (base primaria)** — usadas para integrar candidaturas y ejes programáticos:
+
+- **CNE** (`cne.gob.ec`, `app01.cne.gob.ec`, `delegaciones.cne.gob.ec`): calendario, requisitos, planes registrados, listados definitivos. Fuente canónica.
+- **Primicias** (`primicias.ec`): inscripciones y alianzas (Muñoz 14-ago, Viteri 11-ago, Guschmer 12-ago, Yunda 14-ago, Ubidia, Burbano, Angulo, Roche 15-ago, Zambrano 11-ago, Cueva, Palacios 13-ago, Encalada 13-ago, Macas 13-ago, Ordóñez 14-ago, Weber, Santistevan 13-ago, Carrasco 11-ago, Morales, Riquetti, Palacios Ullauri, Lloret, Luzárraga, Caiza, Bayas, Erazo, Lara, Naranjo, Valdivieso 13-ago, González 15-ago).
+- **El Universo** (`eluniverso.com`): Zambrano (11-ago), Angulo, Caiza, Valdivieso.
+- **El Comercio** (`elcomercio.com`): contexto RC, suspensión de Amigo, Burbano (14-ago).
+- **Expreso** (`expreso.ec`): listas de precandidatos, contexto Amigo.
+- **Ecuavisa** (`ecuavisa.com`): inscripción de Ycaza (13-ago), Viteri (12-ago).
+- **El Telégrafo** (`eltelegrafo.com.ec`): mensajes de campaña (Burbano), plan nacional ADN 2025.
+- **Vistazo** (`vistazo.com`): Luisa González → Pachakutik (14-ago); RC (4-ago).
+- **Teleamazonas**: cronograma, contexto Amigo.
+- **Diario Correo** (`diariocorreo.com.ec`, El Oro): Falquez (04-jul), Steven Ordóñez, Macas, Cueva.
+- **El Diario** (`eldiario.ec`, Manabí): Ycaza, Caiza, Bayas, Erazo.
+- **Sitios oficiales de partidos** (`adn-ecuador.org`, `revolucionciudadana.com.ec`): referencia de plataforma nacional, nunca como plan seccional.
+
+**Nivel Medium (respaldo con fuente High)**: La Hora, Radio Centro (Roche 15-ago, Galo Lara 15-ago), Radio Pichincha, La Prensa, La República, Expectativa, notiregionecuador.com, El Mercurio (vía sitio web), Prensa Latina (solo contexto), Wikipedia (solo contexto biográfico).
+
+**Nivel Low (solo corroboración, NO integrados como evidencia)**: Instagram/Facebook/TikTok de candidatos y páginas locales, cuentas de X sin verificación editorial, páginas tipo `CNEImbaburaEc` (riesgo de suplantación). Las candidaturas con fuente única social quedan **LOW** hasta confirmación del CNE.
+
+**Excluidas**: blogs anónimos (p. ej. `radiogovea.wordpress.com`), cuentas anónimas, listas virales sin fecha ni autor.
+
+### 0.3. Decisiones verificadas y conflictos pendientes
+
+**Resuelto (verificación cruzada):**
+
+- Movimiento **Amigo = lista 16** (no 62); **Caminantes = lista 62** (Manabí); **Renace = 107**; **RETO = Renovación Total = 33**.
+- **Cynthia Viteri** → ADN (7), Alcaldía de Guayaquil (antes precandidata por Centro Democrático).
+- **Fiorella Ycaza** sustituyó a Norero como candidata correísta a la Alcaldía de Guayaquil (auspicio PSE-17).
+- **Luisa González** → Pachakutik (18), Prefectura de Manabí.
+- **RC-5 y Amigo suspendidas por el TCE** (caso "Caja Chica"); el correísmo participa con listas prestadas (PSE, UP, Todos, Pachakutik, RETO).
+- Partidos **bloqueados** por el CNE al corte: RC5, SUMA, ID, RETO y Amigo → no generan candidaturas sintéticas en el frontend.
+
+**Pendiente de confirmación CNE (listado 9-nov-2026) — marcado como preliminar:**
+
+- Sigla definitiva de **Andrés Guschmer** (ADN-7 vs. registro PSC del 15-ago).
+- Lista de **Sofía Espín** (Amigo-16 vs. PSE-17) — no integrada como High.
+- Dignidad de **Carlos Falquez Aguilar** (alcaldía Machala vs. prefectura El Oro) — no integrada como High.
+- **Paola Pabón** (Pichincha): tratada como NO confirmada.
+- Listas provinciales (AFE-131, PHD-67, PLAN-77, Futuro-20, Sí Podemos-72, Mejor Ciudad-107, Somos Azuay, etc.): sin verificación independiente contra el registro del CNE.
+
+### 0.4. Planes de trabajo seccionales
+
+Al corte del 16 de agosto de 2026 **ningún plan de trabajo seccional completo está publicado** (son requisito CNE de inscripción y solo serán contrastables tras el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable (fuentes High/Medium) y de los planes nacionales registrados (ADN: plan nacional de 6 ejes en `adn-ecuador.org`). **No se atribuye ningún eje programático sin fuente High/Medium; si no hay evidencia, se declara "sin evidencia"** en lugar de inferir.
+
+---
+
 ## 1. Programas de gobierno de partidos
 
 ### 1.1. Sitios web de partidos políticos

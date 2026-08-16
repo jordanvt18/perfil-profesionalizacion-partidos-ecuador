@@ -323,6 +323,8 @@ function updateModalRadar(cand) {
     <p style="color:#3b82f6;font-size:0.82rem;font-weight:600;margin-bottom:0.4rem">${cand.partido} — ${cand.dignidad}</p>
     <p style="font-size:0.78rem;color:#9ca3af;margin-bottom:0.3rem"><b>Provincia:</b> ${cand.provincia} · <b>Cantón:</b> ${cand.canton}</p>
     <p style="font-size:0.78rem;margin-bottom:0.3rem">Congruencia: <span class="cong-badge" style="background:${congruenciaColor(cand.congruence)}">${cand.congruence.toFixed(1)}/100</span></p>
+    ${cand.fuente ? `<p style="font-size:0.72rem;color:#6b7280;margin-bottom:0.2rem"><b>Fuente:</b> ${cand.fuente}</p>` : ""}
+    ${cand.estado ? `<p style="font-size:0.72rem;color:${cand.verificado ? "#22c55e" : "#f59e0b"};margin-bottom:0.2rem"><b>Estado:</b> ${cand.estado}</p>` : ""}
     <div style="font-size:0.75rem;margin-top:0.5rem">
       <b style="color:#3b82f6">Top 3 prioridades ciudadanas:</b><br>
       1. ${t3[0].tema} (${(t3[0].v * 100).toFixed(0)}%)<br>
