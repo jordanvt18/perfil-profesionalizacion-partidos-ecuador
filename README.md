@@ -91,6 +91,7 @@ flowchart TB
 |---|---|---|
 | Metodología | 60/40 (formación/experiencia) | Documentada en `METHODOLOGY.md` |
 | Cobertura del pipeline | Todos los partidos habilitados | Datos sintéticos calibrados hasta registro oficial |
+| Volumen de datos demo | 282 precandidatos (89 confirmados por medios + 193 sintéticos) | 24 provincias; ola de inscripción CNE ago 2026; Amigo suspendido por TCE (jul 2026) |
 | Calidad de software | Tests + CI + deploy Pages | `tests/`, GitHub Actions |
 | Congruencia programática | Scores por partido | `data/demo/congruence_scores.json` |
 

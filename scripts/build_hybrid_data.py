@@ -2,7 +2,7 @@
 """
 Hybrid dataset v2.1: Expanded REAL confirmed candidates with verified education + synthetic fill.
 Each candidate has "fuente": "Confirmado: [media]" or "Sintetico - no confirmado"
-Updated: Aug 2026 - significantly expanded confirmed list across underserved provinces.
+Updated: Aug 2026 - confirmed list expanded with the CNE inscription wave (ADN in Guayas/Pichincha, Cuenca, Ambato); Amigo suspended by TCE.
 """
 import json, random
 from pathlib import Path
@@ -55,6 +55,8 @@ REAL = [
     {"nombre":"Gabriela Sommerfeld","party":"ADN (Accion Democratica Nacional)","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":6,"fuente":"Ecuavisa / El Universo"},
     # Harold Burbano: Abogado. Concejal de Quito. Asambleista 
     {"nombre":"Harold Burbano","party":"ADN (Accion Democratica Nacional)","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Ecuavisa"},
+    # Giovanna Ubidia: Directora Nacional del Seguro Social Campesino desde 2025. ADN la inscribio para la Prefectura de Pichincha (La Republica, 2 ago 2026)
+    {"nombre":"Giovanna Ubidia","party":"ADN (Accion Democratica Nacional)","provincia":"Pichincha","canton":"Quito","dignidad":"Prefecto/a","degree":"universitario","years":3,"fuente":"La Republica / El Comercio"},
     # Augusto Barrera: Medico UCE, MSc en Ciencias Sociales FLACSO, PhD en Geografia. Alcalde Quito 2009-2014, Sec. Educacion Superior 2015-2017
     {"nombre":"Augusto Barrera","party":"Movimiento Construye","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":18,"fuente":"El Comercio / Wikipedia"},
     # Pabel Munoz: Economista PUCE, MSc FLACSO, PhD en Ciencia Politica. Asambleista 2017-2021. BLOQUEADO RC5
@@ -99,6 +101,10 @@ REAL = [
     {"nombre":"Juan Cristobal Lloret","party":"ADN (Accion Democratica Nacional)","provincia":"Azuay","canton":"Cuenca","dignidad":"Prefecto/a","degree":"posgrado","years":10,"fuente":"Primicias / Wikipedia"},
     # Marcelo Cabrera: Ing. Civil UDA. Ex-Alcalde Cuenca 2019-2023. BLOQUEADO RC5
     {"nombre":"Marcelo Cabrera","party":"Revolucion Ciudadana (RC5)","provincia":"Azuay","canton":"Cuenca","dignidad":"Prefecto/a","degree":"universitario","years":12,"fuente":"Primicias / Wikipedia"},
+    # Juan Carlos Vega: Economista. Renuncio al Ministerio de Agricultura (1 ago 2026) para competir por ADN a la Alcaldia de Cuenca
+    {"nombre":"Juan Carlos Vega","party":"ADN (Accion Democratica Nacional)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":4,"fuente":"Primicias / La Hora"},
+    # Pedro Palacios Ullauri: Ex-alcalde de Cuenca 2019-2023. Inscrito el 13 ago 2026 con el movimiento provincial Nueva Generacion (lista 100)
+    {"nombre":"Pedro Palacios Ullauri","party":"Nueva Generacion (Lista 100)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias / Cronica"},
 
     # ═══ GUAYAQUIL / GUAYAS ═══
     # Aquiles Alvarez: Abogado, Universidad de Guayaquil. Alcalde Guayaquil 2023-present. BLOQUEADO RC5
@@ -114,6 +120,20 @@ REAL = [
     # ADDITIONAL Guayaquil/Guayas
     {"nombre":"Dallyana Passailaigue","party":"Partido Social Cristiano (PSC)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":10,"fuente":"El Universo"},
     {"nombre":"Juan Carlos Rojas","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Universo"},
+
+    # OLA DE INSCRIPCION ADN GUAYAS - AGOSTO 2026 (Expreso / El Telegrafo / El Universo)
+    # Cynthia Viteri: Abogada UCSG. Ex-alcaldesa de Guayaquil 2019-2023 y ex-asambleista. ADN la postula a la Alcaldia de Guayaquil
+    {"nombre":"Cynthia Viteri","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":14,"fuente":"Expreso / El Telegrafo"},
+    # Andres Guschmer: Abogado. Ex-Prefecto del Guayas 2019-2023. ADN lo postula a la Prefectura
+    {"nombre":"Andres Guschmer","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Prefecto/a","degree":"universitario","years":10,"fuente":"Expreso / El Universo"},
+    # Niels Olsen: Empresario turistico, titulos en Marketing y Turismo. Ex-presidente de la Asamblea 2025-2026 y ex-ministro de Turismo
+    {"nombre":"Niels Olsen","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Samborondon","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Comercio / El Telegrafo"},
+    # Francisco Cevallos: Candidato de ADN a la Alcaldia de Milagro
+    {"nombre":"Francisco Cevallos","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Milagro","dignidad":"Alcalde/sa","degree":"universitario","years":3,"fuente":"El Telegrafo"},
+    # Madeleyne Canizares: Candidata de ADN a la Alcaldia de Daule
+    {"nombre":"Madeleyne Canizares","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Daule","dignidad":"Alcalde/sa","degree":"universitario","years":2,"fuente":"El Telegrafo"},
+    # Alex Leon: Candidato de ADN a la Alcaldia de Duran
+    {"nombre":"Alex Leon","party":"ADN (Accion Democratica Nacional)","provincia":"Guayas","canton":"Duran","dignidad":"Alcalde/sa","degree":"universitario","years":2,"fuente":"El Telegrafo"},
 
     # ═══ MANABI ═══
     # Leonardo Orlando: Ingenerio, MSc. Gobernador Manabi 2023-2025. Prefecto Manabi 2019-2023
@@ -132,6 +152,8 @@ REAL = [
     # 13 precandidatos Tungurahua - additional confirmed
     {"nombre":"Luis Amoroso","party":"Movimiento CREO","provincia":"Tungurahua","canton":"Ambato","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"Diario La Hora"},
     {"nombre":"Jaime Torres","party":"Partido Social Cristiano (PSC)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Prefecto/a","degree":"universitario","years":12,"fuente":"Diario La Hora"},
+    # Luis Fernando Torres: Doctor en Jurisprudencia PUCE. Ex-alcalde de Ambato 1992-2000 y legislador. Confirmado por el PSC para la Alcaldia de Ambato
+    {"nombre":"Luis Fernando Torres","party":"Partido Social Cristiano (PSC)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Alcalde/sa","degree":"universitario","years":20,"fuente":"El Telegrafo"},
 
     # ═══ EL ORO ═══
     # Dario Macas: Abogado. Alcalde Machala 2023-present. BLOQUEADO ID
@@ -209,7 +231,7 @@ REAL = [
 ]
 
 # Known blocked parties per CNE (Agosto 2026)
-BLOCKED = {"Revolucion Ciudadana (RC5)", "SUMA", "Izquierda Democratica (ID)", "Reto"}
+BLOCKED = {"Revolucion Ciudadana (RC5)", "SUMA", "Izquierda Democratica (ID)", "Reto", "Amigo (Lista 62)"}
 
 NAMES_M = ["Carlos","Andres","Juan","Luis","Pedro","Miguel","Jose","Fernando","Javier","Diego","Roberto","Francisco","Alejandro","Ricardo","Eduardo","Wilson","Byron","Gustavo","Omar","Marcelo","Cesar","Patricio","Fabian","Mauricio","Esteban","Lenin","Rafael","Hector","Vladimir","Christian","Damian","Freddy","Victor","Angel","Alex","Holger","Leonardo","Marco","Santiago","Clemente","Vinicio","Efren","Walter","Segundo","Abel","Ramon","German","Bolivar","Eloy","Octavio","Teodoro","Rigoberto","Delfin"]
 NAMES_F = ["Maria","Rosa","Ana","Carmen","Isabel","Luisa","Patricia","Gabriela","Andrea","Veronica","Monica","Sandra","Lorena","Paola","Cristina","Diana","Nathaly","Johanna","Karla","Marcela","Ximena","Silvana","Cecilia","Rosana","Viviana","Mariana","Mercedes","Tatiana","Estefania","Alejandra","Daniela","Karina","Alexandra","Paulina","Jimena","Catalina","Elena","Mariuxi","Liliana","Jennifer","Nancy","Martha","Gladys","Sonia","Norma","Beatriz","Rocio","Magdalena","Consuelo","Angelica","Mirian","Rebeca","Susana"]
@@ -308,8 +330,8 @@ def main():
         f.write(f"// Generado: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
         f.write(f"// CONFIRMADO por medios ecuatorianos: {real_n} precandidatos\n")
         f.write(f"// SINTETICO no confirmado: {synth_n} precandidatos\n")
-        f.write(f"// ATENCION: {blocked_list} estan BLOQUEADOS por el CNE (Agosto 2026)\n")
-        f.write(f"// Fuentes: El Universo, Primicias, Expreso, Extra, Ecuavisa, Diario La Hora, El Comercio, La Prensa, El Telegrafo, El Mercurio, El Diario (Manabi)\n\n")
+        f.write(f"// ATENCION: {blocked_list} estan SUSPENDIDOS/INHABILITADOS por CNE/TCE (Agosto 2026)\n")
+        f.write(f"// Fuentes: El Universo, Primicias, Expreso, Extra, Ecuavisa, Diario La Hora, El Comercio, La Prensa, El Telegrafo, El Mercurio, El Diario (Manabi), La Republica, Cronica\n\n")
         for var,arr in [("demoAggregates",agg),("demoCandidates",cands),("demoTurnout",tur)]:
             f.write(f"export const {var} = ")
             json.dump(arr, f, ensure_ascii=False)
