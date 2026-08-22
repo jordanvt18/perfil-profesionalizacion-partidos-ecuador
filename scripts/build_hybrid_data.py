@@ -59,8 +59,8 @@ REAL = [
     {"nombre":"Giovanna Ubidia","party":"ADN (Accion Democratica Nacional)","provincia":"Pichincha","canton":"Quito","dignidad":"Prefecto/a","degree":"universitario","years":3,"fuente":"La Republica / El Comercio"},
     # Augusto Barrera: Medico UCE, MSc en Ciencias Sociales FLACSO, PhD en Geografia. Alcalde Quito 2009-2014, Sec. Educacion Superior 2015-2017
     {"nombre":"Augusto Barrera","party":"Movimiento Construye","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":18,"fuente":"El Comercio / Wikipedia"},
-    # Pabel Munoz: Economista PUCE, MSc FLACSO, PhD en Ciencia Politica. Reeleccion a la Alcaldia de Quito por la alianza UP (2) + PSE (17) + Todos (refugio correismo)
-    {"nombre":"Pabel Munoz","party":"Alianza UP (2) + PSE (17) + Todos","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":15,"fuente":"Primicias"},
+    # Pabel Munoz: Economista PUCE, MSc FLACSO, PhD en Ciencia Politica. Reeleccion a la Alcaldia de Quito por la Alianza Ciudadana UP (2) + PSE (17) + Todos (70) (refugio correismo)
+    {"nombre":"Pabel Munoz","party":"Alianza UP (2) + PSE (17) + Todos (70)","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":15,"fuente":"Primicias"},
     # Jorge Yunda: Medico Veterinario UCE. Locutor. Alcalde Quito 2019-2021
     {"nombre":"Jorge Yunda","party":"Avanza","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"universitario","years":12,"fuente":"Primicias"},
     # Maria Jose Carrion: Politologa. MSc. Asambleista 2021-2023. BLOQUEADO SUMA
@@ -97,8 +97,8 @@ REAL = [
     # Xavier Munoz: Ingeniero. Concejal Cuenca. BLOQUEADO RC5
     {"nombre":"Xavier Munoz","party":"Revolucion Ciudadana (RC5)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias"},
     {"nombre":"Jose Jara","party":"Partido Social Cristiano (PSC)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":15,"fuente":"El Universo"},
-    # Juan Cristobal Lloret: MBA INCAE, Ingeniero. Prefecto Azuay 2019-2023
-    {"nombre":"Juan Cristobal Lloret","party":"ADN (Accion Democratica Nacional)","provincia":"Azuay","canton":"Cuenca","dignidad":"Prefecto/a","degree":"posgrado","years":10,"fuente":"Primicias / Wikipedia"},
+    # Juan Cristobal Lloret: MBA INCAE, Ingeniero. Ex-prefecto Azuay 2019-2023; ahora a la Alcaldia de Cuenca por La Provincia en Marcha (63+17+1)
+    {"nombre":"Juan Cristobal Lloret","party":"La Provincia en Marcha (63+17+1)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"posgrado","years":10,"fuente":"Primicias"},
     # Marcelo Cabrera: Ing. Civil UDA. Ex-Alcalde Cuenca 2019-2023. BLOQUEADO RC5
     {"nombre":"Marcelo Cabrera","party":"Revolucion Ciudadana (RC5)","provincia":"Azuay","canton":"Cuenca","dignidad":"Prefecto/a","degree":"universitario","years":12,"fuente":"Primicias / Wikipedia"},
     # Juan Carlos Vega: Economista. Renuncio al Ministerio de Agricultura (1 ago 2026) para competir por ADN a la Alcaldia de Cuenca
@@ -156,8 +156,8 @@ REAL = [
     {"nombre":"Luis Fernando Torres","party":"Partido Social Cristiano (PSC)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Alcalde/sa","degree":"universitario","years":20,"fuente":"El Telegrafo"},
 
     # ═══ EL ORO ═══
-    # Dario Macas: Abogado. Prefectura de El Oro por el movimiento PLAN (Lista 77)
-    {"nombre":"Dario Macas","party":"PLAN (Lista 77)","provincia":"El Oro","canton":"Machala","dignidad":"Prefecto/a","degree":"universitario","years":12,"fuente":"Primicias"},
+    # Dario Macas: Abogado. Alcalde Machala 2023-present. BLOQUEADO ID (su precandidatura por PLAN 77 se retiro de la contienda)
+    {"nombre":"Dario Macas","party":"Izquierda Democratica (ID)","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":12,"fuente":"Primicias / Wikipedia"},
     # ADDITIONAL El Oro
     {"nombre":"Carlos Serrano","party":"Pachakutik","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":10,"fuente":"Primicias"},
     {"nombre":"Jorgue Bravo","party":"Partido Social Cristiano (PSC)","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias"},
