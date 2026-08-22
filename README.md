@@ -1,4 +1,4 @@
-# Índice de profesionalización de candidatos – Elecciones Ecuador 2026 🇪🇨
+﻿# Índice de profesionalización de candidatos – Elecciones Ecuador 2026 🇪🇨
 
 Repositorio reproducible para calcular y analizar el **índice de profesionalización** de candidatos/as a Prefecturas, Alcaldías y Concejalías en las **Elecciones Seccionales Ecuador – Noviembre 2026**.
 
@@ -20,9 +20,9 @@ Repositorio reproducible para calcular y analizar el **índice de profesionaliza
 
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-Ver_en_GitHub_Pages-00D9FF?style=flat-square&logo=github)](https://jordanvt18.github.io/perfil-profesionalizacion-partidos-ecuador/)
 
-**275 precandidatos/as** (79 confirmados por medios + 196 sintéticos) sobre 15 partidos nacionales + movimientos locales, cubriendo las 24 provincias del Ecuador:
-- **~111** precandidatos/as a Prefecturas
-- **~164** precandidatos/as a Alcaldías
+**292 precandidatos/as** (105 confirmados por medios + 187 sintéticos) sobre 15 partidos nacionales + movimientos locales, cubriendo las 24 provincias del Ecuador:
+- **~80** precandidatos/as a Prefecturas
+- **~212** precandidatos/as a Alcaldías
 - Datos de Concejalías pendientes de publicación oficial del CNE
 
 Mapa interactivo Leaflet, barras por nivel académico, serie histórica de participación (2017-2026), ranking de candidatos con detalle completo.

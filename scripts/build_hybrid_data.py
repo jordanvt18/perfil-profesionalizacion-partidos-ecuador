@@ -59,10 +59,10 @@ REAL = [
     {"nombre":"Giovanna Ubidia","party":"ADN (Accion Democratica Nacional)","provincia":"Pichincha","canton":"Quito","dignidad":"Prefecto/a","degree":"universitario","years":3,"fuente":"La Republica / El Comercio"},
     # Augusto Barrera: Medico UCE, MSc en Ciencias Sociales FLACSO, PhD en Geografia. Alcalde Quito 2009-2014, Sec. Educacion Superior 2015-2017
     {"nombre":"Augusto Barrera","party":"Movimiento Construye","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":18,"fuente":"El Comercio / Wikipedia"},
-    # Pabel Munoz: Economista PUCE, MSc FLACSO, PhD en Ciencia Politica. Asambleista 2017-2021. BLOQUEADO RC5
-    {"nombre":"Pabel Munoz","party":"Revolucion Ciudadana (RC5)","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":15,"fuente":"El Telegrafo"},
+    # Pabel Munoz: Economista PUCE, MSc FLACSO, PhD en Ciencia Politica. Reeleccion a la Alcaldia de Quito por la alianza UP (2) + PSE (17) + Todos (refugio correismo)
+    {"nombre":"Pabel Munoz","party":"Alianza UP (2) + PSE (17) + Todos","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":15,"fuente":"Primicias"},
     # Jorge Yunda: Medico Veterinario UCE. Locutor. Alcalde Quito 2019-2021
-    {"nombre":"Jorge Yunda","party":"Partido Social Cristiano (PSC)","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"universitario","years":12,"fuente":"El Telegrafo / Wikipedia"},
+    {"nombre":"Jorge Yunda","party":"Avanza","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"universitario","years":12,"fuente":"Primicias"},
     # Maria Jose Carrion: Politologa. MSc. Asambleista 2021-2023. BLOQUEADO SUMA
     {"nombre":"Maria Jose Carrion","party":"SUMA","provincia":"Pichincha","canton":"Quito","dignidad":"Alcalde/sa","degree":"posgrado","years":5,"fuente":"Primicias"},
     # Luis Pachala: Dirigente indigena. No tiene titulo universitario verificado publicamente.
@@ -139,11 +139,11 @@ REAL = [
     # Leonardo Orlando: Ingenerio, MSc. Gobernador Manabi 2023-2025. Prefecto Manabi 2019-2023
     {"nombre":"Leonardo Orlando","party":"Revolucion Ciudadana (RC5)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":8,"fuente":"El Universo / Wikipedia"},
     {"nombre":"Susana Duenas","party":"Movimiento Construye","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Universo"},
-    # Luisa Gonzalez: Abogada, U. Internacional del Ecuador. MSc en Alta Gerencia, IAEN. Ex-presidential 2023/2025
-    {"nombre":"Luisa Gonzalez","party":"Revolucion Ciudadana (RC5)","provincia":"Manabi","canton":"Manta","dignidad":"Alcalde/sa","degree":"posgrado","years":10,"fuente":"El Diario / Wikipedia"},
+    # Luisa Gonzalez: Abogada. Ex-candidata presidencial. Prefectura de Manabi por Pachakutik (refugio correismo)
+    {"nombre":"Luisa Gonzalez","party":"Pachakutik","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":10,"fuente":"Vistazo / Primicias"},
     # ADDITIONAL Manabi
     {"nombre":"Javier Pincay","party":"Partido Social Cristiano (PSC)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Diario"},
-    {"nombre":"Marciana Valdivieso","party":"ADN (Accion Democratica Nacional)","provincia":"Manabi","canton":"Manta","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Diario"},
+    {"nombre":"Marciana Valdivieso","party":"Mejor Ciudad (Lista 107)","provincia":"Manabi","canton":"Manta","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Universo"},
 
     # ═══ TUNGURAHUA ═══
     # Manuel Caizabanda: Medico. Prefecto Tungurahua 2019-2023. BLOQUEADO RETO
@@ -156,8 +156,8 @@ REAL = [
     {"nombre":"Luis Fernando Torres","party":"Partido Social Cristiano (PSC)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Alcalde/sa","degree":"universitario","years":20,"fuente":"El Telegrafo"},
 
     # ═══ EL ORO ═══
-    # Dario Macas: Abogado. Alcalde Machala 2023-present. BLOQUEADO ID
-    {"nombre":"Dario Macas","party":"Izquierda Democratica (ID)","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":12,"fuente":"Primicias / Wikipedia"},
+    # Dario Macas: Abogado. Prefectura de El Oro por el movimiento PLAN (Lista 77)
+    {"nombre":"Dario Macas","party":"PLAN (Lista 77)","provincia":"El Oro","canton":"Machala","dignidad":"Prefecto/a","degree":"universitario","years":12,"fuente":"Primicias"},
     # ADDITIONAL El Oro
     {"nombre":"Carlos Serrano","party":"Pachakutik","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":10,"fuente":"Primicias"},
     {"nombre":"Jorgue Bravo","party":"Partido Social Cristiano (PSC)","provincia":"El Oro","canton":"Machala","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias"},
@@ -176,7 +176,7 @@ REAL = [
     {"nombre":"Jorge Carrillo","party":"Pachakutik","provincia":"Los Rios","canton":"Babahoyo","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Universo"},
 
     # ═══ SANTO DOMINGO ═══
-    {"nombre":"Wilson Erazo","party":"Partido Social Cristiano (PSC)","provincia":"Santo Domingo de los Tsachilas","canton":"Santo Domingo","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Diario"},
+    {"nombre":"Wilson Erazo","party":"ADN (Accion Democratica Nacional)","provincia":"Santo Domingo de los Tsachilas","canton":"Santo Domingo","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"El Diario"},
     {"nombre":"Geovanny Benitez","party":"ADN (Accion Democratica Nacional)","provincia":"Santo Domingo de los Tsachilas","canton":"Santo Domingo","dignidad":"Prefecto/a","degree":"universitario","years":10,"fuente":"El Diario"},
 
     # ═══ LOJA ═══
@@ -228,6 +228,30 @@ REAL = [
 
     # ═══ GALAPAGOS ═══
     {"nombre":"Javier Yanez","party":"Movimiento Construye","provincia":"Galapagos","canton":"Santa Cruz","dignidad":"Prefecto/a","degree":"universitario","years":6,"fuente":"El Universo"},
+
+    # ═══ OLA DE CIERRE DE INSCRIPCIONES - 12/17 AGO 2026 (Primicias / El Universo / El Diario / Ecuavisa / Radio Centro) ═══
+    # Guayaquil / Guayas
+    {"nombre":"Andres Roche Pesantes","party":"Partido Social Cristiano (PSC)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias / Radio Centro"},
+    {"nombre":"Fiorella Ycaza","party":"Partido Socialista Ecuatoriano (PSE)","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":4,"fuente":"Ecuavisa / El Diario"},
+    {"nombre":"Susana Santistevan","party":"Movimiento CREO","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"Primicias"},
+    {"nombre":"Monica Luzarraga","party":"Partido Socialista Ecuatoriano (PSE) + Pachakutik","provincia":"Guayas","canton":"Guayaquil","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"Primicias"},
+    {"nombre":"Geraldine Weber","party":"Movimiento CREO","provincia":"Guayas","canton":"Guayaquil","dignidad":"Prefecto/a","degree":"universitario","years":6,"fuente":"Primicias"},
+    # Cuenca / Azuay
+    {"nombre":"Paul Carrasco Carpio","party":"Cuencanos como vos (Lista 62 + Renace 107)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"posgrado","years":16,"fuente":"Primicias"},
+    {"nombre":"Leonardo Morales Ordonez","party":"Avanza","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"Primicias"},
+    {"nombre":"Juan Pablo Riquetti","party":"Partido Sociedad Patriotica (PSP)","provincia":"Azuay","canton":"Cuenca","dignidad":"Alcalde/sa","degree":"universitario","years":5,"fuente":"Primicias"},
+    # Ambato / Tungurahua
+    {"nombre":"Diana Caiza","party":"Pachakutik","provincia":"Tungurahua","canton":"Ambato","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Universo"},
+    {"nombre":"Lisette Naranjo","party":"ADN (Accion Democratica Nacional)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Alcalde/sa","degree":"universitario","years":3,"fuente":"Radio Centro"},
+    {"nombre":"Alejandro Lara","party":"ADN (Accion Democratica Nacional)","provincia":"Tungurahua","canton":"Ambato","dignidad":"Prefecto/a","degree":"universitario","years":6,"fuente":"Radio Centro"},
+    # Santo Domingo de los Tsachilas
+    {"nombre":"Yadira Bayas","party":"ADN (Accion Democratica Nacional)","provincia":"Santo Domingo de los Tsachilas","canton":"Santo Domingo","dignidad":"Alcalde/sa","degree":"universitario","years":3,"fuente":"El Diario"},
+    # Esmeraldas
+    {"nombre":"Julia Angulo Giron","party":"ADN (Accion Democratica Nacional)","provincia":"Esmeraldas","canton":"Esmeraldas","dignidad":"Prefecto/a","degree":"universitario","years":4,"fuente":"El Universo / Megavision"},
+    # El Oro
+    {"nombre":"Steven Ordonez","party":"PHD (Lista 67)","provincia":"El Oro","canton":"Machala","dignidad":"Prefecto/a","degree":"universitario","years":5,"fuente":"Primicias"},
+    {"nombre":"Cesar Encalada","party":"Movimiento CREO","provincia":"El Oro","canton":"Machala","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"Primicias"},
+    {"nombre":"Danilo Palacios","party":"ADN (Accion Democratica Nacional)","provincia":"El Oro","canton":"Machala","dignidad":"Prefecto/a","degree":"universitario","years":6,"fuente":"Primicias"},
 ]
 
 # Known blocked parties per CNE (Agosto 2026)
