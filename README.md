@@ -85,7 +85,7 @@ La base de datos del mapa se actualizó el **28 de agosto de 2026** con las **ca
 - **Archivo de planes**: `data/plans/planes_trabajo.json` — 53 candidaturas por plaza, partido/alianza, dignidad, ejes seccionales y nivel de confianza de cada registro (45 High/Medium integradas al mapa, 8 Low excluidas).
 - **Generador**: `scripts/generate_frontend_demo_data.py` integra las candidaturas High/Medium y excluye a los partidos **bloqueados por el CNE** (RC5, SUMA, ID, RETO, Amigo) de la cobertura sintética.
 - **Fuentes documentadas**: `docs/congruencia-sources.md` (sección 0: proceso 2026, fuentes verificadas y conflictos pendientes).
-- ⚠️ Toda candidatura individual es **preliminar** hasta el listado oficial del CNE del **9 de noviembre de 2026** (listado provincial: 24 de septiembre); los planes seccionales completos no están publicados aún (son requisito CNE de inscripción). Plan 77 (El Oro) retiró sus candidaturas; PLAN-77 queda excluido del mapa.
+- ⚠️ Toda candidatura individual es **preliminar** hasta el listado oficial del CNE del **9 de noviembre de 2026** (listado provincial: 24 de septiembre); los planes seccionales completos no están publicados aún (son requisito CNE de inscripción). Cambios de calificación al corte: Plan 77 (El Oro) retiró sus candidaturas y al CNE le fue negada la inscripción de **Luisa González** en Manabí (impugnación en curso) — ambos excluidos del mapa.
 
 ## Objetivo
 

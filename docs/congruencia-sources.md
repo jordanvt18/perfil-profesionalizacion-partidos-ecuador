@@ -57,11 +57,13 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **RESUELTO 28-ago: Sofía Espín = PSE (17)**, Prefectura del Guayas, auspicio correísta (Primicias, tabla de inscritos).
 - **RESUELTO 28-ago: Plan 77 (El Oro) se retiró** — sin candidatos a Prefectura ni Alcaldía de Machala (Expreso); Darío Macas excluido del mapa (nivel Low).
 - **Confirmadas 28-ago**: PHD-67 (Steven Ordóñez), AFE-131 (Carlos Rodríguez, Machala), Futuro-20, Sí Podemos-72, Mejor Ciudad-107 (Valdivieso); **Somos Azuay** es colectivo aliado de Nueva Generación (Lista 100).
+- **RESUELTO 28-ago: Luisa González (Pachakutik, Prefectura Manabí)** — la delegación provincial del CNE negó su inscripción (3 votos a favor, 2 abstenciones) tras impugnaciones de CREO y ADN; González anunció impugnación y el CNE ratificó la negativa (El Universo, Diario Correo, MiradaNacionalEC/Ecuavisa). Excluida del mapa (nivel Low) hasta el listado definitivo del 9-nov-2026.
 - **RC-5 y Amigo suspendidas por el TCE** (caso "Caja Chica"); el correísmo participa con listas prestadas (PSE, UP, Todos, Pachakutik, RETO).
 - Partidos **bloqueados** por el CNE al corte: RC5, SUMA, ID, RETO y Amigo → no generan candidaturas sintéticas en el frontend.
 
 **Pendiente de confirmación CNE (listado 9-nov-2026) — marcado como preliminar:**
 
+- **Impugnación de Luisa González** ante el CNE contra su no calificación: pendiente de resolución definitiva.
 - **Paola Pabón** (Pichincha): tratada como NO confirmada.
 - Partidos de **Gabriela Ochoa y Ángel Cartuche** (Prefectura Azuay), **Renán Borbúa y Héctor Cali** (Prefectura Guayas), **Juan Zapata y Emerson Rubio** (Prefectura Pichincha) y de los demás inscritos a la Alcaldía de Machala: sin atribución concluyente al 28-ago.
 - Dignidad de **Carlos Falquez Aguilar** (alcaldía Machala vs. prefectura El Oro) — no integrada como High.
