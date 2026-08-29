@@ -46,7 +46,7 @@ CANTONES = {
 REAL = [
     # ═══ SANTA ELENA (confirmados por El Universo) ═══
     {"nombre":"Jose Daniel Villao","party":"ADN (Accion Democratica Nacional)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":10,"fuente":"El Universo"},
-    {"nombre":"Maria del Carmen Aquino","party":"Amigo (Lista 62)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"El Universo"},
+    {"nombre":"Maria del Carmen Aquino","party":"Amigo (Lista 16)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":8,"fuente":"El Universo"},
     {"nombre":"Andres Arturo Aguilar Villarroel","party":"Peninsula Positiva (Lista 69)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"posgrado","years":12,"fuente":"El Universo"},
     {"nombre":"Ricardo Javier Vinueza Iniga","party":"Movimiento Unete (Lista 100)","provincia":"Santa Elena","canton":"Santa Elena","dignidad":"Prefecto/a","degree":"universitario","years":5,"fuente":"El Universo"},
 
@@ -139,7 +139,7 @@ REAL = [
     # Leonardo Orlando: Ingenerio, MSc. Gobernador Manabi 2023-2025. Prefecto Manabi 2019-2023
     {"nombre":"Leonardo Orlando","party":"Revolucion Ciudadana (RC5)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":8,"fuente":"El Universo / Wikipedia"},
     {"nombre":"Susana Duenas","party":"Movimiento Construye","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Universo"},
-    # Luisa Gonzalez: Abogada. Ex-candidata presidencial. Prefectura de Manabi por Pachakutik (refugio correismo)
+    # Luisa Gonzalez: Abogada. Ex-candidata presidencial. Prefectura de Manabi por Pachakutik (refugio correismo). CNE nego su calificacion (3 votos, ago-2026); impugnacion en curso
     {"nombre":"Luisa Gonzalez","party":"Pachakutik","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":10,"fuente":"Vistazo / Primicias"},
     # ADDITIONAL Manabi
     {"nombre":"Javier Pincay","party":"Partido Social Cristiano (PSC)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Diario"},
@@ -255,7 +255,7 @@ REAL = [
 ]
 
 # Known blocked parties per CNE (Agosto 2026)
-BLOCKED = {"Revolucion Ciudadana (RC5)", "SUMA", "Izquierda Democratica (ID)", "Reto", "Amigo (Lista 62)"}
+BLOCKED = {"Revolucion Ciudadana (RC5)", "SUMA", "Izquierda Democratica (ID)", "Reto", "Amigo (Lista 16)"}
 
 NAMES_M = ["Carlos","Andres","Juan","Luis","Pedro","Miguel","Jose","Fernando","Javier","Diego","Roberto","Francisco","Alejandro","Ricardo","Eduardo","Wilson","Byron","Gustavo","Omar","Marcelo","Cesar","Patricio","Fabian","Mauricio","Esteban","Lenin","Rafael","Hector","Vladimir","Christian","Damian","Freddy","Victor","Angel","Alex","Holger","Leonardo","Marco","Santiago","Clemente","Vinicio","Efren","Walter","Segundo","Abel","Ramon","German","Bolivar","Eloy","Octavio","Teodoro","Rigoberto","Delfin"]
 NAMES_F = ["Maria","Rosa","Ana","Carmen","Isabel","Luisa","Patricia","Gabriela","Andrea","Veronica","Monica","Sandra","Lorena","Paola","Cristina","Diana","Nathaly","Johanna","Karla","Marcela","Ximena","Silvana","Cecilia","Rosana","Viviana","Mariana","Mercedes","Tatiana","Estefania","Alejandra","Daniela","Karina","Alexandra","Paulina","Jimena","Catalina","Elena","Mariuxi","Liliana","Jennifer","Nancy","Martha","Gladys","Sonia","Norma","Beatriz","Rocio","Magdalena","Consuelo","Angelica","Mirian","Rebeca","Susana"]
@@ -294,6 +294,11 @@ def main():
         if prov not in CANTONES: prov = list(CANTONES.keys())[0]
         if canton not in CANTONES[prov]: canton = list(CANTONES[prov].keys())[0]
         cands.append(make(cid, r["nombre"], r["party"], prov, canton, r["dignidad"], d, y, f"Confirmado: {r['fuente']}"))
+
+    # Correccion puntual (28-ago-2026): CNE nego la calificacion de Luisa Gonzalez como precandidata a la Prefectura de Manabi (3 votos a favor, 2 abstenciones); impugnacion en curso
+    for c in cands:
+        if c["nombre"] == "Luisa Gonzalez" and c["party_normalized"] == "Pachakutik":
+            c["bloqueado"] = True
 
     # 2. Synthetic fill for provinces with fewer than 3 confirmed per canton/dignidad
     for prov, cantones in CANTONES.items():

@@ -8,7 +8,7 @@ Repositorio reproducible para calcular y analizar el **índice de profesionaliza
 
 ## ⚠️ Estado de los datos
 
-**El CNE aún NO ha publicado el listado oficial de candidatos inscritos** para las Elecciones Seccionales de Noviembre 2026. Los datos en este repositorio son **sintéticos y representativos** — generados con base en:
+**El CNE publicará la lista definitiva de candidatos el 9 de noviembre de 2026** (aún no disponible) para las Elecciones Seccionales de Noviembre 2026. Los datos en este repositorio son **sintéticos y representativos** — generados con base en:
 - Partidos y movimientos políticos **habilitados por el CNE** para el periodo electoral 2025-2026
 - **Movimientos locales reales documentados** (ej: Península Positiva L.69, Únete L.100, Amigo L.62 en Santa Elena)
 - **Distribuciones educativas calibradas** según perfiles históricos de cada partido
