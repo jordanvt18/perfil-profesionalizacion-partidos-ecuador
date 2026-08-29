@@ -13,9 +13,12 @@
     "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
     "postulaciones_al_15_ago": 17934,
     "requisito_plan_trabajo": "Cada candidatura debe presentar plan de trabajo (diagnóstico, objetivos generales y específicos, plan de acción) como requisito de inscripción ante el CNE",
-    "nota": "Al 16 de agosto de 2026 ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables y declaraciones oficiales de partidos. Los planes completos serán contrastables tras el cierre de inscripciones y el listado definitivo del CNE.",
-    "fecha_corte": "2026-08-16",
-    "actualizado": "2026-08-16"
+    "nota": "Al 28 de agosto de 2026 las juntas provinciales del CNE califican las postulaciones (540 objeciones reportadas por Primicias); los listados definitivos provinciales salen el 24 de septiembre y el de papeletas el 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables y declaraciones oficiales de partidos. Corte de candidaturas: 28 de agosto de 2026 (cierre de inscripción: 17 de agosto).",
+    "fecha_corte": "2026-08-28",
+    "actualizado": "2026-08-28",
+    "candidaturas_inscritas_al_cierre": 53534,
+    "candidatos_principales_inscritos": 10711,
+    "alianzas_registradas": 397
   },
   "fuentes_clave": [
     {
@@ -627,7 +630,8 @@
       "ejes": [],
       "fuente": "Primicias 02-jul-2026",
       "estado": "preliminar",
-      "nivel": "High"
+      "nivel": "Low",
+      "nota": "Plan 77 anunció el retiro de sus candidaturas para la Prefectura de El Oro y la Alcaldía de Machala (Expreso, ago-2026); excluido del frontend hasta confirmación en el listado CNE (9-nov-2026)."
     },
     {
       "nombre": "César Encalada",
@@ -695,6 +699,179 @@
       "estado": "preliminar",
       "nivel": "Low",
       "nota": "Excluida de integración: lista Amigo (16) suspendida por TCE; fuente única La Hora (fragmentos). Confirmar lista real con CNE (listado 9-nov-2026)."
+    },
+    {
+      "nombre": "Sofía Espín Reyes",
+      "partido": "PSE (17)",
+      "militancia": "RC",
+      "dignidad": "Prefecta",
+      "provincia": "Guayas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias (tabla inscritos prefectura Guayas) + Threads @ladataec / RTP, 17-ago-2026",
+      "estado": "preliminar",
+      "nivel": "High",
+      "nota": "Se resuelve pendiente: lista PSE-17 con auspicio correísta (no Amigo-16). Binomio con Fiorella Ycaza (Alcaldía Guayaquil, misma lista)."
+    },
+    {
+      "nombre": "Juan Carlos González",
+      "partido": "PSC (6)",
+      "dignidad": "Prefecto",
+      "provincia": "Guayas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias (candidatos prefectura Guayas) + X @RtpEcuador, ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "César Bravo",
+      "partido": "Alianza UP (2) + Pachakutik (18)",
+      "dignidad": "Prefecto",
+      "provincia": "Guayas",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Radio Pichincha (ocho inscritos prefectura Guayas), ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Martha Noboa",
+      "partido": "CREO (21)",
+      "dignidad": "Prefecta",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "gk.city 21-ago-2026 (10 candidatos prefectura Pichincha) + Radio Pichincha",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Alexandro Tonello",
+      "partido": "Alianza UP (2) + PSE (17) + Todos",
+      "dignidad": "Prefecto",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Universo (video, pacto que respalda a Pabel Muñoz) + gk.city 21-ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Postulado por el pacto que respalda la reelección de Muñoz; sigla definitiva por confirmar en listado CNE (9-nov-2026)."
+    },
+    {
+      "nombre": "Consuelo Orellana",
+      "partido": "La Provincia en Marcha (Renovación 63 + PSE 17 + CD 1)",
+      "dignidad": "Prefecta",
+      "provincia": "Azuay",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 18-ago-2026 (ocho candidatos prefectura Azuay) + Cuenca Informativa",
+      "estado": "preliminar",
+      "nivel": "High",
+      "nota": "Binomio con Manuel Alvarado."
+    },
+    {
+      "nombre": "Gustavo Sánchez",
+      "partido": "Avanza (8)",
+      "dignidad": "Prefecto",
+      "provincia": "Azuay",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Primicias 18-ago-2026 + Cuenca Informativa",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Pablo Webster",
+      "partido": "Nueva Generación (100) / colectivo Somos Azuay",
+      "dignidad": "Prefecto",
+      "provincia": "Azuay",
+      "canton": null,
+      "ejes": [],
+      "fuente": "X @dedoenlallagaec (8 inscritos) + Expreso, ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Somos Azuay es un colectivo ciudadano, no una lista numerada; corre vía Lista 100 (Nueva Generación)."
+    },
+    {
+      "nombre": "Sebastián Cevallos",
+      "partido": "UP (2)",
+      "dignidad": "Prefecto",
+      "provincia": "Azuay",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Expreso (binomio UP Azuay), ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Carlos Julio Lozano Santacruz",
+      "partido": "Centro Democrático (1)",
+      "dignidad": "Prefecto",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Diario Correo / MP Noticias / RPG 106.7 FM (nueve inscritos prefectura El Oro), ago-2026",
+      "estado": "preliminar",
+      "nivel": "High"
+    },
+    {
+      "nombre": "Verónica Arreaga",
+      "partido": "Pachakutik (18)",
+      "dignidad": "Prefecta",
+      "provincia": "El Oro",
+      "canton": null,
+      "ejes": [],
+      "fuente": "Diario Correo / MP Noticias / RPG 106.7 FM, ago-2026",
+      "estado": "preliminar",
+      "nivel": "High",
+      "nota": "Única mujer entre los nueve inscritos a la Prefectura de El Oro."
+    },
+    {
+      "nombre": "Clemente Bravo",
+      "partido": "ADN (7)",
+      "dignidad": "Alcalde",
+      "provincia": "El Oro",
+      "canton": "Machala",
+      "ejes": [],
+      "fuente": "Diario Correo (446 inscritos El Oro) + Instagram @enfoquec (lista alcaldía Machala), ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Francisco Medina",
+      "partido": "PSP (3)",
+      "dignidad": "Alcalde",
+      "provincia": "El Oro",
+      "canton": "Machala",
+      "ejes": [],
+      "fuente": "Diario Correo + Instagram @enfoquec, ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium"
+    },
+    {
+      "nombre": "Carlos Rodríguez",
+      "partido": "AFE (131)",
+      "dignidad": "Alcalde",
+      "provincia": "El Oro",
+      "canton": "Machala",
+      "ejes": [],
+      "fuente": "Diario Correo (diez inscritos alcaldía Machala), ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "AFE = movimiento Amor, Fe y Esperanza (lista 131), El Oro."
+    },
+    {
+      "nombre": "Jaime Estrada Bonilla",
+      "partido": "Sí Podemos (72) – Nuevo Rumbo (111)",
+      "dignidad": "Alcalde",
+      "provincia": "Manabí",
+      "canton": "Manta",
+      "ejes": [],
+      "fuente": "Cobertura local Manabí, ago-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Alianza Sí Podemos (72) + Nuevo Rumbo (111)."
     }
   ],
   "bloqueados_cne": [
@@ -705,10 +882,15 @@
     "Amigo (16)"
   ],
   "notas_discrepancias": [
-    "Viteri cambió de Centro Democrático a ADN (12-ago-2026); Guschmer aparece en registro PSC 15-ago y también como ADN-7 — confirmar sigla definitiva con CNE",
-    "Correísmo Guayaquil: 3 cambios (Molina → Norero → Ycaza)",
-    "Amigo es lista 16, no 62 (la 62 es Renace en Cuenca, alianza 'Cuencanos como vos')",
-    "Cuenca Avanza L.71 y Quito Honesto L.64 no verificables como movimientos políticos",
-    "Paola Pabón (Pichincha): contradicción entre nota de Expreso (descartó) y videos RC (candidata) — sin confirmación CNE"
+    "RESUELTO 28-ago: Guschmer es candidato ADN (lista 7) confirmado (Expreso; ADN oficializó la candidatura, binomio Samia Álava). El registro PSC del 15-ago correspondía a Andrés Roche (Alcaldía de Guayaquil, PSC-6), no a Guschmer. Historial partidario: PSC (2019-22) → RETO (2022-24) → ADN (desde 2024).",
+    "RESUELTO 28-ago: Sofía Espín inscrita por PSE (lista 17), Prefectura del Guayas, con auspicio correísta; no por Amigo (16).",
+    "RESUELTO 28-ago: Plan 77 (El Oro) retiró candidaturas para Prefectura y Alcaldía de Machala (Expreso); Darío Macas marcado Low.",
+    "Pendiente: dignidad de Carlos Falquez Aguilar (Alcaldía Machala vs Prefectura El Oro) — sin fuente concluyente al 28-ago.",
+    "Pendiente: Paola Pabón (Pichincha) — contradicción Expreso (descartó) vs videos RC (candidata); NO integrada.",
+    "Pendiente: partidos de Gabriela Ochoa y Ángel Cartuche (Prefectura Azuay), Renán Borbúa y Héctor Cali (Prefectura Guayas), Juan Zapata y Emerson Rubio (Prefectura Pichincha), y de los demás inscritos a Alcaldía de Machala — sin atribución concluyente; pendientes para el listado CNE del 9-nov-2026.",
+    "Correísmo Guayaquil: 3 cambios (Molina → Norero → Ycaza); Ycaza inscrita por PSE (17).",
+    "Amigo es lista 16, no 62 (la 62 es Renace en Cuenca, alianza 'Cuencanos como vos'); Caminantes es lista 62 en Manabí.",
+    "Cuenca Avanza L.71 y Quito Honesto L.64 no verificables como movimientos políticos.",
+    "Alcaldía Ambato: 8 candidaturas inscritas (FB); Luis Amoroso, Alex Valladares, Javier Altamirano y Gonzalo Callejas sin partido confirmado en fuentes rescatadas."
   ]
 }

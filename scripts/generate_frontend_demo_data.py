@@ -10,7 +10,7 @@ Fuentes de verdad:
   - Indicadores INEC (empleo, pobreza, agua, alcantarillado) y CEDATOS 2026
     para el vector de prioridades ciudadanas por provincia/cantón.
 
-Reglas aplicadas (verificación cruzada de fuentes, 2026-08-16):
+Reglas aplicadas (verificación cruzada de fuentes, 2026-08-28):
   - Solo se integran candidaturas con nivel High/Medium; las Low quedan excluidas
     hasta confirmación del CNE (listado definitivo: 9 de noviembre de 2026).
   - Los partidos bloqueados por el CNE (RC5, SUMA, ID, RETO, Amigo) NO se usan
@@ -213,6 +213,13 @@ PARTIDO_A_PERFIL = {
     "PHD (67)": "Movimiento CREO",
     "PLAN (77)": "Partido Social Cristiano (PSC)",
     "Lista 2": "PSE (Partido Socialista)",
+    # Mapeos agregados en la actualización del 28-ago-2026
+    "Alianza UP (2) + Pachakutik (18)": "UP (Unidad Popular)",
+    "La Provincia en Marcha (Renovación 63 + PSE 17 + CD 1)": "PSE (Partido Socialista)",
+    "Nueva Generación (100) / colectivo Somos Azuay": "Movimiento CREO",
+    "Centro Democrático (1)": "Partido Social Cristiano (PSC)",
+    "AFE (131)": "Avanza",
+    "Sí Podemos (72) – Nuevo Rumbo (111)": "Avanza",
 }
 
 # ═══════════════════════════════════════════════════════════════
@@ -478,7 +485,7 @@ for i in range(10):
 YEARS = [2026]
 
 # ═══════════════════════════════════════════════════════════════
-# METADATOS DE FUENTES (verificación cruzada 2026-08-16)
+# METADATOS DE FUENTES (verificación cruzada 2026-08-28)
 # ═══════════════════════════════════════════════════════════════
 
 FUENTES_DATOS = {
@@ -488,13 +495,16 @@ FUENTES_DATOS = {
         "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
         "campana": "12 al 26 de noviembre de 2026",
         "postulaciones_al_15_ago": 17934,
-        "fuente": "https://www.cne.gob.ec",
+        "candidaturas_inscritas_al_cierre": 53534,
+        "candidatos_principales_inscritos": 10711,
+        "alianzas_registradas": 397,
+        "fuente": "https://www.cne.gob.ec + Radio Pichincha + El Comercio",
         "nota": "Las candidaturas individuales son preliminares hasta el listado oficial del CNE"
     },
     "candidaturas_y_planes": {
         "fuente": "CNE + Primicias + El Universo + El Comercio + Expreso + Ecuavisa + El Telégrafo + Vistazo + Diario Correo + El Diario",
-        "fecha_corte": "2026-08-16",
-        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable",
+        "fecha_corte": "2026-08-28",
+        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Plan 77 (El Oro) retiró candidaturas: Darío Macas excluido (nivel Low)",
         "archivo": "data/plans/planes_trabajo.json"
     },
     "prioridades_ciudadanas": {

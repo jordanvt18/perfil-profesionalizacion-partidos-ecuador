@@ -4,7 +4,7 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 
 ---
 
-## 0. Elecciones Seccionales 2026 — fuentes verificadas (corte: 16 de agosto de 2026)
+## 0. Elecciones Seccionales 2026 — fuentes verificadas (corte: 28 de agosto de 2026)
 
 ### 0.1. Contexto del proceso
 
@@ -16,6 +16,7 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 | Listado definitivo de papeletas | 9 de noviembre de 2026 | CNE |
 | Campaña electoral | 12 al 26 de noviembre de 2026 | CNE |
 | Postulaciones registradas (15-ago) | 17.934 | CNE / Primicias |
+| Candidaturas inscritas al cierre | 53.534 (397 alianzas; 10.711 candidatos principales) | CNE / Radio Pichincha / El Comercio |
 
 > ⚠️ **Preliminar**: toda candidatura individual es preliminar hasta el listado oficial del CNE del 9 de noviembre de 2026. La calificación en firme puede excluir nombres.
 
@@ -34,6 +35,8 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **Teleamazonas**: cronograma, contexto Amigo.
 - **Diario Correo** (`diariocorreo.com.ec`, El Oro): Falquez (04-jul), Steven Ordóñez, Macas, Cueva.
 - **El Diario** (`eldiario.ec`, Manabí): Ycaza, Caiza, Bayas, Erazo.
+- **gk.city** (`gk.city`): perfiles de los 10 candidatos a la Prefectura de Pichincha (21-ago-2026).
+- **Radio Pichincha** (`radiopichincha.com`): total de candidaturas/alianzas al cierre y listados prefecturas Pichincha/Guayas.
 - **Sitios oficiales de partidos** (`adn-ecuador.org`, `revolucionciudadana.com.ec`): referencia de plataforma nacional, nunca como plan seccional.
 
 **Nivel Medium (respaldo con fuente High)**: La Hora, Radio Centro (Roche 15-ago, Galo Lara 15-ago), Radio Pichincha, La Prensa, La República, Expectativa, notiregionecuador.com, El Mercurio (vía sitio web), Prensa Latina (solo contexto), Wikipedia (solo contexto biográfico).
@@ -50,20 +53,24 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **Cynthia Viteri** → ADN (7), Alcaldía de Guayaquil (antes precandidata por Centro Democrático).
 - **Fiorella Ycaza** sustituyó a Norero como candidata correísta a la Alcaldía de Guayaquil (auspicio PSE-17).
 - **Luisa González** → Pachakutik (18), Prefectura de Manabí.
+- **RESUELTO 28-ago: Andrés Guschmer = ADN (7)**, Prefectura del Guayas (Expreso; ADN oficializó; binomio Samia Álava). El registro PSC del 15-ago era de Andrés Roche (Alcaldía de Guayaquil). Historial: PSC (2019-22) → RETO (2022-24) → ADN (desde 2024).
+- **RESUELTO 28-ago: Sofía Espín = PSE (17)**, Prefectura del Guayas, auspicio correísta (Primicias, tabla de inscritos).
+- **RESUELTO 28-ago: Plan 77 (El Oro) se retiró** — sin candidatos a Prefectura ni Alcaldía de Machala (Expreso); Darío Macas excluido del mapa (nivel Low).
+- **Confirmadas 28-ago**: PHD-67 (Steven Ordóñez), AFE-131 (Carlos Rodríguez, Machala), Futuro-20, Sí Podemos-72, Mejor Ciudad-107 (Valdivieso); **Somos Azuay** es colectivo aliado de Nueva Generación (Lista 100).
 - **RC-5 y Amigo suspendidas por el TCE** (caso "Caja Chica"); el correísmo participa con listas prestadas (PSE, UP, Todos, Pachakutik, RETO).
 - Partidos **bloqueados** por el CNE al corte: RC5, SUMA, ID, RETO y Amigo → no generan candidaturas sintéticas en el frontend.
 
 **Pendiente de confirmación CNE (listado 9-nov-2026) — marcado como preliminar:**
 
-- Sigla definitiva de **Andrés Guschmer** (ADN-7 vs. registro PSC del 15-ago).
-- Lista de **Sofía Espín** (Amigo-16 vs. PSE-17) — no integrada como High.
-- Dignidad de **Carlos Falquez Aguilar** (alcaldía Machala vs. prefectura El Oro) — no integrada como High.
 - **Paola Pabón** (Pichincha): tratada como NO confirmada.
-- Listas provinciales (AFE-131, PHD-67, PLAN-77, Futuro-20, Sí Podemos-72, Mejor Ciudad-107, Somos Azuay, etc.): sin verificación independiente contra el registro del CNE.
+- Partidos de **Gabriela Ochoa y Ángel Cartuche** (Prefectura Azuay), **Renán Borbúa y Héctor Cali** (Prefectura Guayas), **Juan Zapata y Emerson Rubio** (Prefectura Pichincha) y de los demás inscritos a la Alcaldía de Machala: sin atribución concluyente al 28-ago.
+- Dignidad de **Carlos Falquez Aguilar** (alcaldía Machala vs. prefectura El Oro) — no integrada como High.
+- Dos de los nueve inscritos a la Prefectura de El Oro registran impedimentos por deudas (Diario Correo) — sujetos a calificación.
+- **Sigla de Alexandro Tonello** (pacto UP+PSE+Todos): confirmar en listado definitivo.
 
 ### 0.4. Planes de trabajo seccionales
 
-Al corte del 16 de agosto de 2026 **ningún plan de trabajo seccional completo está publicado** (son requisito CNE de inscripción y solo serán contrastables tras el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable (fuentes High/Medium) y de los planes nacionales registrados (ADN: plan nacional de 6 ejes en `adn-ecuador.org`). **No se atribuye ningún eje programático sin fuente High/Medium; si no hay evidencia, se declara "sin evidencia"** en lugar de inferir.
+Al corte del 28 de agosto de 2026 **ningún plan de trabajo seccional completo está publicado** (son requisito CNE de inscripción y solo serán contrastables tras el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable (fuentes High/Medium) y de los planes nacionales registrados (ADN: plan nacional de 6 ejes en `adn-ecuador.org`). **No se atribuye ningún eje programático sin fuente High/Medium; si no hay evidencia, se declara "sin evidencia"** en lugar de inferir.
 
 ---
 
