@@ -462,6 +462,40 @@ function renderThemesGraph(cands = null) {
     .domain([0, d3.max(links, d => d.weight)])
     .range([0.5, 4]);
 
+  // ═══ ANÁLISIS DE ATAQUE ═══
+  // Score = brecha normalizada × demanda × escasez de cobertura temática en los planes
+  const maxGapAbs = d3.max(nodes, d => Math.abs(d.gap)) || 1e-9;
+  const maxDem = d3.max(nodes, d => d.demanda) || 1e-9;
+  const attackScore = d => Math.max(0, d.gap) / maxGapAbs * (d.demanda / maxDem) * (1 - d.oferta / Math.max(d.demanda, 1e-9));
+  const attackRank = [...nodes].sort((a, b) => attackScore(b) - attackScore(a));
+
+  // Chips + lista priorizada de frentes de ataque
+  const chipsEl = document.getElementById("themes-attack-chips");
+  const listEl = document.getElementById("themes-attack-list");
+  if (chipsEl && listEl) {
+    chipsEl.innerHTML = "";
+    listEl.innerHTML = "";
+    const temasMap = { salud: "Salud", educacion: "Educación", agua: "Agua", movilidad: "Movilidad", empleo: "Empleo", seguridad: "Seguridad", vivienda: "Vivienda", ambiente: "Ambiente", transparencia: "Transparencia", presupuesto: "Presupuesto" };
+    attackRank.slice(0, 3).forEach((d, k) => {
+      const chip = document.createElement("button");
+      const key = Object.keys(temasMap).find(k2 => temasMap[k2] === d.name);
+      chip.textContent = `#${k + 1} ${d.name}`;
+      chip.dataset.tema = d.name;
+      chip.style.cssText = "background:#1d2c44;border:1px solid #374151;color:#f5c542;border-radius:6px;padding:0.15rem 0.5rem;cursor:pointer;font-size:0.72rem";
+      chip.addEventListener("click", () => showAttackSubgraph(d, cands));
+      chipsEl.appendChild(chip);
+      const li = document.createElement("li");
+      const pct = x => `${(x * 100).toFixed(0)}%`;
+      const base = key && cands && cands.length ? ` — eje seccional dominante: ${temasMap[key]}` : "";
+      li.innerHTML = `<b style="color:${colorScale(Math.abs(d.gap))}">#${k + 1} ${d.name}</b>: demanda ${pct(d.demanda)} vs oferta ${pct(d.oferta)} → brecha <b>${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp</b>${base}`;
+      li.style.cursor = "pointer";
+      li.addEventListener("click", () => showAttackSubgraph(d, cands));
+      listEl.appendChild(li);
+    });
+  }
+
+  // (coronas y clic se conectan tras crear los nodos, más abajo)
+
   // Force simulation
   const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id).distance(d => 80 + (100 / d.weight) * 20))
@@ -522,7 +556,8 @@ function renderThemesGraph(cands = null) {
       `<b>${d.name}</b><br>` +
       `Demanda ciudadana: <b style="color:#3b82f6">${(d.demanda * 100).toFixed(0)}%</b><br>` +
       `Oferta en programas: <b style="color:#22c55e">${(d.oferta * 100).toFixed(0)}%</b><br>` +
-      `Brecha: <b style="color:${d.gap > 0.05 ? "#ef4444" : "#22c55e"}">${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(0)}%</b>`
+      `Brecha: <b style="color:${d.gap > 0.05 ? "#ef4444" : "#22c55e"}">${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(0)}%</b><br>` +
+      `<span style="color:#9ca3af">Clic = subgrafo de ataque</span>`
     );
   })
     .on("mousemove", (event) => {
@@ -531,6 +566,17 @@ function renderThemesGraph(cands = null) {
         .style("top", (event.pageY - 10) + "px");
     })
     .on("mouseout", () => tooltip.style("opacity", 0));
+
+  // Corona numerada sobre los 3 nodos con mayor score de ataque + clic → subgrafo
+  node.filter(d => attackRank.indexOf(d) < 3 && attackScore(d) > 0)
+    .append("text")
+    .text(d => `#${attackRank.indexOf(d) + 1}`)
+    .attr("text-anchor", "middle")
+    .attr("dy", d => -rScale(d.demanda) - 6)
+    .attr("font-size", "11px")
+    .attr("font-weight", "bold")
+    .attr("fill", "#f5c542");
+  node.on("click", (event, d) => showAttackSubgraph(d, cands));
 
   simulation.on("tick", () => {
     link
@@ -544,6 +590,79 @@ function renderThemesGraph(cands = null) {
       return `translate(${d.x},${d.y})`;
     });
   });
+
+  // Clic en nodo → subgrafo de ataque
+  node.on("click", (event, d) => showAttackSubgraph(d, cands));
+
+  // ═══ SUBGRAFO DE ATAQUE POR TEMA ═══
+  function showAttackSubgraph(d, cands) {
+    const box = document.getElementById("themes-subgraph-box");
+    const titleEl = document.getElementById("themes-subgraph-title");
+    const summaryEl = document.getElementById("themes-subgraph-summary");
+    const svgSel = d3.select("#themes-subgraph-svg");
+    if (!box || !titleEl || !summaryEl || !svgSel.node()) return;
+
+    box.classList.remove("hidden");
+    titleEl.textContent = `🎯 Subgrafo de ataque — ${d.name}`;
+    box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    svgSel.selectAll("*").remove();
+
+    const temaIdx = TEMAS.indexOf(d.name);
+    const pool = (Array.isArray(cands) && cands.length ? cands : state.filtered || []);
+    const conEje = pool.filter(c => (c.ejes_plan || []).some(e => e.toLowerCase().includes(d.name.toLowerCase().slice(0, 5))))
+      .map(c => ({ nombre: c.nombre, partido: c.partido, canton: c.canton, congruencia: c.congruence, tipo: "con eje declarado" }));
+    const sinEje = pool.filter(c => !conEje.some(x => x.nombre === c.nombre))
+      .sort((a, b) => b.congruence - a.congruence)
+      .slice(0, 8)
+      .map(c => ({ nombre: c.nombre, partido: c.partido, canton: c.canton, congruencia: c.congruence, tipo: "sin eje declarado (brecha abierta)" }));
+
+    const nAtacables = sinEje.length;
+    summaryEl.innerHTML =
+      `Brecha ${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp · demanda ${(d.demanda * 100).toFixed(0)}% vs oferta ${(d.oferta * 100).toFixed(0)}% · ` +
+      `<b style="color:#f5c542">${conEje.length} candidatura(s) ya lo trabajan</b> · ` +
+      `<b style="color:#ef4444">${nAtacables} frentes abiertos</b> (donde atacar: declarar el eje y costearlo desplaza al incumbente)`;
+
+    // Subgrafo: centro = tema; anillo = candidaturas (verde si trabaja el tema, rojo si es frente abierto)
+    const width = (document.getElementById("themes-graph-container")?.clientWidth || 800) - 32;
+    const height = 320;
+    const svg = svgSel.attr("viewBox", `0 0 ${width} ${height}`);
+    const g = svg.append("g");
+    const cx = width / 2, cy = height / 2, R = Math.min(width, height) / 2 - 52;
+
+    const center = g.append("circle").attr("cx", cx).attr("cy", cy).attr("r", 34)
+      .attr("fill", colorScale(Math.abs(d.gap))).attr("fill-opacity", 0.45)
+      .attr("stroke", colorScale(Math.abs(d.gap))).attr("stroke-width", 2);
+    g.append("text").attr("x", cx).attr("y", cy - 4).attr("text-anchor", "middle").attr("fill", "#e5e7eb").attr("font-size", "10px").attr("font-weight", "bold").text(d.name);
+    g.append("text").attr("x", cx).attr("y", cy + 9).attr("text-anchor", "middle").attr("fill", "#9ca3af").attr("font-size", "9px").text(`brecha +${(d.gap * 100).toFixed(0)}pp`);
+
+    const ring = [...conEje.slice(0, 10), ...sinEje];
+    ring.forEach((c, i) => {
+      const ang = (i / Math.max(ring.length, 1)) * 2 * Math.PI;
+      const x = cx + R * Math.cos(ang), y = cy + R * Math.sin(ang);
+      const isGap = c.tipo.includes("sin eje");
+      g.append("line").attr("x1", cx).attr("y1", cy).attr("x2", x).attr("y2", y)
+        .attr("stroke", isGap ? "rgba(239,68,68,0.45)" : "rgba(34,197,94,0.45)").attr("stroke-width", 1.5);
+      g.append("circle").attr("cx", x).attr("cy", y).attr("r", 6)
+        .attr("fill", isGap ? "#ef4444" : "#22c55e").attr("fill-opacity", 0.85).attr("stroke", "#0d1b2e");
+      g.append("text").attr("x", x).attr("y", y + (ang > Math.PI ? 20 : -12)).attr("text-anchor", "middle")
+        .attr("fill", "#e5e7eb").attr("font-size", "8px").text(c.nombre.split(" ").slice(0, 2).join(" "));
+      const tip = d3.select("body").append("div")
+        .style("position", "absolute").style("background", "#020617").style("border", "1px solid #374151")
+        .style("border-radius", "6px").style("padding", "6px 8px").style("font-size", "0.68rem")
+        .style("color", "#e5e7eb").style("pointer-events", "none").style("opacity", 0).style("z-index", 10000);
+      g.select(`circle:nth-of-type(${i + 2})`).on("mouseover", () => tip.style("opacity", 1).html(
+        `<b>${c.nombre}</b><br>${c.partido}<br>${c.canton} · congruencia ${c.congruencia.toFixed(1)}<br><b style="color:${isGap ? "#ef4444" : "#22c55e"}">${c.tipo}</b>`
+      )).on("mousemove", ev => tip.style("left", (ev.pageX + 12) + "px").style("top", (ev.pageY - 10) + "px"))
+        .on("mouseout", () => { tip.style("opacity", 0); tip.remove(); });
+    });
+    if (!ring.length) {
+      g.append("text").attr("x", cx).attr("y", cy + 60).attr("text-anchor", "middle").attr("fill", "#9ca3af").attr("font-size", "10px").text("Sin candidaturas en el filtro activo");
+    }
+  }
+
+  // Cerrar subgrafo
+  const closeBtn = document.getElementById("themes-subgraph-close");
+  if (closeBtn) closeBtn.onclick = () => document.getElementById("themes-subgraph-box")?.classList.add("hidden");
 
   // Drag functions
   function drag(simulation) {

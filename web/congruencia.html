@@ -127,12 +127,27 @@
       <div class="chart-container" id="themes-graph-container">
         <h2>Red de Temas — Co-mentions y Brechas</h2>
         <p style="font-size:0.72rem;color:#9ca3af;margin-bottom:0.4rem">
-          Nodos = temas · Aristas = frecuencia de co-mentions en programas ·
+          Nodos = temas · Aristas = frecuencia de co-mentions en programas · Tamaño = demanda ciudadana ·
           <span style="color:#ef4444">🔴 Rojo = brecha alta (demanda &gt; oferta)</span> ·
-          <span style="color:#22c55e">🟢 Verde = oferta adecuada</span><br>
+          <span style="color:#22c55e">🟢 Verde = oferta adecuada</span> · Clic en un tema = subgrafo de ataque<br>
           <span id="themes-scope" style="color:#f5c542"></span>
         </p>
         <svg id="themes-svg"></svg>
+        <div id="themes-attack-box" style="margin-top:0.75rem;border:1px solid #24354d;border-radius:8px;background:#0d1b2e;padding:0.75rem 1rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem">
+            <h3 style="margin:0;font-size:0.95rem;color:#f5c542">🎯 Frentes de ataque (brecha × demanda × cobertura)</h3>
+            <div id="themes-attack-chips" style="display:flex;flex-wrap:wrap;gap:0.35rem"></div>
+          </div>
+          <ol id="themes-attack-list" style="margin:0.6rem 0 0 1.1rem;padding:0;color:#e5e7eb;font-size:0.8rem;line-height:1.55"></ol>
+        </div>
+        <div id="themes-subgraph-box" class="hidden" style="margin-top:0.75rem;border:1px solid #24354d;border-radius:8px;background:#0d1b2e;padding:0.75rem 1rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem">
+            <h3 id="themes-subgraph-title" style="margin:0;font-size:0.95rem;color:#4a9eff"></h3>
+            <button id="themes-subgraph-close" style="background:#1d2c44;border:1px solid #374151;color:#e5e7eb;border-radius:6px;padding:0.2rem 0.6rem;cursor:pointer;font-size:0.75rem">Cerrar ✕</button>
+          </div>
+          <div id="themes-subgraph-summary" style="color:#9fb3cc;font-size:0.75rem;margin-top:0.35rem"></div>
+          <svg id="themes-subgraph-svg" style="width:100%;height:320px;display:block"></svg>
+        </div>
       </div>
     </section>
 
