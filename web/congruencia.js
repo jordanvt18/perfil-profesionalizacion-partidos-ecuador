@@ -39,7 +39,7 @@ function fillSelect(id, allLabel, opts) {
   });
 }
 
-// Color scale: red → orange → yellow → green
+// Color scale: red  orange  yellow  green
 function congruenciaColor(v) {
   if (v >= 80) return "#22c55e";
   if (v >= 70) return "#84cc16";
@@ -487,7 +487,7 @@ function renderThemesGraph(cands = null) {
       const li = document.createElement("li");
       const pct = x => `${(x * 100).toFixed(0)}%`;
       const base = key && cands && cands.length ? ` — eje seccional dominante: ${temasMap[key]}` : "";
-      li.innerHTML = `<b style="color:${colorScale(Math.abs(d.gap))}">#${k + 1} ${d.name}</b>: demanda ${pct(d.demanda)} vs oferta ${pct(d.oferta)} → brecha <b>${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp</b>${base}`;
+      li.innerHTML = `<b style="color:${colorScale(Math.abs(d.gap))}">#${k + 1} ${d.name}</b>: demanda ${pct(d.demanda)} vs oferta ${pct(d.oferta)}  brecha <b>${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp</b>${base}`;
       li.style.cursor = "pointer";
       li.addEventListener("click", () => showAttackSubgraph(d, cands));
       listEl.appendChild(li);
@@ -557,7 +557,7 @@ function renderThemesGraph(cands = null) {
       `Demanda ciudadana: <b style="color:#3b82f6">${(d.demanda * 100).toFixed(0)}%</b><br>` +
       `Oferta en programas: <b style="color:#22c55e">${(d.oferta * 100).toFixed(0)}%</b><br>` +
       `Brecha: <b style="color:${d.gap > 0.05 ? "#ef4444" : "#22c55e"}">${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(0)}%</b><br>` +
-      `<span style="color:#9ca3af">Clic = subgrafo de ataque</span>`
+      `<span style="color:#9ca3af">Clic = descomposicion del problema</span>`
     );
   })
     .on("mousemove", (event) => {
@@ -567,7 +567,7 @@ function renderThemesGraph(cands = null) {
     })
     .on("mouseout", () => tooltip.style("opacity", 0));
 
-  // Corona numerada sobre los 3 nodos con mayor score de ataque + clic → subgrafo
+  // Corona numerada sobre los 3 nodos con mayor score de ataque + clic  subgrafo
   node.filter(d => attackRank.indexOf(d) < 3 && attackScore(d) > 0)
     .append("text")
     .text(d => `#${attackRank.indexOf(d) + 1}`)
@@ -591,10 +591,87 @@ function renderThemesGraph(cands = null) {
     });
   });
 
-  // Clic en nodo → subgrafo de ataque
+  // Clic en nodo  subgrafo de ataque
   node.on("click", (event, d) => showAttackSubgraph(d, cands));
 
-  // ═══ SUBGRAFO DE ATAQUE POR TEMA ═══
+  // ═══ SUBGRAFO DE ATAQUE POR TEMA: subproblemas y soluciones sugeridas ═══
+  // Descomposición del tema en subproblemas operativos; cada nodo sugiere una línea de acción
+  // anclada en la evidencia disponible (ejes declarados en el filtro activo + estructura de brecha).
+  const SUBPROBLEMAS_TEMA = {
+    "Seguridad Ciudadana": [
+      { sub: "Presencia policial y patrullaje en zonas críticas",
+        sol: "Plan cantonal de patrullaje por cuadrantes con metas mensuales públicas; coordinación con Jefatura Provincial y juntas parroquiales" },
+      { sub: "Espacios públicos inseguros (parques, terminales, mercados)",
+        sol: "Auditoría de iluminación y cámaras en los 10 puntos con más denuncias; presupuesto participativo para su rehabilitación" },
+      { sub: "Reinserción y prevención juvenil",
+        sol: "Programa municipal de deporte y oficios en horarios de riesgo con registro de cobertura; alianza con colegios y ligas barriales" },
+      { sub: "Denuncia y respuesta ciudadana",
+        sol: "Canal único de denuncia con SLA público de respuesta y tablero trimestral de casos resueltos" }
+    ],
+    "Transparencia": [
+      { sub: "Contratación pública opaca",
+        sol: "Publicar en línea el 100% de procesos contractuales con actas y adjudicatarios; portal abierto de proveedores" },
+      { sub: "Presupuesto difícil de rastrear",
+        sol: "Tablero ciudadano de ejecución presupuestaria por obra y partida, actualizado mensualmente" },
+      { sub: "Conflicto de interés no declarado",
+        sol: "Declaraciones de intereses de autoridades y funcionarios de compra publicadas al inicio de la gestión" }
+    ],
+    "Empleo y Economía": [
+      { sub: "Baja formalización laboral local",
+        sol: "Ventanilla única de formalización laboral con acompañamiento tributario municipal el primer año" },
+      { sub: "Emprendimientos sin escala",
+        sol: "Fondo de matching municipal para compras públicas locales a microempresas, con umbral y meta anuales" },
+      { sub: "Desajuste entre oferta y demanda de habilidades",
+        sol: "Observatorio cantonal de empleo que alinee la oferta de formación técnica con las vacantes reales" }
+    ],
+    "Movilidad y Transporte": [
+      { sub: "Congestión en ejes comerciales",
+        sol: "Plan de reordenamiento de transporte pesado y horarios de carga en el centro cantonal" },
+      { sub: "Transporte público deficiente",
+        sol: "Redefinir rutas con datos de demanda GPS y contrato con indicadores de frecuencia medibles" },
+      { sub: "Seguridad vial",
+        sol: "Auditoría vial de puntos negros con metas de reducción de siniestralidad por zona escolar" }
+    ],
+    "Agua y Saneamiento": [
+      { sub: "Cobertura incompleta",
+        sol: "Inventario georreferenciado de conexiones faltantes y plan quinquenal priorizado por densidad poblacional" },
+      { sub: "Continuidad y calidad del servicio",
+        sol: "Meta pública de horas continuas de suministro y monitoreo de cloro residual en la red" },
+      { sub: "Pérdidas técnicas y comerciales",
+        sol: "Programa de macro y micromedición y regularización de conexiones con meta de reducción de pérdidas" }
+    ],
+    "Salud": [
+      { sub: "Acceso a primer nivel de atención",
+        sol: "Ampliar horarios de centros de salud cantonales y atención casa a casa en zonas alejadas con agenda móvil" },
+      { sub: "Equipamiento y medicamentos",
+        sol: "Tablero público de stock de medicamentos esenciales en cada establecimiento" }
+    ],
+    "Educación": [
+      { sub: "Infraestructura escolar deficiente",
+        sol: "Diagnóstico estructural de colegios priorizado y plan de emergencia para aulas críticas" },
+      { sub: "Deserción escolar",
+        sol: "Sistema de alerta temprana de deserción con seguimiento caso a caso y becas municipales" }
+    ],
+    "Vivienda": [
+      { sub: "Déficit cuantitativo",
+        sol: "Registro municipal de demanda de vivienda y reservas de suelo urbanizado para programas de vivienda social" },
+      { sub: "Asentamientos informales",
+        sol: "Programa de regularización de tenencia con apoyo técnico de autoconstrucción" }
+    ],
+    "Ambiente": [
+      { sub: "Gestión integral de residuos",
+        sol: "Separación en fuente con incentivos tarifarios y meta pública de aprovechamiento de residuos" },
+      { sub: "Áreas verdes y cuencas degradadas",
+        sol: "Plan cantonal de reforestación con especies nativas y custodia comunitaria de microcuencas" }
+    ],
+    "Presupuesto": [
+      { sub: "Ejecución baja e irregular",
+        sol: "Cronograma de ejecución trimestral público con responsables nominales por proyecto" },
+      { sub: "Dependencia de transferencias",
+        sol: "Estrategia de ingresos propios (catastro actualizado y cobranza) con meta anual explícita" }
+    ]
+  };
+
   function showAttackSubgraph(d, cands) {
     const box = document.getElementById("themes-subgraph-box");
     const titleEl = document.getElementById("themes-subgraph-title");
@@ -603,61 +680,73 @@ function renderThemesGraph(cands = null) {
     if (!box || !titleEl || !summaryEl || !svgSel.node()) return;
 
     box.classList.remove("hidden");
-    titleEl.textContent = `🎯 Subgrafo de ataque — ${d.name}`;
+    titleEl.textContent = `Descomposición del problema — ${d.name}`;
     box.scrollIntoView({ behavior: "smooth", block: "nearest" });
     svgSel.selectAll("*").remove();
 
-    const temaIdx = TEMAS.indexOf(d.name);
     const pool = (Array.isArray(cands) && cands.length ? cands : state.filtered || []);
-    const conEje = pool.filter(c => (c.ejes_plan || []).some(e => e.toLowerCase().includes(d.name.toLowerCase().slice(0, 5))))
-      .map(c => ({ nombre: c.nombre, partido: c.partido, canton: c.canton, congruencia: c.congruence, tipo: "con eje declarado" }));
-    const sinEje = pool.filter(c => !conEje.some(x => x.nombre === c.nombre))
-      .sort((a, b) => b.congruence - a.congruence)
-      .slice(0, 8)
-      .map(c => ({ nombre: c.nombre, partido: c.partido, canton: c.canton, congruencia: c.congruence, tipo: "sin eje declarado (brecha abierta)" }));
+    const key5 = d.name.slice(0, 5).toLowerCase();
+    const conEje = pool.filter(c => (c.ejes_plan || []).some(e => e.toLowerCase().includes(key5)));
 
-    const nAtacables = sinEje.length;
     summaryEl.innerHTML =
-      `Brecha ${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp · demanda ${(d.demanda * 100).toFixed(0)}% vs oferta ${(d.oferta * 100).toFixed(0)}% · ` +
-      `<b style="color:#f5c542">${conEje.length} candidatura(s) ya lo trabajan</b> · ` +
-      `<b style="color:#ef4444">${nAtacables} frentes abiertos</b> (donde atacar: declarar el eje y costearlo desplaza al incumbente)`;
+      `Brecha <b>${d.gap > 0 ? "+" : ""}${(d.gap * 100).toFixed(1)} pp</b> (demanda ${(d.demanda * 100).toFixed(0)}% vs oferta ${(d.oferta * 100).toFixed(0)}%) · ` +
+      `<b style="color:#f5c542">${conEje.length} de ${pool.length} candidatura(s) declaran este eje</b>. ` +
+      `Lectura para el decisor: la brecha se cierra atacando los subproblemas priorizados; cada uno sugiere una línea de acción verificable. ` +
+      (conEje.length === 0
+        ? "Nadie en el filtro activo ocupa este terreno: el primer movimiento tiene ventaja de agenda."
+        : "Diferénciate por costeo y metas: la mayoría declara el eje sin plan medible.");
 
-    // Subgrafo: centro = tema; anillo = candidaturas (verde si trabaja el tema, rojo si es frente abierto)
+    const subs = SUBPROBLEMAS_TEMA[d.name] ||
+      [{ sub: "Desagregación pendiente",
+         sol: "Priorizar el subproblema con mayor peso en la demanda local y declararlo con metas medibles" }];
+
     const width = (document.getElementById("themes-graph-container")?.clientWidth || 800) - 32;
-    const height = 320;
-    const svg = svgSel.attr("viewBox", `0 0 ${width} ${height}`);
+    const rowH = 86, headerH = 8;
+    const height = headerH + 34 + subs.length * rowH;
+    const svg = svgSel.attr("viewBox", `0 0 ${width} ${height}`).style("height", height + "px");
     const g = svg.append("g");
-    const cx = width / 2, cy = height / 2, R = Math.min(width, height) / 2 - 52;
+    const cxNode = 16, xSub = 42, xSol = Math.max(width * 0.44, 300);
 
-    const center = g.append("circle").attr("cx", cx).attr("cy", cy).attr("r", 34)
-      .attr("fill", colorScale(Math.abs(d.gap))).attr("fill-opacity", 0.45)
-      .attr("stroke", colorScale(Math.abs(d.gap))).attr("stroke-width", 2);
-    g.append("text").attr("x", cx).attr("y", cy - 4).attr("text-anchor", "middle").attr("fill", "#e5e7eb").attr("font-size", "10px").attr("font-weight", "bold").text(d.name);
-    g.append("text").attr("x", cx).attr("y", cy + 9).attr("text-anchor", "middle").attr("fill", "#9ca3af").attr("font-size", "9px").text(`brecha +${(d.gap * 100).toFixed(0)}pp`);
+    // Cabecera: tema con brecha
+    g.append("circle").attr("cx", cxNode).attr("cy", 20).attr("r", 11)
+      .attr("fill", colorScale(Math.abs(d.gap))).attr("fill-opacity", 0.5).attr("stroke", colorScale(Math.abs(d.gap)));
+    g.append("text").attr("x", cxNode + 18).attr("y", 24).attr("fill", "#e5e7eb").attr("font-size", "12px").attr("font-weight", "bold")
+      .text(`${d.name}  ·  brecha +${(d.gap * 100).toFixed(1)} pp`);
 
-    const ring = [...conEje.slice(0, 10), ...sinEje];
-    ring.forEach((c, i) => {
-      const ang = (i / Math.max(ring.length, 1)) * 2 * Math.PI;
-      const x = cx + R * Math.cos(ang), y = cy + R * Math.sin(ang);
-      const isGap = c.tipo.includes("sin eje");
-      g.append("line").attr("x1", cx).attr("y1", cy).attr("x2", x).attr("y2", y)
-        .attr("stroke", isGap ? "rgba(239,68,68,0.45)" : "rgba(34,197,94,0.45)").attr("stroke-width", 1.5);
-      g.append("circle").attr("cx", x).attr("cy", y).attr("r", 6)
-        .attr("fill", isGap ? "#ef4444" : "#22c55e").attr("fill-opacity", 0.85).attr("stroke", "#0d1b2e");
-      g.append("text").attr("x", x).attr("y", y + (ang > Math.PI ? 20 : -12)).attr("text-anchor", "middle")
-        .attr("fill", "#e5e7eb").attr("font-size", "8px").text(c.nombre.split(" ").slice(0, 2).join(" "));
-      const tip = d3.select("body").append("div")
-        .style("position", "absolute").style("background", "#020617").style("border", "1px solid #374151")
-        .style("border-radius", "6px").style("padding", "6px 8px").style("font-size", "0.68rem")
-        .style("color", "#e5e7eb").style("pointer-events", "none").style("opacity", 0).style("z-index", 10000);
-      g.select(`circle:nth-of-type(${i + 2})`).on("mouseover", () => tip.style("opacity", 1).html(
-        `<b>${c.nombre}</b><br>${c.partido}<br>${c.canton} · congruencia ${c.congruencia.toFixed(1)}<br><b style="color:${isGap ? "#ef4444" : "#22c55e"}">${c.tipo}</b>`
-      )).on("mousemove", ev => tip.style("left", (ev.pageX + 12) + "px").style("top", (ev.pageY - 10) + "px"))
-        .on("mouseout", () => { tip.style("opacity", 0); tip.remove(); });
+    // Filas: subproblema -> solución sugerida
+    subs.forEach((s, i) => {
+      const y = headerH + 44 + i * rowH;
+      g.append("line").attr("x1", cxNode).attr("y1", i === 0 ? 31 : headerH + 44 + (i - 1) * rowH)
+        .attr("x2", cxNode).attr("y2", y).attr("stroke", "rgba(255,255,255,0.18)").attr("stroke-width", 1.5);
+      g.append("circle").attr("cx", cxNode).attr("cy", y).attr("r", 5).attr("fill", colorScale(Math.abs(d.gap)));
+      g.append("text").attr("x", xSub).attr("y", y + 2).attr("fill", "#e5e7eb").attr("font-size", "11.5px").attr("font-weight", "bold")
+        .text(`${i + 1}. ${s.sub}`);
+      g.append("text").attr("x", xSub + 2).attr("y", y + 16).attr("fill", "#6b7f99").attr("font-size", "9px")
+        .text("Subproblema operativo: aquí se ataca la brecha");
+      g.append("text").attr("x", xSol).attr("y", y + 2).attr("fill", "#22c55e").attr("font-size", "10px").attr("font-weight", "bold")
+        .text("Solución sugerida:");
+      wrapText(g, s.sol, xSol, y + 17, width - xSol - 12, 11, 9.5);
     });
-    if (!ring.length) {
-      g.append("text").attr("x", cx).attr("y", cy + 60).attr("text-anchor", "middle").attr("fill", "#9ca3af").attr("font-size", "10px").text("Sin candidaturas en el filtro activo");
-    }
+
+    // Nota de evidencia
+    g.append("text").attr("x", xSub).attr("y", height - 4).attr("fill", "#5f748f").attr("font-size", "8.5px")
+      .text(`Evidencia del filtro activo: ${conEje.length} de ${pool.length} candidatura(s) declaran ejes de ${d.name}; soluciones ancladas a la estructura de brecha del conjunto`);
+  }
+
+  // Envoltura de texto multi-línea para la columna de soluciones
+  function wrapText(g, text, x, y, maxW, lineH, size) {
+    const words = text.split(" ");
+    const maxChars = Math.max(24, Math.floor(maxW / (size * 0.56)));
+    let line = "", dy = 0;
+    const t = g.append("text").attr("x", x).attr("y", y).attr("fill", "#e5e7eb").attr("font-size", size + "px");
+    words.forEach(w => {
+      const test = line ? line + " " + w : w;
+      if (test.length > maxChars) {
+        t.append("tspan").attr("x", x).attr("dy", dy === 0 ? 0 : lineH).text(line);
+        line = w; dy++;
+      } else { line = test; }
+    });
+    if (line) t.append("tspan").attr("x", x).attr("dy", dy === 0 ? 0 : lineH).text(line);
   }
 
   // Cerrar subgrafo
@@ -771,7 +860,7 @@ function initSelectors() {
 
   // Candidates (filtered by party later)
   fillSelect("candidate-select", "Todos los candidatos", CANDIDATOS.map(c => c.nombre));
-  // Store candidate names → id mapping via data attributes
+  // Store candidate names  id mapping via data attributes
   const candSel = $("candidate-select");
   candSel.innerHTML = '<option value="">Todos los candidatos</option>';
   CANDIDATOS.forEach(c => {
@@ -791,7 +880,7 @@ function initSelectors() {
   fillSelect("year-select", "Todos los años", YEARS.map(String));
   $("year-select").value = "2026";
 
-  // Cascade: party → candidate
+  // Cascade: party  candidate
   $("party-select").addEventListener("change", () => {
     const p = $("party-select").value;
     const candSel = $("candidate-select");
@@ -806,7 +895,7 @@ function initSelectors() {
     candSel.value = "";
   });
 
-  // Cascade: province → canton
+  // Cascade: province  canton
   $("province-select").addEventListener("change", () => {
     const p = $("province-select").value;
     const cantonSel = $("canton-select");
@@ -821,7 +910,7 @@ function initSelectors() {
     cantonSel.value = "";
   });
 
-  // Candidate select → update radar directly
+  // Candidate select  update radar directly
   $("candidate-select").addEventListener("change", () => {
     const id = $("candidate-select").value;
     if (id) {
