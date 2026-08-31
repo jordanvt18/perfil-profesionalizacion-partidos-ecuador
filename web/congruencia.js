@@ -391,7 +391,7 @@ function updateStats(cands) {
 // ═══════════════════════════════════════════════════
 // THEMES GRAPH (D3 force-directed)
 // ═══════════════════════════════════════════════════
-function renderThemesGraph() {
+function renderThemesGraph(cands = null) {
   const svg = d3.select("#themes-svg");
   svg.selectAll("*").remove();
 
@@ -401,14 +401,35 @@ function renderThemesGraph() {
 
   svg.attr("viewBox", `0 0 ${width} ${height}`);
 
-  // Build nodes from TEMAS
-  const nodes = TEMAS.map((tema, i) => ({
-    id: i,
-    name: tema,
-    gap: THEME_GAPS[i].gap,
-    oferta: THEME_GAPS[i].oferta,
-    demanda: THEME_GAPS[i].demanda
-  }));
+  // Nodos: si hay conjunto filtrado, computar demanda/oferta/brecha desde esos candidatos;
+  // si no (sin resultados), conservar los gaps globales como referencia.
+  let nodes;
+  let scopeLabel;
+  if (Array.isArray(cands) && cands.length > 0) {
+    nodes = TEMAS.map((tema, i) => {
+      const demanda = cands.reduce((s, c) => s + (c.priority_vector?.[i] ?? 0), 0) / cands.length;
+      const oferta = cands.reduce((s, c) => s + (c.program_vector?.[i] ?? 0), 0) / cands.length;
+      return { id: i, name: tema, gap: demanda - oferta, oferta, demanda };
+    });
+    const provSel = document.getElementById("province-select")?.value || "";
+    const cantonSel = document.getElementById("canton-select")?.value || "";
+    const partySel = document.getElementById("party-select")?.value || "";
+    const parts = [cantonSel, provSel, partySel].filter(Boolean);
+    scopeLabel = parts.length
+      ? `Ámbito: ${parts.join(" · ")} — ${cands.length} candidatura(s)`
+      : `Ámbito: nacional — ${cands.length} candidatura(s)`;
+  } else {
+    nodes = TEMAS.map((tema, i) => ({
+      id: i,
+      name: tema,
+      gap: THEME_GAPS[i].gap,
+      oferta: THEME_GAPS[i].oferta,
+      demanda: THEME_GAPS[i].demanda
+    }));
+    scopeLabel = "Sin candidaturas para el filtro activo — mostrando brechas nacionales de referencia";
+  }
+  const scopeEl = document.getElementById("themes-scope");
+  if (scopeEl) scopeEl.textContent = scopeLabel;
 
   // Build edges from CO_MENTION_MATRIX
   const links = [];
@@ -714,6 +735,7 @@ function refresh() {
   updateMap(cands);
   updateTable(cands);
   updateStats(cands);
+  renderThemesGraph(cands);
 
   // Update radar with best candidate if none selected
   if (!candId && cands.length > 0) {
@@ -742,15 +764,14 @@ function main() {
   $("export-json").addEventListener("click", exportJSON);
 
   // Initial render
-  refresh();
-  renderThemesGraph();
+  refresh(); // renderThemesGraph se ejecuta dentro de refresh con el conjunto filtrado
 
-  // Re-render themes graph on resize
+  // Re-render themes graph on resize (con el conjunto filtrado actual)
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-      renderThemesGraph();
+      renderThemesGraph(state.filtered);
     }, 300);
   });
 }
