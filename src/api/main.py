@@ -8,8 +8,8 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .congruencia import router as congruencia_router
 from .congruencia import flat_router as congruencia_flat_router
+from .congruencia import router as congruencia_router
 
 app = FastAPI(
     title="Índice de Profesionalización – Ecuador",
@@ -103,10 +103,20 @@ def root():
     return {
         "app": "Índice de Profesionalización de Partidos – Ecuador",
         "endpoints": [
-            "/parties", "/provinces", "/years", "/aggregates", "/candidates", "/turnout",
-            "/themes", "/canton/{canton_id}/priorities", "/candidate/{candidate_id}/program",
-            "/match", "/party/{party_id}/aggregates",
-            "/congruencia/map", "/congruencia/ranking", "/congruencia/themes-graph",
+            "/parties",
+            "/provinces",
+            "/years",
+            "/aggregates",
+            "/candidates",
+            "/turnout",
+            "/themes",
+            "/canton/{canton_id}/priorities",
+            "/candidate/{candidate_id}/program",
+            "/match",
+            "/party/{party_id}/aggregates",
+            "/congruencia/map",
+            "/congruencia/ranking",
+            "/congruencia/themes-graph",
         ],
         "docs": "/docs",
     }

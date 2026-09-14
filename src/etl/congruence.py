@@ -12,6 +12,7 @@ Funciones principales:
     - bootstrap_confidence_interval: Intervalos de confianza por bootstrap
     - correlation_with_indicators: Correlación con indicadores socioeconómicos
 """
+
 import logging
 from collections import defaultdict
 from typing import Optional
@@ -22,8 +23,16 @@ logger = logging.getLogger(__name__)
 
 # Temas en orden canónico (debe coincidir con config/themes.yml)
 THEME_IDS = [
-    "salud", "educacion", "agua", "movilidad", "empleo",
-    "seguridad", "vivienda", "ambiente", "transparencia", "presupuesto",
+    "salud",
+    "educacion",
+    "agua",
+    "movilidad",
+    "empleo",
+    "seguridad",
+    "vivienda",
+    "ambiente",
+    "transparencia",
+    "presupuesto",
 ]
 
 
@@ -277,13 +286,15 @@ def calculate_all_congruence(
     for party, prog_vec in program_vectors.items():
         for canton, prio_vec in priority_vectors.items():
             congruence = calculate_congruence(prog_vec, prio_vec, theme_ids)
-            results.append({
-                "party": party,
-                "canton": canton,
-                "congruence": congruence,
-                "program_vector": prog_vec,
-                "priority_vector": prio_vec,
-            })
+            results.append(
+                {
+                    "party": party,
+                    "canton": canton,
+                    "congruence": congruence,
+                    "program_vector": prog_vec,
+                    "priority_vector": prio_vec,
+                }
+            )
 
     logger.info(
         f"Calculados {len(results)} scores de congruencia "

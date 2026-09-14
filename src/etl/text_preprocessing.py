@@ -15,6 +15,7 @@ Funciones:
     - tokenize: Tokeniza con spaCy
     - preprocess_document: Pipeline completo de preprocesamiento
 """
+
 import logging
 import re
 from pathlib import Path
@@ -33,6 +34,7 @@ def _get_nlp():
     global _nlp
     if _nlp is None:
         import spacy
+
         try:
             _nlp = spacy.load("es_core_news_md")
         except OSError:
@@ -150,11 +152,50 @@ def detect_language(text: str) -> str:
 
     # Stopwords comunes en español
     spanish_indicators = {
-        "de", "la", "que", "el", "en", "y", "a", "los", "se", "del",
-        "las", "un", "por", "con", "no", "una", "su", "para", "es",
-        "al", "lo", "como", "más", "o", "pero", "sus", "le", "ya",
-        "o", "este", "sí", "porque", "esta", "entre", "cuando", "muy",
-        "sin", "sobre", "también", "me", "hasta", "hay", "donde", "quien",
+        "de",
+        "la",
+        "que",
+        "el",
+        "en",
+        "y",
+        "a",
+        "los",
+        "se",
+        "del",
+        "las",
+        "un",
+        "por",
+        "con",
+        "no",
+        "una",
+        "su",
+        "para",
+        "es",
+        "al",
+        "lo",
+        "como",
+        "más",
+        "o",
+        "pero",
+        "sus",
+        "le",
+        "ya",
+        "o",
+        "este",
+        "sí",
+        "porque",
+        "esta",
+        "entre",
+        "cuando",
+        "muy",
+        "sin",
+        "sobre",
+        "también",
+        "me",
+        "hasta",
+        "hay",
+        "donde",
+        "quien",
     }
 
     words = set(text.lower().split())
@@ -164,7 +205,9 @@ def detect_language(text: str) -> str:
     return "es" if ratio > 0.15 else "other"
 
 
-def tokenize(text: str, remove_stopwords: bool = False, remove_punct: bool = True) -> list[str]:
+def tokenize(
+    text: str, remove_stopwords: bool = False, remove_punct: bool = True
+) -> list[str]:
     """
     Tokeniza texto usando spaCy.
 
@@ -208,12 +251,14 @@ def extract_entities(text: str) -> list[dict]:
 
     entities = []
     for ent in doc.ents:
-        entities.append({
-            "text": ent.text,
-            "label": ent.label_,
-            "start": ent.start_char,
-            "end": ent.end_char,
-        })
+        entities.append(
+            {
+                "text": ent.text,
+                "label": ent.label_,
+                "start": ent.start_char,
+                "end": ent.end_char,
+            }
+        )
 
     return entities
 

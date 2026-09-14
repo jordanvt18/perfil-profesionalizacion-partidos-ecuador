@@ -35,80 +35,155 @@ THEMES: List[Dict[str, Any]] = [
         "theme_id": "seguridad_ciudadana",
         "label": "Seguridad Ciudadana",
         "keywords": [
-            "seguridad", "delincuencia", "criminalidad", "policia", "robos",
-            "hurtos", "narcotrafico", "pandillas", "violencia", "convivencia",
+            "seguridad",
+            "delincuencia",
+            "criminalidad",
+            "policia",
+            "robos",
+            "hurtos",
+            "narcotrafico",
+            "pandillas",
+            "violencia",
+            "convivencia",
         ],
     },
     {
         "theme_id": "empleo_economia",
         "label": "Empleo y Economía",
         "keywords": [
-            "empleo", "trabajo", "desempleo", "economia", "emprendimiento",
-            "microempresa", "formalizacion", "ingresos", "salarios", "productividad",
+            "empleo",
+            "trabajo",
+            "desempleo",
+            "economia",
+            "emprendimiento",
+            "microempresa",
+            "formalizacion",
+            "ingresos",
+            "salarios",
+            "productividad",
         ],
     },
     {
         "theme_id": "educacion",
         "label": "Educación",
         "keywords": [
-            "educacion", "escuela", "colegio", "universidad", "docentes",
-            "infraestructura educativa", "becas", "alfabetizacion", "tecnologia educativa",
+            "educacion",
+            "escuela",
+            "colegio",
+            "universidad",
+            "docentes",
+            "infraestructura educativa",
+            "becas",
+            "alfabetizacion",
+            "tecnologia educativa",
         ],
     },
     {
         "theme_id": "salud",
         "label": "Salud",
         "keywords": [
-            "salud", "hospital", "centro de salud", "medicamentos", "atencion medica",
-            "enfermedades", "prevencion", "vacunacion", "seguro social", "mortalidad",
+            "salud",
+            "hospital",
+            "centro de salud",
+            "medicamentos",
+            "atencion medica",
+            "enfermedades",
+            "prevencion",
+            "vacunacion",
+            "seguro social",
+            "mortalidad",
         ],
     },
     {
         "theme_id": "infraestructura_vial",
         "label": "Infraestructura Vial",
         "keywords": [
-            "vias", "carreteras", "calles", "asfalto", "puentes",
-            "infraestructura", "transporte", "movilidad", "pavimentacion", "caminos vecinales",
+            "vias",
+            "carreteras",
+            "calles",
+            "asfalto",
+            "puentes",
+            "infraestructura",
+            "transporte",
+            "movilidad",
+            "pavimentacion",
+            "caminos vecinales",
         ],
     },
     {
         "theme_id": "ambiente_agua",
         "label": "Ambiente y Agua",
         "keywords": [
-            "agua", "alcantarillado", "ambiente", "contaminacion", "deforestacion",
-            "recursos naturales", "saneamiento", "desechos", " areas verdes", "cambio climatico",
+            "agua",
+            "alcantarillado",
+            "ambiente",
+            "contaminacion",
+            "deforestacion",
+            "recursos naturales",
+            "saneamiento",
+            "desechos",
+            " areas verdes",
+            "cambio climatico",
         ],
     },
     {
         "theme_id": "participacion_ciudadana",
         "label": "Participación Ciudadana",
         "keywords": [
-            "participacion", "rendicion de cuentas", "transparencia", "control social",
-            "asambleas", "cabildos", "consejos", "veeduria", "presupuesto participativo",
+            "participacion",
+            "rendicion de cuentas",
+            "transparencia",
+            "control social",
+            "asambleas",
+            "cabildos",
+            "consejos",
+            "veeduria",
+            "presupuesto participativo",
         ],
     },
     {
         "theme_id": "cultura_deporte",
         "label": "Cultura y Deporte",
         "keywords": [
-            "cultura", "deporte", "patrimonio", "eventos culturales", "escenario deportivo",
-            "recreacion", "identidad", "tradiciones", "centros culturales",
+            "cultura",
+            "deporte",
+            "patrimonio",
+            "eventos culturales",
+            "escenario deportivo",
+            "recreacion",
+            "identidad",
+            "tradiciones",
+            "centros culturales",
         ],
     },
     {
         "theme_id": "desarrollo_rural",
         "label": "Desarrollo Rural y Agricultura",
         "keywords": [
-            "agricultura", "rural", "campesino", "riego", "tierras",
-            "productividad agricola", "asociaciones", "ganaderia", "soberania alimentaria",
+            "agricultura",
+            "rural",
+            "campesino",
+            "riego",
+            "tierras",
+            "productividad agricola",
+            "asociaciones",
+            "ganaderia",
+            "soberania alimentaria",
         ],
     },
     {
         "theme_id": "genero_inclusion",
         "label": "Género e Inclusión",
         "keywords": [
-            "genero", "mujeres", "inclusion", "discapacidad", "igualdad",
-            "violencia de genero", "grupos prioritarios", "diversidad", "equidad",
+            "genero",
+            "mujeres",
+            "inclusion",
+            "discapacidad",
+            "igualdad",
+            "violencia de genero",
+            "grupos prioritarios",
+            "diversidad",
+            "equidad",
         ],
     },
 ]
@@ -119,6 +194,7 @@ THEME_IDS: List[str] = [t["theme_id"] for t in THEMES]
 # ═══════════════════════════════════════════════════════════════════════════
 # Utilidades de carga de datos (mismo patrón que main.py)
 # ═══════════════════════════════════════════════════════════════════════════
+
 
 def _load_json(filename: str) -> Any:
     """Carga un JSON desde data/processed/ o data/demo/ con fallback.
@@ -165,9 +241,11 @@ def _load_co_mentions() -> List[Dict[str, Any]]:
 # Generación de datos sintéticos por defecto
 # ═══════════════════════════════════════════════════════════════════════════
 
+
 def _generate_default_canton_priorities() -> List[Dict[str, Any]]:
     """Genera prioridades sintéticas para todos los cantones conocidos."""
     import random
+
     random.seed(42)
 
     # Base de cantones desde candidates.json o aggregates.json
@@ -181,7 +259,11 @@ def _generate_default_canton_priorities() -> List[Dict[str, Any]]:
 
     # Fallback si no hay candidates.json
     if not cantones_set:
-        cantones_set = {("Pichincha", "Quito"), ("Guayas", "Guayaquil"), ("Azuay", "Cuenca")}
+        cantones_set = {
+            ("Pichincha", "Quito"),
+            ("Guayas", "Guayaquil"),
+            ("Azuay", "Cuenca"),
+        }
 
     result: List[Dict[str, Any]] = []
     for i, (provincia, canton) in enumerate(sorted(cantones_set)):
@@ -189,18 +271,21 @@ def _generate_default_canton_priorities() -> List[Dict[str, Any]]:
         # Normalizar para que sumen 1 (distribución de prioridades)
         total = sum(scores.values())
         scores = {k: round(v / total, 4) for k, v in scores.items()}
-        result.append({
-            "canton_id": i + 1,
-            "provincia": provincia,
-            "canton": canton,
-            "priorities": scores,
-        })
+        result.append(
+            {
+                "canton_id": i + 1,
+                "provincia": provincia,
+                "canton": canton,
+                "priorities": scores,
+            }
+        )
     return result
 
 
 def _generate_default_candidate_programs() -> List[Dict[str, Any]]:
     """Genera scores sintéticos de programas de candidatos."""
     import random
+
     random.seed(99)
 
     candidates = _load_json("candidates.json") or []
@@ -210,33 +295,38 @@ def _generate_default_candidate_programs() -> List[Dict[str, Any]]:
         if cid is None:
             continue
         scores = {tid: round(random.uniform(0.0, 1.0), 2) for tid in THEME_IDS}
-        result.append({
-            "candidate_id": cid,
-            "nombre": c.get("nombre", ""),
-            "party_normalized": c.get("party_normalized", ""),
-            "provincia": c.get("provincia", ""),
-            "canton": c.get("canton", ""),
-            "program_scores": scores,
-        })
+        result.append(
+            {
+                "candidate_id": cid,
+                "nombre": c.get("nombre", ""),
+                "party_normalized": c.get("party_normalized", ""),
+                "provincia": c.get("provincia", ""),
+                "canton": c.get("canton", ""),
+                "program_scores": scores,
+            }
+        )
     return result
 
 
 def _generate_default_co_mentions() -> List[Dict[str, Any]]:
     """Genera datos sintéticos de co-mention de temas."""
     import random
+
     random.seed(7)
 
     edges: List[Dict[str, Any]] = []
     for i, t1 in enumerate(THEME_IDS):
-        for t2 in THEME_IDS[i + 1:]:
+        for t2 in THEME_IDS[i + 1 :]:
             weight = round(random.uniform(0.0, 1.0), 2)
             if weight > 0.15:  # Solo aristas con peso significativo
-                edges.append({
-                    "source": t1,
-                    "target": t2,
-                    "weight": weight,
-                    "co_mentions": int(weight * 100),
-                })
+                edges.append(
+                    {
+                        "source": t1,
+                        "target": t2,
+                        "weight": weight,
+                        "co_mentions": int(weight * 100),
+                    }
+                )
     return edges
 
 
@@ -244,7 +334,10 @@ def _generate_default_co_mentions() -> List[Dict[str, Any]]:
 # Helpers de cálculo
 # ═══════════════════════════════════════════════════════════════════════════
 
-def _find_canton_by_id(canton_id: int, priorities: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+
+def _find_canton_by_id(
+    canton_id: int, priorities: List[Dict[str, Any]]
+) -> Optional[Dict[str, Any]]:
     """Busca un cantón por su ID en la lista de prioridades."""
     for c in priorities:
         if c.get("canton_id") == canton_id:
@@ -252,7 +345,9 @@ def _find_canton_by_id(canton_id: int, priorities: List[Dict[str, Any]]) -> Opti
     return None
 
 
-def _find_candidate_program(candidate_id: int, programs: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+def _find_candidate_program(
+    candidate_id: int, programs: List[Dict[str, Any]]
+) -> Optional[Dict[str, Any]]:
     """Busca el programa de un candidato por su ID."""
     for p in programs:
         if p.get("candidate_id") == candidate_id:
@@ -432,7 +527,7 @@ def get_party_aggregates(
         raise HTTPException(
             status_code=404,
             detail=f"No se encontraron agregados para el partido '{party_id}'"
-                   + (f" en la provincia '{province}'" if province else ""),
+            + (f" en la provincia '{province}'" if province else ""),
         )
 
     # Calcular estadísticas resumidas
@@ -452,6 +547,7 @@ def get_party_aggregates(
 # ═══════════════════════════════════════════════════════════════════════════
 # Endpoints bajo /congruencia (usan el router con prefix)
 # ═══════════════════════════════════════════════════════════════════════════
+
 
 @router.get("/map")
 def get_congruence_map(
@@ -487,7 +583,8 @@ def get_congruence_map(
 
         # Programas de candidatos del partido en este cantón
         canton_programs = [
-            p for p in party_programs
+            p
+            for p in party_programs
             if p.get("provincia") == canton.get("provincia")
             and p.get("canton") == canton.get("canton")
         ]
@@ -495,14 +592,17 @@ def get_congruence_map(
         if not canton_programs:
             # Buscar candidatos del partido en la provincia si no hay en el cantón
             canton_programs = [
-                p for p in party_programs
+                p
+                for p in party_programs
                 if p.get("provincia") == canton.get("provincia")
             ]
 
         if canton_programs:
             scores = []
             for prog in canton_programs:
-                congruence = _compute_congruence(canton_priorities, prog["program_scores"])
+                congruence = _compute_congruence(
+                    canton_priorities, prog["program_scores"]
+                )
                 scores.append(congruence["congruence_score"])
             avg_score = round(sum(scores) / len(scores), 1)
             max_score = round(max(scores), 1)
@@ -512,15 +612,17 @@ def get_congruence_map(
             max_score = 0.0
             min_score = 0.0
 
-        results.append({
-            "canton_id": canton_id,
-            "provincia": canton.get("provincia", ""),
-            "canton": canton.get("canton", ""),
-            "congruence_avg": avg_score,
-            "congruence_max": max_score,
-            "congruence_min": min_score,
-            "n_candidates": len(canton_programs),
-        })
+        results.append(
+            {
+                "canton_id": canton_id,
+                "provincia": canton.get("provincia", ""),
+                "canton": canton.get("canton", ""),
+                "congruence_avg": avg_score,
+                "congruence_max": max_score,
+                "congruence_min": min_score,
+                "n_candidates": len(canton_programs),
+            }
+        )
 
     return {
         "party": party,
@@ -559,13 +661,15 @@ def get_congruence_ranking(
 
     for prog in programs_data:
         result = _compute_congruence(canton_priorities, prog["program_scores"])
-        ranking.append({
-            "candidate_id": prog.get("candidate_id"),
-            "nombre": prog.get("nombre", ""),
-            "party_normalized": prog.get("party_normalized", ""),
-            "congruence_score": result["congruence_score"],
-            "per_theme": result["per_theme"],
-        })
+        ranking.append(
+            {
+                "candidate_id": prog.get("candidate_id"),
+                "nombre": prog.get("nombre", ""),
+                "party_normalized": prog.get("party_normalized", ""),
+                "congruence_score": result["congruence_score"],
+                "per_theme": result["per_theme"],
+            }
+        )
 
     # Ordenar por congruencia descendente
     ranking.sort(key=lambda x: x["congruence_score"], reverse=True)

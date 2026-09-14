@@ -2,7 +2,6 @@ from pathlib import Path
 from typing import List, Tuple
 
 import spacy
-
 from bs4 import BeautifulSoup
 
 DATA_RAW_CVS = Path("data/raw/cvs")
@@ -25,9 +24,18 @@ def extract_degree_and_experience_from_html(html_text: str) -> Tuple[str, int]:
         degree = "secundaria"
     elif "tecnico" in text_lower or "tecnologo" in text_lower:
         degree = "tecnico"
-    elif "licenciado" in text_lower or "ingeniero" in text_lower or "universidad" in text_lower:
+    elif (
+        "licenciado" in text_lower
+        or "ingeniero" in text_lower
+        or "universidad" in text_lower
+    ):
         degree = "universitario"
-    elif "maestria" in text_lower or "magister" in text_lower or "phd" in text_lower or "doctorado" in text_lower:
+    elif (
+        "maestria" in text_lower
+        or "magister" in text_lower
+        or "phd" in text_lower
+        or "doctorado" in text_lower
+    ):
         degree = "posgrado"
 
     for ent in doc.ents:

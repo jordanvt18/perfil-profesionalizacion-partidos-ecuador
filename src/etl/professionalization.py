@@ -9,13 +9,17 @@ DATA_RAW_CVS = Path("data/raw/cvs")
 DATA_PROCESSED = Path("data/processed")
 
 
-def normalize_party_names(df: pd.DataFrame, party_column: str, canonical_parties: List[str]) -> pd.DataFrame:
+def normalize_party_names(
+    df: pd.DataFrame, party_column: str, canonical_parties: List[str]
+) -> pd.DataFrame:
     """Normaliza nombres de partidos usando fuzzy matching contra una lista canónica."""
 
     def match_party(name: str) -> str:
         if pd.isna(name) or not str(name).strip():
             return None
-        match, score, _ = process.extractOne(name, canonical_parties, scorer=fuzz.WRatio)
+        match, score, _ = process.extractOne(
+            name, canonical_parties, scorer=fuzz.WRatio
+        )
         return match if score >= 80 else name
 
     df[party_column + "_normalized"] = df[party_column].apply(match_party)
@@ -46,7 +50,9 @@ def compute_professionalization_scores(df: pd.DataFrame) -> pd.DataFrame:
 
     df["score_academico"] = df["max_degree"].apply(map_degree).clip(lower=0, upper=100)
     df["score_experiencia"] = (df["years_public_service"] * 2).clip(lower=0, upper=40)
-    df["profesionalizacion"] = 0.6 * df["score_academico"] + 0.4 * df["score_experiencia"]
+    df["profesionalizacion"] = (
+        0.6 * df["score_academico"] + 0.4 * df["score_experiencia"]
+    )
     df["profesionalizacion"] = df["profesionalizacion"].clip(lower=0, upper=100)
     return df
 
@@ -73,7 +79,9 @@ if __name__ == "__main__":
     if candidates_path.exists():
         df_candidates = pd.read_parquet(candidates_path)
         df_candidates = compute_professionalization_scores(df_candidates)
-        df_candidates.to_parquet(DATA_PROCESSED / "candidates_with_scores.parquet", index=False)
+        df_candidates.to_parquet(
+            DATA_PROCESSED / "candidates_with_scores.parquet", index=False
+        )
 
         agg = aggregate_by_party_province(df_candidates)
         agg.to_parquet(DATA_PROCESSED / "agg_party_province.parquet", index=False)

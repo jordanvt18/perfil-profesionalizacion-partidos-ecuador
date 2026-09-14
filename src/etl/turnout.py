@@ -13,9 +13,13 @@ def compute_turnout_delta(turnout_df: pd.DataFrame) -> pd.DataFrame:
     historical = turnout_df[turnout_df["year"] < last_year]
 
     hist_mean = (
-        historical.groupby(["province", "canton"])["turnout"].mean().reset_index(name="turnout_mean_hist")
+        historical.groupby(["province", "canton"])["turnout"]
+        .mean()
+        .reset_index(name="turnout_mean_hist")
     )
-    last = turnout_df[turnout_df["year"] == last_year][["province", "canton", "turnout"]]
+    last = turnout_df[turnout_df["year"] == last_year][
+        ["province", "canton", "turnout"]
+    ]
     merged = last.merge(hist_mean, on=["province", "canton"], how="left")
     merged["delta_participacion"] = merged["turnout"] - merged["turnout_mean_hist"]
     return merged

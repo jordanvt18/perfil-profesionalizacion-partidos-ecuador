@@ -14,6 +14,7 @@ Produce vectores de scores por tema para cada documento:
 Para encuestas: mapea preguntas/respuestas a la misma taxonomía
 y calcula priority_scores por cantón.
 """
+
 import logging
 import re
 from collections import Counter, defaultdict
@@ -22,7 +23,7 @@ from typing import Optional
 
 import numpy as np
 
-from src.etl.text_preprocessing import tokenize, extract_entities, _get_nlp
+from src.etl.text_preprocessing import _get_nlp, extract_entities, tokenize
 
 logger = logging.getLogger(__name__)
 
@@ -324,8 +325,8 @@ def run_lda(
     Returns:
         Lista de temas con palabras clave principales.
     """
-    from sklearn.feature_extraction.text import CountVectorizer
     from sklearn.decomposition import LatentDirichletAllocation
+    from sklearn.feature_extraction.text import CountVectorizer
 
     themes = load_themes(config_path)
     existing_keywords = set()
@@ -359,14 +360,18 @@ def run_lda(
         # Verificar si es un tema emergente (no en taxonomía)
         is_emerging = not any(kw in existing_keywords for kw in top_words[:5])
 
-        topics.append({
-            "topic_id": topic_idx,
-            "top_words": top_words,
-            "is_emerging": is_emerging,
-        })
+        topics.append(
+            {
+                "topic_id": topic_idx,
+                "top_words": top_words,
+                "is_emerging": is_emerging,
+            }
+        )
 
         if is_emerging:
-            logger.info(f"Tema emergente detectado #{topic_idx}: {', '.join(top_words[:5])}")
+            logger.info(
+                f"Tema emergente detectado #{topic_idx}: {', '.join(top_words[:5])}"
+            )
 
     return topics
 
