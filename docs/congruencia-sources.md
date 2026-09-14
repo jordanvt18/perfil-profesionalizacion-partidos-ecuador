@@ -58,15 +58,21 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **RESUELTO 28-ago: Plan 77 (El Oro) se retiró** — sin candidatos a Prefectura ni Alcaldía de Machala (Expreso); Darío Macas excluido del mapa (nivel Low).
 - **Confirmadas 28-ago**: PHD-67 (Steven Ordóñez), AFE-131 (Carlos Rodríguez, Machala), Futuro-20, Sí Podemos-72, Mejor Ciudad-107 (Valdivieso); **Somos Azuay** es colectivo aliado de Nueva Generación (Lista 100).
 - **RESUELTO 28-ago: Luisa González (Pachakutik, Prefectura Manabí)** — la delegación provincial del CNE negó su inscripción (3 votos a favor, 2 abstenciones) tras impugnaciones de CREO y ADN; González anunció impugnación y el CNE ratificó la negativa (El Universo, Diario Correo, MiradaNacionalEC/Ecuavisa). Excluida del mapa (nivel Low) hasta el listado definitivo del 9-nov-2026.
+- **RESUELTO 12-sep: el TCE rechazó la apelación de Luisa González** (cinco votos; Vistazo y Expreso reportan unanimidad, El Universo reporta voto de mayoría). Secuencia: JPE Manabí niega (~22-ago, impugnación de ADN vía su secretaria nacional Mishel Mancheno, por no acreditar dos años de militancia en Pachakutik) → CNE ratifica (28-ago, 3-2) → TCE rechaza la apelación (12-sep-2026). Sin recursos adicionales registrados al 13-sep. Resta la publicación del listado definitivo provincial (~24-sep). Fuentes: El Universo, Vistazo, Expreso, DW, Primicias, Teleamazonas, Ecuavisa, La Hora (12-sep-2026).
+- **RESUELTO 12-sep: el CNE no calificó a Jaime Estrada Medranda** (asambleísta, Prefectura de Manabí por Sí Podemos con auspicio correísta; causal: no firma del acta de aceptación; negativa con voto dirimente del presidente del CNE; aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep-2026). No confundir con **Jaime Estrada Bonilla** (exalcalde, nuestra base: Alcaldía de Manta, Sí Podemos 72 + Nuevo Rumbo 111, sin descalificación reportada). Fuentes: Primicias, Vistazo, El Universo, Expreso, La República, Primera Plana (12-sep-2026).
+- **RESUELTO 13-sep: Carlos Falquez Aguilar** se postuló a la Alcaldía de Machala por CREO y quedó fuera por retiro de respaldo del movimiento (Primicias; El Universo; Diario Correo); el Pleno del CNE ratificó la no calificación y Falquez presentó recurso ante el TCE (vivo al 13-sep-2026). No migró a la Prefectura de El Oro.
+- **RESUELTO 13-sep: Paola Pabón** descartó cualquier candidatura para las seccionales 2026 mediante anuncio propio (Expreso; fecha del anuncio por confirmar); RC no la inscribió.
+- **Calificación de Pichincha (~12-sep): 5 binomios habilitados** para la Prefectura (El Universo, Lexis, radios); verificación nominal pendiente para el listado provincial (24-sep).
+- **JPE Azuay (04-sep): calificó 7 de los 8 binomios** inscritos para la Prefectura (El Mercurio).
 - **RC-5 y Amigo suspendidas por el TCE** (caso "Caja Chica"); el correísmo participa con listas prestadas (PSE, UP, Todos, Pachakutik, RETO).
-- Partidos **bloqueados** por el CNE al corte: RC5, SUMA, ID, RETO y Amigo → no generan candidaturas sintéticas en el frontend.
+- Partidos **impedidos de inscribir candidaturas propias** por el CNE/TCE al corte: RC5, SUMA, ID, RETO y Amigo (sus precandidatos pueden migrar a otros movimientos; el correísmo compite con listas prestadas) → no generan candidaturas sintéticas en el frontend.
 
 **Pendiente de confirmación CNE (listado 9-nov-2026) — marcado como preliminar:**
 
-- **Impugnación de Luisa González** ante el CNE contra su no calificación: pendiente de resolución definitiva.
-- **Paola Pabón** (Pichincha): tratada como NO confirmada.
+- **Luisa González**: apelación rechazada por el TCE (12-sep-2026); resta el listado definitivo provincial (~24-sep). Sin registro de recursos adicionales al corte.
+- **Paola Pabón** (Pichincha): NO integrada — descartó su candidatura (Expreso).
 - Partidos de **Gabriela Ochoa y Ángel Cartuche** (Prefectura Azuay), **Renán Borbúa y Héctor Cali** (Prefectura Guayas), **Juan Zapata y Emerson Rubio** (Prefectura Pichincha) y de los demás inscritos a la Alcaldía de Machala: sin atribución concluyente al 28-ago.
-- Dignidad de **Carlos Falquez Aguilar** (alcaldía Machala vs. prefectura El Oro) — no integrada como High.
+- **Carlos Falquez Aguilar**: fuera de la contienda (CREO retiró su respaldo en Machala; el CNE ratificó la no calificación); presentó recurso ante el TCE (vivo al corte); no integrado.
 - Dos de los nueve inscritos a la Prefectura de El Oro registran impedimentos por deudas (Diario Correo) — sujetos a calificación.
 - **Sigla de Alexandro Tonello** (pacto UP+PSE+Todos): confirmar en listado definitivo.
 

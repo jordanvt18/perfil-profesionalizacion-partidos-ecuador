@@ -10,7 +10,7 @@ Fuentes de verdad:
   - Indicadores INEC (empleo, pobreza, agua, alcantarillado) y CEDATOS 2026
     para el vector de prioridades ciudadanas por provincia/cantón.
 
-Reglas aplicadas (verificación cruzada de fuentes, 2026-08-28):
+Reglas aplicadas (verificación cruzada de fuentes, 2026-09-13):
   - Solo se integran candidaturas con nivel High/Medium; las Low quedan excluidas
     hasta confirmación del CNE (listado definitivo: 9 de noviembre de 2026).
   - Los partidos bloqueados por el CNE (RC5, SUMA, ID, RETO, Amigo) NO se usan
@@ -485,7 +485,7 @@ for i in range(10):
 YEARS = [2026]
 
 # ═══════════════════════════════════════════════════════════════
-# METADATOS DE FUENTES (verificación cruzada 2026-08-28)
+# METADATOS DE FUENTES (verificación cruzada 2026-09-13)
 # ═══════════════════════════════════════════════════════════════
 
 FUENTES_DATOS = {
@@ -503,8 +503,8 @@ FUENTES_DATOS = {
     },
     "candidaturas_y_planes": {
         "fuente": "CNE + Primicias + El Universo + El Comercio + Expreso + Ecuavisa + El Telégrafo + Vistazo + Diario Correo + El Diario",
-        "fecha_corte": "2026-08-28",
-        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Plan 77 (El Oro) retiró candidaturas: Darío Macas excluido (nivel Low)",
+        "fecha_corte": "2026-09-13",
+        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Al corte 13-sep: el TCE ratificó (12-sep, unánime 5-0) la descalificación de Luisa González (Prefectura Manabí) y el CNE no calificó a Jaime Estrada Medranda para la misma dignidad; Plan 77 (El Oro) retiró candidaturas (28-ago): Darío Macas excluido (nivel Low)",
         "archivo": "data/plans/planes_trabajo.json"
     },
     "prioridades_ciudadanas": {
@@ -536,7 +536,7 @@ FUENTES_DATOS = {
     },
     "bloqueados_cne": {
         "partidos": sorted(BLOQUEADOS_CNE),
-        "nota": "RC5, SUMA, ID, RETO y Amigo suspendidos/bloqueados por el CNE (agosto 2026). Los cuadros correístas participan con listas prestadas (PSE, UP, Todos, Pachakutik)"
+        "nota": "RC5, SUMA, ID, RETO y Amigo están impedidos de inscribir candidaturas propias (CNE/TCE, 2026); sus precandidatos pueden migrar a otros movimientos y el correísmo compite con listas prestadas (PSE, UP, Todos, Pachakutik)"
     }
 }
 

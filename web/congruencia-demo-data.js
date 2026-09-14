@@ -1,5 +1,5 @@
 // Mapa de Congruencia Política — Elecciones Seccionales Ecuador, 29-nov-2026
-// Generado: 2026-08-30 21:56
+// Generado: 2026-09-13 22:24
 // FUENTES CONFIABLES (verificación cruzada 2026-08-16):
 //   - CNE (cne.gob.ec): calendario, requisitos, listado definitivo 9-nov-2026
 //   - CEDATOS 2026: prioridades ciudadanas (48% inseguridad, 18.5% empleo)
@@ -46,8 +46,8 @@ export const FUENTES = {
   },
   "candidaturas_y_planes": {
     "fuente": "CNE + Primicias + El Universo + El Comercio + Expreso + Ecuavisa + El Telégrafo + Vistazo + Diario Correo + El Diario",
-    "fecha_corte": "2026-08-28",
-    "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Plan 77 (El Oro) retiró candidaturas: Darío Macas excluido (nivel Low)",
+    "fecha_corte": "2026-09-13",
+    "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Al corte 13-sep: el TCE ratificó (12-sep, unánime 5-0) la descalificación de Luisa González (Prefectura Manabí) y el CNE no calificó a Jaime Estrada Medranda para la misma dignidad; Plan 77 (El Oro) retiró candidaturas (28-ago): Darío Macas excluido (nivel Low)",
     "archivo": "data/plans/planes_trabajo.json"
   },
   "prioridades_ciudadanas": {
@@ -85,6 +85,6 @@ export const FUENTES = {
       "Revolucion Ciudadana (RC5)",
       "SUMA"
     ],
-    "nota": "RC5, SUMA, ID, RETO y Amigo suspendidos/bloqueados por el CNE (agosto 2026). Los cuadros correístas participan con listas prestadas (PSE, UP, Todos, Pachakutik)"
+    "nota": "RC5, SUMA, ID, RETO y Amigo están impedidos de inscribir candidaturas propias (CNE/TCE, 2026); sus precandidatos pueden migrar a otros movimientos y el correísmo compite con listas prestadas (PSE, UP, Todos, Pachakutik)"
   }
 };

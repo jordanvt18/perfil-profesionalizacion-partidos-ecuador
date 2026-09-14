@@ -139,7 +139,7 @@ REAL = [
     # Leonardo Orlando: Ingenerio, MSc. Gobernador Manabi 2023-2025. Prefecto Manabi 2019-2023
     {"nombre":"Leonardo Orlando","party":"Revolucion Ciudadana (RC5)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":8,"fuente":"El Universo / Wikipedia"},
     {"nombre":"Susana Duenas","party":"Movimiento Construye","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":6,"fuente":"El Universo"},
-    # Luisa Gonzalez: Abogada. Ex-candidata presidencial. Prefectura de Manabi por Pachakutik (refugio correismo). CNE nego su calificacion (3 votos, ago-2026); impugnacion en curso
+    # Luisa Gonzalez: Abogada. Ex-candidata presidencial. Prefectura de Manabi por Pachakutik (refugio correismo). CNE nego su calificacion (28-ago); TCE ratifico la descalificacion (12-sep-2026, unanime 5-0)
     {"nombre":"Luisa Gonzalez","party":"Pachakutik","provincia":"Manabi","canton":"Portoviejo","dignidad":"Prefecto/a","degree":"posgrado","years":10,"fuente":"Vistazo / Primicias"},
     # ADDITIONAL Manabi
     {"nombre":"Javier Pincay","party":"Partido Social Cristiano (PSC)","provincia":"Manabi","canton":"Portoviejo","dignidad":"Alcalde/sa","degree":"universitario","years":8,"fuente":"El Diario"},
@@ -295,7 +295,7 @@ def main():
         if canton not in CANTONES[prov]: canton = list(CANTONES[prov].keys())[0]
         cands.append(make(cid, r["nombre"], r["party"], prov, canton, r["dignidad"], d, y, f"Confirmado: {r['fuente']}"))
 
-    # Correccion puntual (28-ago-2026): CNE nego la calificacion de Luisa Gonzalez como precandidata a la Prefectura de Manabi (3 votos a favor, 2 abstenciones); impugnacion en curso
+    # Correccion puntual (28-ago-2026, actualizada 13-sep-2026): CNE nego la calificacion de Luisa Gonzalez como precandidata a la Prefectura de Manabi (3 votos a favor, 2 abstenciones); el TCE ratifico la descalificacion el 12-sep-2026 (unanime 5-0)
     for c in cands:
         if c["nombre"] == "Luisa Gonzalez" and c["party_normalized"] == "Pachakutik":
             c["bloqueado"] = True
