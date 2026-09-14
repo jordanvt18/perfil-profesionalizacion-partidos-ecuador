@@ -13,7 +13,7 @@
     "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
     "postulaciones_al_15_ago": 17934,
     "requisito_plan_trabajo": "Cada candidatura debe presentar plan de trabajo (diagnóstico, objetivos generales y específicos, plan de acción) como requisito de inscripción ante el CNE",
-    "nota": "Al 13 de septiembre de 2026 el plazo de objeciones está cerrado (219 objeciones contra 53.534 candidaturas) y las juntas provinciales y el CNE califican postulaciones. El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González y ratificó la negativa de calificar su candidatura a la Prefectura de Manabí (cinco votos; sin recursos adicionales registrados al 13-sep); ese mismo día el CNE negó, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep). Pichincha tiene 5 binomios calificados a la Prefectura (~12-sep; verificación nominal pendiente). Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables.",
+    "nota": "Al 13 de septiembre de 2026 el plazo de objeciones está cerrado (219 objeciones contra 53.534 candidaturas) y las juntas provinciales y el CNE califican postulaciones. El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González y ratificó la negativa de calificar su candidatura a la Prefectura de Manabí (cinco votos; sin recursos adicionales registrados al 13-sep); ese mismo día el CNE negó, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep). La JPE de Pichincha calificó 5 de los 10 binomios a la Prefectura de Pichincha al 07-sep-2026 (Tonello, Pinto, Ormaza, Ubidia y Zapata). Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables.",
     "fecha_corte": "2026-09-13",
     "actualizado": "2026-09-13",
     "candidaturas_inscritas_al_cierre": 53534,
@@ -314,7 +314,7 @@
       "fuente": "Primicias 06-ago-2026",
       "estado": "preliminar",
       "nivel": "High",
-      "nota": "Nota corte 13-sep: el CNE calificó 5 binomios para la Prefectura de Pichincha (~12-sep-2026); la verificación nominal de inclusión queda pendiente para el listado provincial (24-sep). Fuentes: El Universo / Lexis / radios (sep-2026)."
+      "nota": "Calificada por la JPE de Pichincha (07-sep-2026): entre los 5 binomios calificados de 10 inscritos a la Prefectura de Pichincha (El Universo 07-sep-2026). Binomios calificados: Tonello, Pinto, Ormaza, Ubidia y Zapata."
     },
     {
       "nombre": "Cynthia Viteri",
@@ -741,16 +741,16 @@
       "nivel": "Medium"
     },
     {
-      "nombre": "Martha Noboa",
+      "nombre": "Mishelle Calvache",
       "partido": "CREO (21)",
       "dignidad": "Prefecta",
       "provincia": "Pichincha",
       "canton": null,
       "ejes": [],
-      "fuente": "gk.city 21-ago-2026 (10 candidatos prefectura Pichincha) + Radio Pichincha",
+      "fuente": "El Universo 07-sep-2026",
       "estado": "preliminar",
       "nivel": "High",
-      "nota": "Nota corte 13-sep: el CNE calificó 5 binomios para la Prefectura de Pichincha (~12-sep-2026); la verificación nominal de inclusión queda pendiente para el listado provincial (24-sep). Fuentes: El Universo / Lexis / radios (sep-2026)."
+      "nota": "Nota corte 13-sep: CREO (21) promueve a Mishelle Calvache Fernández (exconsejera y vicepresidenta del CPCCS); inscrita y entre los 5 binomios pendientes de calificación al 07-sep-2026. Corrige la atribución previa 'Martha Noboa (CREO)' (gk.city 21-ago-2026), que no figura en el listado nominal de 10 aspirantes de El Universo (07-sep-2026)."
     },
     {
       "nombre": "Alexandro Tonello",
@@ -762,7 +762,43 @@
       "fuente": "El Universo (video, pacto que respalda a Pabel Muñoz) + gk.city 21-ago-2026",
       "estado": "preliminar",
       "nivel": "Medium",
-      "nota": "Nota corte 13-sep: el CNE calificó 5 binomios para la Prefectura de Pichincha (~12-sep-2026); la verificación nominal de inclusión queda pendiente para el listado provincial (24-sep). Fuentes: El Universo / Lexis / radios (sep-2026)."
+      "nota": "Calificado por la JPE de Pichincha (07-sep-2026): binomio por Alianza Ciudadana (UP 2 + PSE 17 + Todos 70). Proviene de filas de RC (lista suspendida). Fuente: El Universo 07-sep-2026."
+    },
+    {
+      "nombre": "Jorge Pinto Dávila",
+      "partido": "PSP (3)",
+      "dignidad": "Prefecto",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Universo 07-sep-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Calificado por la JPE de Pichincha (07-sep-2026). Exlegislador del movimiento CREO. Fuente: El Universo 07-sep-2026."
+    },
+    {
+      "nombre": "Claudia Ormaza Loor",
+      "partido": "PSC (6)",
+      "dignidad": "Prefecta",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Universo 07-sep-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Calificada por la JPE de Pichincha (07-sep-2026). Exprecandidata a la Presidencia 2025 por Centro Democrático (luego desistió). Fuente: El Universo 07-sep-2026."
+    },
+    {
+      "nombre": "Juan Zapata Silva",
+      "partido": "Imparables (79)",
+      "dignidad": "Prefecto",
+      "provincia": "Pichincha",
+      "canton": null,
+      "ejes": [],
+      "fuente": "El Universo 07-sep-2026",
+      "estado": "preliminar",
+      "nivel": "Medium",
+      "nota": "Calificado por la JPE de Pichincha (07-sep-2026). Oficial de Policía en servicio pasivo; exdirector del ECU911 y exministro del Interior (gobiernos de Moreno y Lasso). Fuente: El Universo 07-sep-2026."
     },
     {
       "nombre": "Consuelo Orellana",
@@ -893,7 +929,7 @@
     "RESUELTO 13-sep: Paola Pabón — descartó cualquier candidatura para las seccionales 2026 mediante anuncio propio (Expreso; fecha del anuncio por confirmar); RC no la inscribió. NO integrada, por decisión propia.",
     "Parcialmente resuelto 13-sep: Gabriela Ochoa y Ángel Cartuche (Prefectura Azuay) — ambos figuran entre los 8 binomios inscritos; la JPE del Azuay calificó 7 de 8 (El Mercurio, 04-sep-2026). Con qué partido/movimiento exacto quedó inscrito cada uno sigue sin confirmarse (Primicias). Ninguno integrado en la base (nivel no calificado).",
     "Aclarado 13-sep: existen dos candidatos homónimos en Manabí — Jaime Estrada Bonilla (nuestra base, Alcaldía de Manta, Sí Podemos 72 + Nuevo Rumbo 111, sin descalificación reportada) y Jaime Estrada Medranda (asambleísta, Prefectura de Manabí por Sí Podemos con auspicio correísta, no calificado por el CNE el 12-sep-2026 con voto dirimente de su presidente; puede aún recurrir al TCE (recurso no confirmado presentado al 13-sep)). El titular de La Hora (12-sep) 'plan B del correísmo descalificado' se refiere a Medranda, no a Bonilla.",
-    "Pendiente 13-sep: Prefectura de Pichincha — el CNE calificó 5 binomios (~12-sep-2026, El Universo/Lexis); la lista nominal exacta no pudo verificarse en las fuentes consultadas. Tonello (UP+PSE+Todos), Ubidia (ADN) y M. Noboa (CREO) mantienen estado preliminar hasta el listado provincial (24-sep).",
+    "RESUELTO 13-sep: Prefectura de Pichincha — 5 de 10 binomios calificados por la JPE de Pichincha al 07-sep-2026: Alexandro Tonello (Alianza Ciudadana UP 2 + PSE 17 + Todos 70), Jorge Pinto Dávila (PSP 3), Claudia Ormaza Loor (PSC 6), Giovanna Ubidia (ADN 7) y Juan Zapata Silva (Imparables 79). Pendientes de calificación: Mishelle Calvache (CREO 21), Carla Cevallos (Avanza 8), Guillermo Churuchumbi (Pachakutik 18), Wilmer Morales (Futuro 20) y Mohammed Alí (PID 4). Corrige la atribución previa 'M. Noboa (CREO)'. Fuente: El Universo 07-sep-2026. Resta el listado provincial definitivo (24-sep-2026).",
     "RESUELTO 28-ago: Guschmer es candidato ADN (lista 7) confirmado (Expreso; ADN oficializó la candidatura, binomio Samia Álava). El registro PSC del 15-ago correspondía a Andrés Roche (Alcaldía de Guayaquil, PSC-6), no a Guschmer. Historial partidario: PSC (2019-22) → RETO (2022-24) → ADN (desde 2024).",
     "RESUELTO 28-ago: Sofía Espín inscrita por PSE (lista 17), Prefectura del Guayas, con auspicio correísta; no por Amigo (16).",
     "RESUELTO 28-ago: Plan 77 (El Oro) retiró candidaturas para Prefectura y Alcaldía de Machala (Expreso); Darío Macas marcado Low.",
