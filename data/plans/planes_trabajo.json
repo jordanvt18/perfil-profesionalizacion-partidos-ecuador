@@ -13,7 +13,7 @@
     "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
     "postulaciones_al_15_ago": 17934,
     "requisito_plan_trabajo": "Cada candidatura debe presentar plan de trabajo (diagnóstico, objetivos generales y específicos, plan de acción) como requisito de inscripción ante el CNE",
-    "nota": "Al corte 20-sep-2026 las juntas provinciales y el CNE califican postulaciones: 25.880 de 53.530 candidaturas inscritas estaban calificadas al 17-sep-2026 (813 alcaldes en firme, 101 binomios de prefecto/viceprefecto, 3.422 concejales urbanos, 2.470 rurales, 1.220 por circunscripción y 17.254 vocales; reportes preliminares del CNE vía El Universo 19-sep-2026). El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González, negó el 16-sep su pedido de ampliación y aclaración (último recurso) y la sentencia que impide su candidatura a la Prefectura de Manabí quedó ejecutada; sin recursos pendientes. El CNE negó el 12-sep-2026, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (sin registro público de recurso contencioso presentado al corte). Pichincha: la JPE calificó 5 de los 10 binomios a la Prefectura al 07-sep-2026 (Tonello, Pinto, Ormaza, Ubidia y Zapata); al 19-sep el mapa preliminar reporta 32 alcaldías calificadas en Pichincha y 10 candidatos en papeleta para Quito. Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables.",
+    "nota": "Al corte 20-sep-2026 las juntas provinciales y el CNE califican postulaciones: 25.880 de 53.530 candidaturas inscritas estaban calificadas al 17-sep-2026 (813 alcaldes en firme, 101 binomios de prefecto/viceprefecto, 3.422 concejales urbanos, 2.470 rurales, 1.220 por circunscripción y 17.254 vocales; reportes preliminares del CNE vía El Universo 19-sep-2026). El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González, negó el 16-sep su pedido de ampliación y aclaración (último recurso) y la sentencia que impide su candidatura a la Prefectura de Manabí quedó ejecutada; sin recursos pendientes. El CNE negó el 12-sep-2026, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (sin registro público de recurso contencioso presentado al corte). Pichincha: la JPE calificó 5 de los 10 binomios a la Prefectura al 07-sep-2026 (Tonello, Pinto, Ormaza, Ubidia y Zapata); al 19-sep el mapa preliminar reporta 32 alcaldías calificadas en Pichincha y 10 candidatos en papeleta para Quito. Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables. Avance de calificación: en Quito, nueve de los diez aspirantes a la Alcaldía constaban calificados al 14-sep-2026 (El Noticiero TC); en Guayas, 45 aspirantes a alcaldías de los 25 cantones al 18-sep-2026 (El Universo).",
     "fecha_corte": "2026-09-20",
     "actualizado": "2026-09-20",
     "candidaturas_inscritas_al_cierre": 53534,
@@ -289,9 +289,12 @@
       "canton": "Quito",
       "ejes": [
         "seguridad",
-        "orden"
+        "orden",
+        "movilidad",
+        "empleo",
+        "presupuesto"
       ],
-      "fuente": "El Comercio 02-ago / El Telégrafo 12-ago-2026",
+      "fuente": "El Comercio 02-ago / El Telégrafo 12-ago-2026 / La Hora 25-ago-2026 (entrevistas a 10 candidatos) / La Hora #DeTúATú y entrevistas sep-2026",
       "estado": "preliminar",
       "nivel": "High"
     },
@@ -303,9 +306,10 @@
       "canton": "Quito",
       "ejes": [
         "seguridad",
-        "empleo"
+        "empleo",
+        "movilidad"
       ],
-      "fuente": "Primicias 14-ago-2026",
+      "fuente": "Primicias 14-ago-2026 / La Hora 11-jul-2026 (completitud, fecha fuera de ventana 13→20-sep)",
       "estado": "preliminar",
       "nivel": "High"
     },
@@ -327,8 +331,10 @@
       "dignidad": "Alcaldesa",
       "provincia": "Guayas",
       "canton": "Guayaquil",
-      "ejes": [],
-      "fuente": "Primicias/Ecuavisa 12-ago-2026",
+      "ejes": [
+        "seguridad"
+      ],
+      "fuente": "Primicias/Ecuavisa 12-ago-2026 / El Telégrafo (sep-2026, fecha exacta por confirmar)",
       "estado": "calificada",
       "nivel": "High",
       "nota": "Calificada según el reporte preliminar del CNE al 17-sep-2026 (El Universo 19-sep-2026: 45 alcaldías calificadas en Guayas; para Guayaquil constan Roche-PSC, Viteri-ADN e Icaza-PSE)."
@@ -393,7 +399,7 @@
       "fuente": "Primicias 12-ago-2026",
       "estado": "preliminar",
       "nivel": "High",
-      "nota": "Pendiente de confirmación CNE (listado 9-nov-2026)"
+      "nota": "Pendiente de confirmación CNE (listado 9-nov-2026) Plan para la provincia presentado en entrevista en 'Cuesta Arriba' (Altavoz, 11-sep-2026); ejes específicos pendientes de transcripción verificable."
     },
     {
       "nombre": "Geraldine Weber",
@@ -721,8 +727,10 @@
       "dignidad": "Prefecta",
       "provincia": "Guayas",
       "canton": null,
-      "ejes": [],
-      "fuente": "Primicias (tabla inscritos prefectura Guayas) + Threads @ladataec / RTP, 17-ago-2026",
+      "ejes": [
+        "agua"
+      ],
+      "fuente": "Primicias (tabla inscritos prefectura Guayas) + Threads @ladataec / RTP, 17-ago-2026 / Campaña Espín (Instagram, sep-2026) / Ecuador en Directo 16-ago-2026",
       "estado": "preliminar",
       "nivel": "High",
       "nota": "Se resuelve pendiente: lista PSE-17 con auspicio correísta (no Amigo-16). Binomio con Fiorella Ycaza (Alcaldía Guayaquil, misma lista)."
@@ -872,8 +880,11 @@
       "dignidad": "Prefecta",
       "provincia": "El Oro",
       "canton": null,
-      "ejes": [],
-      "fuente": "Diario Correo / MP Noticias / RPG 106.7 FM, ago-2026",
+      "ejes": [
+        "empleo",
+        "salud"
+      ],
+      "fuente": "Diario Correo / MP Noticias / RPG 106.7 FM, ago-2026 / Diario Correo 16-sep-2026 (aprox.)",
       "estado": "preliminar",
       "nivel": "High",
       "nota": "Oficializada por Pachakutik (lista 18) con binomio Franco Bolívar Barros Tinoco; sin descalificación reportada al 13-sep-2026. Fuentes: Diario Correo / Diario Opinión (17-ago-2026); MP Noticias (24-ago-2026)."

@@ -35,11 +35,15 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **Teleamazonas**: cronograma, contexto Amigo.
 - **Diario Correo** (`diariocorreo.com.ec`, El Oro): Falquez (04-jul), Steven Ordóñez, Macas, Cueva.
 - **El Diario** (`eldiario.ec`, Manabí): Ycaza, Caiza, Bayas, Erazo.
-- **gk.city** (`gk.city`): perfiles de los 10 candidatos a la Prefectura de Pichincha (21-ago-2026).
+- **gk.city** (`gk.city`): perfiles de los 10 candidatos a la Prefectura de Pichincha (21-ago-2026); perfil de Fiorella Ycaza (19-ago-2026, propuesta de continuidad); perfiles de la Prefectura del Guayas (02-sep-2026).
+- **La Hora** (`lahora.com.ec`): entrevistas de propuestas a los 10 candidatos a la Alcaldía de Quito (25-ago y 02-sep-2026: movilidad, seguridad, basura, comercio informal, burocracia municipal); entrevistas individuales a Burbano y Yunda (sep-2026).
+- **Diario Correo** (`diariocorreo.com.ec`): propuesta de Verónica Arreaga para la Prefectura de El Oro — producción, salud y empresa pública de emprendimiento (~16-sep-2026).
+- **El Telégrafo** (`eltelegrafo.com.ec`): Cynthia Viteri enfoca sus primeras acciones en combatir la inseguridad (sep-2026).
+- **Ecuador en Directo** (`ecuadorendirecto.com`): propuesta de Sofía Espín para el Guayas (16-ago-2026) + difusión de campaña en redes (control de inundaciones, sep-2026).
 - **Radio Pichincha** (`radiopichincha.com`): total de candidaturas/alianzas al cierre y listados prefecturas Pichincha/Guayas.
 - **Sitios oficiales de partidos** (`adn-ecuador.org`, `revolucionciudadana.com.ec`): referencia de plataforma nacional, nunca como plan seccional.
 
-**Nivel Medium (respaldo con fuente High)**: La Hora, Radio Centro (Roche 15-ago, Galo Lara 15-ago), Radio Pichincha, La Prensa, La República, Expectativa, notiregionecuador.com, El Mercurio (vía sitio web), Prensa Latina (solo contexto), Wikipedia (solo contexto biográfico).
+**Nivel Medium (respaldo con fuente High)**: Radio Centro (Roche 15-ago, Galo Lara 15-ago), Radio Pichincha, La Prensa, La República, Expectativa, notiregionecuador.com, El Mercurio (vía sitio web), Prensa Latina (solo contexto), Wikipedia (solo contexto biográfico).
 
 **Nivel Low (solo corroboración, NO integrados como evidencia)**: Instagram/Facebook/TikTok de candidatos y páginas locales, cuentas de X sin verificación editorial, páginas tipo `CNEImbaburaEc` (riesgo de suplantación). Las candidaturas con fuente única social quedan **LOW** hasta confirmación del CNE.
 
@@ -81,7 +85,7 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 
 ### 0.4. Planes de trabajo seccionales
 
-Al corte del 28 de agosto de 2026 **ningún plan de trabajo seccional completo está publicado** (son requisito CNE de inscripción y solo serán contrastables tras el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable (fuentes High/Medium) y de los planes nacionales registrados (ADN: plan nacional de 6 ejes en `adn-ecuador.org`). **No se atribuye ningún eje programático sin fuente High/Medium; si no hay evidencia, se declara "sin evidencia"** en lugar de inferir.
+Al corte del 20 de septiembre de 2026 **ningún plan de trabajo seccional completo está publicado en el portal del CNE** (verificado 20-sep: la página CNE "Conozca planes de trabajo de candidatos" data de 2013 y no hay anuncio de publicación de los planes inscritos en 2026; son requisito CNE de inscripción y solo serán contrastables tras el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable y de difusión de campaña verificable (fuentes High/Medium, con redes sociales solo como corroboración) al corte 20-sep-2026: Burbano (seguridad, movilidad, obras/empleo — La Hora), Yunda (inseguridad, movilidad, empleo — La Hora), Viteri (seguridad — El Telégrafo), Espín (control de inundaciones — campaña/Ecuador en Directo), Arreaga (producción, salud, empresa pública de emprendimiento — Diario Correo), Guschmer (plan presentado en Altavoz 11-sep, ejes pendientes de transcripción). **No se atribuye ningún eje programático sin fuente; si no hay evidencia, se declara "sin evidencia" en lugar de inferir.** el listado definitivo). Los ejes programáticos integrados en `data/plans/planes_trabajo.json` provienen de cobertura mediática confiable (fuentes High/Medium) y de los planes nacionales registrados (ADN: plan nacional de 6 ejes en `adn-ecuador.org`). **No se atribuye ningún eje programático sin fuente High/Medium; si no hay evidencia, se declara "sin evidencia"** en lugar de inferir.
 
 ---
 
