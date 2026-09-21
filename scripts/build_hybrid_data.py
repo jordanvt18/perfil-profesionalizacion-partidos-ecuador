@@ -295,7 +295,7 @@ def main():
         if canton not in CANTONES[prov]: canton = list(CANTONES[prov].keys())[0]
         cands.append(make(cid, r["nombre"], r["party"], prov, canton, r["dignidad"], d, y, f"Confirmado: {r['fuente']}"))
 
-    # Correccion puntual (28-ago-2026, actualizada 13-sep-2026): CNE nego la calificacion de Luisa Gonzalez como precandidata a la Prefectura de Manabi (3 votos a favor, 2 abstenciones); el TCE ratifico la descalificacion el 12-sep-2026 (unanime 5-0)
+    # Correccion puntual (28-ago-2026, actualizada 20-sep-2026): caso cerrado - CNE nego la calificacion (28-ago), TCE ratifico (12-sep, unanime 5-0) y nego el 16-sep la ampliacion/aclaracion (ultimo recurso); sentencia ejecutada
     for c in cands:
         if c["nombre"] == "Luisa Gonzalez" and c["party_normalized"] == "Pachakutik":
             c["bloqueado"] = True
