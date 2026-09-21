@@ -1,10 +1,10 @@
-# Fuentes de datos sugeridas – Mapa de Congruencia Programa-Votantes
+# Fuentes de datos sugeridas - Mapa de Congruencia Programa-Votantes
 
 Este documento registra las fuentes de datos sugeridas y disponibles para construir el mapa de congruencia entre programas de gobierno y prioridades ciudadanas en el Ecuador.
 
 ---
 
-## 0. Elecciones Seccionales 2026 — fuentes verificadas (corte: 28 de agosto de 2026)
+## 0. Elecciones Seccionales 2026 - fuentes verificadas (corte: 20 de septiembre de 2026)
 
 ### 0.1. Contexto del proceso
 
@@ -22,7 +22,7 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 
 ### 0.2. Fuentes utilizadas para la actualización de datos (agosto 2026)
 
-**Nivel High (base primaria)** — usadas para integrar candidaturas y ejes programáticos:
+**Nivel High (base primaria)** - usadas para integrar candidaturas y ejes programáticos:
 
 - **CNE** (`cne.gob.ec`, `app01.cne.gob.ec`, `delegaciones.cne.gob.ec`): calendario, requisitos, planes registrados, listados definitivos. Fuente canónica.
 - **Primicias** (`primicias.ec`): inscripciones y alianzas (Muñoz 14-ago, Viteri 11-ago, Guschmer 12-ago, Yunda 14-ago, Ubidia, Burbano, Angulo, Roche 15-ago, Zambrano 11-ago, Cueva, Palacios 13-ago, Encalada 13-ago, Macas 13-ago, Ordóñez 14-ago, Weber, Santistevan 13-ago, Carrasco 11-ago, Morales, Riquetti, Palacios Ullauri, Lloret, Luzárraga, Caiza, Bayas, Erazo, Lara, Naranjo, Valdivieso 13-ago, González 15-ago).
@@ -55,25 +55,28 @@ Este documento registra las fuentes de datos sugeridas y disponibles para constr
 - **Luisa González** → Pachakutik (18), Prefectura de Manabí.
 - **RESUELTO 28-ago: Andrés Guschmer = ADN (7)**, Prefectura del Guayas (Expreso; ADN oficializó; binomio Samia Álava). El registro PSC del 15-ago era de Andrés Roche (Alcaldía de Guayaquil). Historial: PSC (2019-22) → RETO (2022-24) → ADN (desde 2024).
 - **RESUELTO 28-ago: Sofía Espín = PSE (17)**, Prefectura del Guayas, auspicio correísta (Primicias, tabla de inscritos).
-- **RESUELTO 28-ago: Plan 77 (El Oro) se retiró** — sin candidatos a Prefectura ni Alcaldía de Machala (Expreso); Darío Macas excluido del mapa (nivel Low).
+- **RESUELTO 28-ago: Plan 77 (El Oro) se retiró** - sin candidatos a Prefectura ni Alcaldía de Machala (Expreso); Darío Macas excluido del mapa (nivel Low).
 - **Confirmadas 28-ago**: PHD-67 (Steven Ordóñez), AFE-131 (Carlos Rodríguez, Machala), Futuro-20, Sí Podemos-72, Mejor Ciudad-107 (Valdivieso); **Somos Azuay** es colectivo aliado de Nueva Generación (Lista 100).
-- **RESUELTO 28-ago: Luisa González (Pachakutik, Prefectura Manabí)** — la delegación provincial del CNE negó su inscripción (3 votos a favor, 2 abstenciones) tras impugnaciones de CREO y ADN; González anunció impugnación y el CNE ratificó la negativa (El Universo, Diario Correo, MiradaNacionalEC/Ecuavisa). Excluida del mapa (nivel Low) hasta el listado definitivo del 9-nov-2026.
+- **RESUELTO 28-ago: Luisa González (Pachakutik, Prefectura Manabí)** - la delegación provincial del CNE negó su inscripción (3 votos a favor, 2 abstenciones) tras impugnaciones de CREO y ADN; González anunció impugnación y el CNE ratificó la negativa (El Universo, Diario Correo, MiradaNacionalEC/Ecuavisa). Excluida del mapa (nivel Low) hasta el listado definitivo del 9-nov-2026.
 - **RESUELTO 12-sep: el TCE rechazó la apelación de Luisa González** (cinco votos; Vistazo y Expreso reportan unanimidad, El Universo reporta voto de mayoría). Secuencia: JPE Manabí niega (~22-ago, impugnación de ADN vía su secretaria nacional Mishel Mancheno, por no acreditar dos años de militancia en Pachakutik) → CNE ratifica (28-ago, 3-2) → TCE rechaza la apelación (12-sep-2026). Sin recursos adicionales registrados al 13-sep. Resta la publicación del listado definitivo provincial (~24-sep). Fuentes: El Universo, Vistazo, Expreso, DW, Primicias, Teleamazonas, Ecuavisa, La Hora (12-sep-2026).
 - **RESUELTO 12-sep: el CNE no calificó a Jaime Estrada Medranda** (asambleísta, Prefectura de Manabí por Sí Podemos con auspicio correísta; causal: no firma del acta de aceptación; negativa con voto dirimente del presidente del CNE; aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep-2026). No confundir con **Jaime Estrada Bonilla** (exalcalde, nuestra base: Alcaldía de Manta, Sí Podemos 72 + Nuevo Rumbo 111, sin descalificación reportada). Fuentes: Primicias, Vistazo, El Universo, Expreso, La República, Primera Plana (12-sep-2026).
 - **RESUELTO 13-sep: Carlos Falquez Aguilar** se postuló a la Alcaldía de Machala por CREO y quedó fuera por retiro de respaldo del movimiento (Primicias; El Universo; Diario Correo); el Pleno del CNE ratificó la no calificación y Falquez presentó recurso ante el TCE (vivo al 13-sep-2026). No migró a la Prefectura de El Oro.
 - **RESUELTO 13-sep: Paola Pabón** descartó cualquier candidatura para las seccionales 2026 mediante anuncio propio (Expreso; fecha del anuncio por confirmar); RC no la inscribió.
-- **Calificación de la Prefectura de Pichincha (07-sep-2026): 5 de 10 binomios habilitados** — Tonello (Alianza Ciudadana UP 2 + PSE 17 + Todos 70), Pinto Dávila (PSP 3), Ormaza Loor (PSC 6), Ubidia (ADN 7) y Zapata Silva (Imparables 79); pendientes: Calvache (CREO 21), Cevallos (Avanza 8), Churuchumbi (Pachakutik 18), Morales (Futuro 20) y Alí (PID 4) (El Universo, 07-sep-2026). Resta el listado provincial definitivo (24-sep).
+- **RESUELTO 16-17-sep: el TCE negó el pedido de ampliación y aclaración de Luisa González** (ingresado el 15-sep-2026; era su último recurso) y dispuso la **ejecución de la sentencia** que impide su candidatura a la Prefectura de Manabí; sin reclamos pendientes. Secuencia completa: JPE Manabí niega (~22-ago)  CNE ratifica (28-ago, 3-2)  TCE rechaza apelación (12-sep, 5 votos)  TCE niega ampliación/aclaración y ejecuta la sentencia (16-sep, conocido el 17-sep). Fuentes: Radio Govea y Primicias (17-sep-2026).
+- **Calificación nacional al 17-sep-2026 (preliminar): 25.880 de 53.530 candidaturas inscritas calificadas** - 813 alcaldes en firme, 101 binomios de prefecto/viceprefecto, 3.422 concejales urbanos, 2.470 rurales, 1.220 por circunscripción y 17.254 vocales (reportes preliminares del CNE vía El Universo, 19-sep-2026). Referencias provinciales de alcaldías calificadas: Guayas 45 (25 cantones), Pichincha 32, Loja 91, Azuay 85, Los Ríos 72, Manabí 69, Tungurahua 60, Morona Santiago 5. Hitos previos de la curva de calificación: más de 11.000 al 10-sep (El Universo) y 21.130 "en firme" al ~16-sep (Lexis; métrica distinta de "calificadas").
+- **Guayaquil al 17-sep-2026**: constan calificadas Cynthia Viteri (ADN 7), Andrés Roche (PSC 6) y Fiorella Icaza (PSE 17) (El Universo, 19-sep-2026). **Susana Santistevan (CREO) y Mónica Luzárraga (PSE+PK) no figuran** en la lista preliminar; re-verificar con el listado provincial del 24-sep-2026. **Quito: 10 candidatos en papeleta** (confirmación nominal pendiente; La Hora 17-sep reporta "nueve de 10 calificados", corte distinto).
+- **Calificación de la Prefectura de Pichincha (07-sep-2026): 5 de 10 binomios habilitados** - Tonello (Alianza Ciudadana UP 2 + PSE 17 + Todos 70), Pinto Dávila (PSP 3), Ormaza Loor (PSC 6), Ubidia (ADN 7) y Zapata Silva (Imparables 79); pendientes: Calvache (CREO 21), Cevallos (Avanza 8), Churuchumbi (Pachakutik 18), Morales (Futuro 20) y Alí (PID 4) (El Universo, 07-sep-2026). Resta el listado provincial definitivo (24-sep).
 - **JPE Azuay (04-sep): calificó 7 de los 8 binomios** inscritos para la Prefectura (El Mercurio).
 - **RC-5 y Amigo suspendidas por el TCE** (caso "Caja Chica"); el correísmo participa con listas prestadas (PSE, UP, Todos, Pachakutik, RETO).
 - Partidos **impedidos de inscribir candidaturas propias** por el CNE/TCE al corte: RC5, SUMA, ID, RETO y Amigo (sus precandidatos pueden migrar a otros movimientos; el correísmo compite con listas prestadas) → no generan candidaturas sintéticas en el frontend.
 
-**Pendiente de confirmación CNE (listado 9-nov-2026) — marcado como preliminar:**
+**Pendiente de confirmación CNE (listado 9-nov-2026) - marcado como preliminar:**
 
-- **Luisa González**: apelación rechazada por el TCE (12-sep-2026); resta el listado definitivo provincial (~24-sep). Sin registro de recursos adicionales al corte.
-- **Paola Pabón** (Pichincha): NO integrada — descartó su candidatura (Expreso).
-- Partidos de **Gabriela Ochoa y Ángel Cartuche** (Prefectura Azuay), **Renán Borbúa y Héctor Cali** (Prefectura Guayas), **Juan Zapata y Emerson Rubio** (Prefectura Pichincha) y de los demás inscritos a la Alcaldía de Machala: sin atribución concluyente al 28-ago. Actualización 13-sep-2026: **Juan Zapata** quedó resuelto (Imparables 79, binomio calificado — El Universo 07-sep-2026); **Ochoa/Cartuche** (Azuay) y **Borbúa/Cali** (Guayas) siguen sin confirmar.
+- **Luisa González**: sentencia del TCE **ejecutada** (16-sep-2026, conocido el 17-sep); sin recursos pendientes. Resta el listado definitivo provincial (~24-sep).
+- **Paola Pabón** (Pichincha): NO integrada - descartó su candidatura (Expreso).
+- Partidos de **Gabriela Ochoa y Ángel Cartuche** (Prefectura Azuay), **Renán Borbúa y Héctor Cali** (Prefectura Guayas), **Juan Zapata y Emerson Rubio** (Prefectura Pichincha) y de los demás inscritos a la Alcaldía de Machala: sin atribución concluyente al 28-ago. Actualización 13-sep-2026: **Juan Zapata** quedó resuelto (Imparables 79, binomio calificado - El Universo 07-sep-2026); **Ochoa/Cartuche** (Azuay) y **Borbúa/Cali** (Guayas) siguen sin confirmar.
 - **Carlos Falquez Aguilar**: fuera de la contienda (CREO retiró su respaldo en Machala; el CNE ratificó la no calificación); presentó recurso ante el TCE (vivo al corte); no integrado.
-- Dos de los nueve inscritos a la Prefectura de El Oro registran impedimentos por deudas (Diario Correo) — sujetos a calificación.
+- Dos de los nueve inscritos a la Prefectura de El Oro registran impedimentos por deudas (Diario Correo) - sujetos a calificación.
 - **Sigla de Alexandro Tonello** (pacto UP+PSE+Todos): confirmar en listado definitivo.
 
 ### 0.4. Planes de trabajo seccionales
@@ -109,10 +112,10 @@ El Consejo Nacional Electoral (CNE) publica boletines oficiales con información
 
 | Tipo de dato | URL | Formato | Estado |
 |--------------|-----|---------|--------|
-| CNE – Portal principal | `https://www.cne.gob.ec` | HTML/PDF | Activo |
-| CNE – Datos abiertos | `https://app01.cne.gob.ec` | CSV/JSON | Activo |
+| CNE - Portal principal | `https://www.cne.gob.ec` | HTML/PDF | Activo |
+| CNE - Datos abiertos | `https://app01.cne.gob.ec` | CSV/JSON | Activo |
 | Boletines de campañas | `https://www.cne.gob.ec/?page_id=126` | PDF | Verificar en temporada electoral |
-| Registro de slogans y propuestas | CNE – Secretaría Técnica | PDF | Solicitar vía acceso a información pública |
+| Registro de slogans y propuestas | CNE - Secretaría Técnica | PDF | Solicitar vía acceso a información pública |
 
 ### 1.3. Archivos PDF de campaña
 
@@ -154,8 +157,8 @@ El Consejo Nacional Electoral (CNE) publica boletines oficiales con información
 ### 2.4. Sondeos municipales
 
 - **Gobiernos autónomos descentralizados (GAD)**: Algunos municipios realizan sondeos de satisfacción ciudadana. Solicitar vía acceso a información pública (Ley COA).
-- **Asociación de Municipalidades del Ecuador (AME)**: `https://www.ame.gob.ec` — puede aggregar datos de sondeos locales.
-- **Consejo Nacional de Competencias (CNC)**: `https://www.competencias.gob.ec` — datos sobre descentralización y necesidades territoriales.
+- **Asociación de Municipalidades del Ecuador (AME)**: `https://www.ame.gob.ec` - puede aggregar datos de sondeos locales.
+- **Consejo Nacional de Competencias (CNC)**: `https://www.competencias.gob.ec` - datos sobre descentralización y necesidades territoriales.
 
 ---
 
@@ -184,7 +187,7 @@ Cuando no existen encuestas directas, se utilizan datos proxy para inferir prior
 ### 3.3. Petitorios y asambleas comunitarias
 
 - **Asambleas parroquiales**: Actas de asambleas parroquiales rurales pueden documentar prioridades comunitarias.
-- **Uniones de organizaciones campesinas e indígenas**: CONAIE, FEINE, FENOCIN — plataformas de lucha documentan prioridades.
+- **Uniones de organizaciones campesinas e indígenas**: CONAIE, FEINE, FENOCIN - plataformas de lucha documentan prioridades.
 - **Cartas de necesidades**: Gobiernos parroquiales suelen elevar cartas de necesidades a gobiernos provinciales.
 
 ---
@@ -197,34 +200,34 @@ Para contextualizar y validar las prioridades inferidas, se utilizan indicadores
 
 | Indicador | Nivel geográfico | Fuente | URL |
 |-----------|------------------|--------|-----|
-| Incidencia de pobreza | Provincia / Cantón | INEC – ECV | `https://www.ecuadorencifras.gob.ec` |
-| Coeficiente de Gini | Provincia | INEC – ECV | `https://www.ecuadorencifras.gob.ec` |
-| Pobreza extrema | Provincia / Cantón | INEC – ECV | `https://www.ecuadorencifras.gob.ec` |
+| Incidencia de pobreza | Provincia / Cantón | INEC - ECV | `https://www.ecuadorencifras.gob.ec` |
+| Coeficiente de Gini | Provincia | INEC - ECV | `https://www.ecuadorencifras.gob.ec` |
+| Pobreza extrema | Provincia / Cantón | INEC - ECV | `https://www.ecuadorencifras.gob.ec` |
 
 ### 4.2. Empleo
 
 | Indicador | Nivel geográfico | Fuente | URL |
 |-----------|------------------|--------|-----|
-| Tasa de desempleo | Nacional / Provincial | INEC – ENEMDU | `https://www.ecuadorencifras.gob.ec` |
-| Empleo informal | Nacional / Provincial | INEC – ENEMDU | `https://www.ecuadorencifras.gob.ec` |
-| Empleo adecuado vs. incompleto | Nacional / Provincial | INEC – ENEMDU | `https://www.ecuadorencifras.gob.ec` |
+| Tasa de desempleo | Nacional / Provincial | INEC - ENEMDU | `https://www.ecuadorencifras.gob.ec` |
+| Empleo informal | Nacional / Provincial | INEC - ENEMDU | `https://www.ecuadorencifras.gob.ec` |
+| Empleo adecuado vs. incompleto | Nacional / Provincial | INEC - ENEMDU | `https://www.ecuadorencifras.gob.ec` |
 
 ### 4.3. Acceso a servicios
 
 | Indicador | Nivel geográfico | Fuente | URL |
 |-----------|------------------|--------|-----|
-| Cobertura de agua potable | Cantón | INEC – Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
-| Cobertura de alcantarillado | Cantón | INEC – Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
-| Cobertura eléctrica | Cantón | INEC – Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
-| Acceso a internet | Cantón | INEC – Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
-| Establecimientos de salud | Cantón | INEC – Registro Estadístico | `https://www.ecuadorencifras.gob.ec` |
-| Establecimientos educativos | Cantón | INEC – AMIE | `https://educacion.gob.ec` |
+| Cobertura de agua potable | Cantón | INEC - Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
+| Cobertura de alcantarillado | Cantón | INEC - Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
+| Cobertura eléctrica | Cantón | INEC - Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
+| Acceso a internet | Cantón | INEC - Censo 2022 | `https://www.ecuadorencifras.gob.ec` |
+| Establecimientos de salud | Cantón | INEC - Registro Estadístico | `https://www.ecuadorencifras.gob.ec` |
+| Establecimientos educativos | Cantón | INEC - AMIE | `https://educacion.gob.ec` |
 
 ### 4.4. Seguridad
 
 | Indicador | Nivel geográfico | Fuente | URL |
 |-----------|------------------|--------|-----|
-| Tasa de homicidios | Provincia | INEC – Registro Civil | `https://www.ecuadorencifras.gob.ec` |
+| Tasa de homicidios | Provincia | INEC - Registro Civil | `https://www.ecuadorencifras.gob.ec` |
 | Denuncias por delito | Provincia / Cantón | Fiscalía General del Estado | `https://www.fiscalia.gob.ec` |
 | Percepción de seguridad | Nacional | Latinobarómetro | `https://www.latinobarometro.org` |
 
@@ -236,10 +239,10 @@ Para contextualizar y validar las prioridades inferidas, se utilizan indicadores
 
 | Tipo de dato | Formato | URL | Notas |
 |--------------|---------|-----|-------|
-| Recintos electorales | GeoJSON | CNE – Datos abiertos | Coordenadas de cada recinto |
-| Cantones | GeoJSON / Shapefile | INEC – Cartografía | Límites cantonales oficiales |
-| Provincias | GeoJSON / Shapefile | INEC – Cartografía | Límites provinciales oficiales |
-| Parroquias | GeoJSON / Shapefile | INEC – Cartografía | Límites parroquiales rurales y urbanas |
+| Recintos electorales | GeoJSON | CNE - Datos abiertos | Coordenadas de cada recinto |
+| Cantones | GeoJSON / Shapefile | INEC - Cartografía | Límites cantonales oficiales |
+| Provincias | GeoJSON / Shapefile | INEC - Cartografía | Límites provinciales oficiales |
+| Parroquias | GeoJSON / Shapefile | INEC - Cartografía | Límites parroquiales rurales y urbanas |
 
 ### 5.2. Fuentes alternativas de geometrías
 
@@ -255,7 +258,7 @@ Para contextualizar y validar las prioridades inferidas, se utilizan indicadores
 | Tipo de dato | Elecciones | Fuente | URL |
 |--------------|-----------|--------|-----|
 | Resultados por recinto | 2017, 2021, 2023, 2025 | CNE | `https://resultados2025.cne.gob.ec` |
-| Padrones electorales | Histórico | CNE – Datos abiertos | `https://app01.cne.gob.ec` |
+| Padrones electorales | Histórico | CNE - Datos abiertos | `https://app01.cne.gob.ec` |
 | Participación electoral | 2017-2025 | CNE | `https://www.cne.gob.ec` |
 | Voto en el exterior | 2017-2025 | CNE | Distritos electorales fuera del país |
 
