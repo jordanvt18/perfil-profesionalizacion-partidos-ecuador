@@ -1,5 +1,5 @@
 // Mapa de Congruencia Política — Elecciones Seccionales Ecuador, 29-nov-2026
-// Generado: 2026-09-20 23:52
+// Generado: 2026-09-20 23:56
 // FUENTES CONFIABLES (verificación cruzada 2026-08-16):
 //   - CNE (cne.gob.ec): calendario, requisitos, listado definitivo 9-nov-2026
 //   - CEDATOS 2026: prioridades ciudadanas (48% inseguridad, 18.5% empleo)
