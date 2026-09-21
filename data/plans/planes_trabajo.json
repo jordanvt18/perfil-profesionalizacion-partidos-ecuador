@@ -13,14 +13,18 @@
     "listado_definitivo_cne": "9 de noviembre de 2026 (papeletas); 24 de septiembre (provincias)",
     "postulaciones_al_15_ago": 17934,
     "requisito_plan_trabajo": "Cada candidatura debe presentar plan de trabajo (diagnóstico, objetivos generales y específicos, plan de acción) como requisito de inscripción ante el CNE",
-    "nota": "Al 13 de septiembre de 2026 el plazo de objeciones está cerrado (219 objeciones contra 53.534 candidaturas) y las juntas provinciales y el CNE califican postulaciones. El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González y ratificó la negativa de calificar su candidatura a la Prefectura de Manabí (cinco votos; sin recursos adicionales registrados al 13-sep); ese mismo día el CNE negó, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep). La JPE de Pichincha calificó 5 de los 10 binomios a la Prefectura de Pichincha al 07-sep-2026 (Tonello, Pinto, Ormaza, Ubidia y Zapata). Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables.",
-    "fecha_corte": "2026-09-13",
-    "actualizado": "2026-09-13",
+    "nota": "Al corte 20-sep-2026 las juntas provinciales y el CNE califican postulaciones: 25.880 de 53.530 candidaturas inscritas estaban calificadas al 17-sep-2026 (813 alcaldes en firme, 101 binomios de prefecto/viceprefecto, 3.422 concejales urbanos, 2.470 rurales, 1.220 por circunscripción y 17.254 vocales; reportes preliminares del CNE vía El Universo 19-sep-2026). El Pleno del TCE rechazó el 12-sep-2026 la apelación de Luisa González, negó el 16-sep su pedido de ampliación y aclaración (último recurso) y la sentencia que impide su candidatura a la Prefectura de Manabí quedó ejecutada; sin recursos pendientes. El CNE negó el 12-sep-2026, con voto dirimente de su presidente, la calificación de Jaime Estrada Medranda para la misma dignidad (sin registro público de recurso contencioso presentado al corte). Pichincha: la JPE calificó 5 de los 10 binomios a la Prefectura al 07-sep-2026 (Tonello, Pinto, Ormaza, Ubidia y Zapata); al 19-sep el mapa preliminar reporta 32 alcaldías calificadas en Pichincha y 10 candidatos en papeleta para Quito. Partidos bloqueados sin cambios: RC5, SUMA, ID, RETO, Amigo. Listados definitivos: provincias 24 de septiembre; papeletas 9 de noviembre de 2026. Ningún plan de trabajo seccional completo está publicado; los ejes provienen de cobertura de medios confiables.",
+    "fecha_corte": "2026-09-20",
+    "actualizado": "2026-09-20",
     "candidaturas_inscritas_al_cierre": 53534,
     "candidatos_principales_inscritos": 10711,
     "alianzas_registradas": 397,
     "objeciones_al_cierre": 219,
-    "objeciones_desglose": "43 alcaldes, 26 prefectos, 25 concejales urbanos, 12 rurales, 10 parroquiales (corte CNE 20-ago; plazo cerrado)"
+    "objeciones_desglose": "43 alcaldes, 26 prefectos, 25 concejales urbanos, 12 rurales, 10 parroquiales (corte CNE 20-ago; plazo cerrado)",
+    "candidaturas_calificadas_al_corte": 25880,
+    "calificadas_alcaldes_en_firme": 813,
+    "calificadas_binomios_prefecto": 101,
+    "fuente_calificacion": "El Universo 19-sep-2026 (reportes preliminares del CNE al 17-sep-2026)"
   },
   "fuentes_clave": [
     {
@@ -274,7 +278,8 @@
       ],
       "fuente": "Primicias 06-ago-2026",
       "estado": "preliminar",
-      "nivel": "High"
+      "nivel": "High",
+      "nota": "Al 19-sep-2026 El Universo reporta 10 candidatos en la papeleta para la Alcaldía de Quito; confirmación nominal pendiente del listado provincial (24-sep-2026). Fuente: El Universo 19-sep-2026 (reportes preliminares del CNE al 17-sep-2026)."
     },
     {
       "nombre": "Harold Burbano",
@@ -324,8 +329,9 @@
       "canton": "Guayaquil",
       "ejes": [],
       "fuente": "Primicias/Ecuavisa 12-ago-2026",
-      "estado": "preliminar",
-      "nivel": "High"
+      "estado": "calificada",
+      "nivel": "High",
+      "nota": "Calificada según el reporte preliminar del CNE al 17-sep-2026 (El Universo 19-sep-2026: 45 alcaldías calificadas en Guayas; para Guayaquil constan Roche-PSC, Viteri-ADN e Icaza-PSE)."
     },
     {
       "nombre": "Andrés Roche Pesantes",
@@ -337,8 +343,9 @@
         "plan construido desde opinión ciudadana"
       ],
       "fuente": "Primicias/Radio Centro 15-ago-2026",
-      "estado": "preliminar",
-      "nivel": "High"
+      "estado": "calificada",
+      "nivel": "High",
+      "nota": "Calificada según el reporte preliminar del CNE al 17-sep-2026 (El Universo 19-sep-2026: 45 alcaldías calificadas en Guayas; para Guayaquil constan Roche-PSC, Viteri-ADN e Icaza-PSE)."
     },
     {
       "nombre": "Fiorella Ycaza",
@@ -348,9 +355,9 @@
       "canton": "Guayaquil",
       "ejes": [],
       "fuente": "Ecuavisa/El Diario 13-ago-2026",
-      "estado": "preliminar",
+      "estado": "calificada",
       "nivel": "High",
-      "nota": "Pendiente de confirmación CNE (listado 9-nov-2026)"
+      "nota": "Calificada según el reporte preliminar del CNE al 17-sep-2026 (El Universo 19-sep-2026: 45 alcaldías calificadas en Guayas; para Guayaquil constan Roche-PSC, Viteri-ADN e Icaza-PSE)."
     },
     {
       "nombre": "Susana Santistevan",
@@ -361,7 +368,8 @@
       "ejes": [],
       "fuente": "Primicias 11-ago-2026",
       "estado": "preliminar",
-      "nivel": "High"
+      "nivel": "High",
+      "nota": "Al 17-sep-2026 no figura en la lista preliminar de 45 alcaldías calificadas del Guayas (El Universo 19-sep-2026), que para Guayaquil registra solo Roche-PSC, Viteri-ADN e Icaza-PSE; pendiente de verificación con el listado provincial (24-sep-2026)."
     },
     {
       "nombre": "Mónica Luzárraga",
@@ -372,7 +380,8 @@
       "ejes": [],
       "fuente": "Primicias 10-ago-2026",
       "estado": "preliminar",
-      "nivel": "High"
+      "nivel": "High",
+      "nota": "Al 17-sep-2026 no figura en la lista preliminar de 45 alcaldías calificadas del Guayas (El Universo 19-sep-2026), que para Guayaquil registra solo Roche-PSC, Viteri-ADN e Icaza-PSE; pendiente de verificación con el listado provincial (24-sep-2026)."
     },
     {
       "nombre": "Andrés Guschmer",
@@ -463,7 +472,7 @@
       "fuente": "Vistazo 14-ago-2026 / Primicias 15-ago-2026",
       "estado": "preliminar",
       "nivel": "Low",
-      "nota": "Descalificada (no calificada). Secuencia: la JPE de Manabí negó la inscripción (~22-ago) por no acreditar dos años de militancia en Pachakutik, tras la impugnación de ADN (secretaria nacional Mishel Mancheno); el Pleno del CNE ratificó la negativa (28-ago, 3 votos a favor, 2 abstenciones); el Pleno del TCE rechazó su apelación el 12-sep-2026 (cinco votos: Vistazo y Expreso reportan unanimidad; El Universo reporta voto de mayoría). Excluida del mapa al corte 13-sep-2026; sin registro público de recursos adicionales a esa fecha (resta el listado definitivo provincial ~24-sep). Fuentes: El Universo / Vistazo / DW / Primicias / Teleamazonas / Ecuavisa / La Hora (12-sep-2026); Primicias / La República (28-29-ago-2026); Expreso / Vistazo (18-ago-2026, objeción de Mancheno)."
+      "nota": "Descalificada (no calificada). Secuencia: la JPE de Manabí negó la inscripción (~22-ago) por no acreditar dos años de militancia en Pachakutik, tras la impugnación de ADN (secretaria nacional Mishel Mancheno); el Pleno del CNE ratificó la negativa (28-ago, 3 votos a favor, 2 abstenciones); el Pleno del TCE rechazó su apelación el 12-sep-2026 (cinco votos: Vistazo y Expreso reportan unanimidad; El Universo reporta voto de mayoría). Excluida del mapa al corte 13-sep-2026; sin registro público de recursos adicionales a esa fecha (resta el listado definitivo provincial ~24-sep). Fuentes: El Universo / Vistazo / DW / Primicias / Teleamazonas / Ecuavisa / La Hora (12-sep-2026); Primicias / La República (28-29-ago-2026); Expreso / Vistazo (18-ago-2026, objeción de Mancheno). RESUELTO 20-sep-2026: el TCE negó (16-sep) el pedido de ampliación y aclaración ingresado el 15-sep (último recurso) y dispuso la ejecución de la sentencia; no quedan reclamos pendientes. Fuente: Radio Govea / Primicias 17-sep-2026."
     },
     {
       "nombre": "Marciana Valdivieso",
@@ -913,7 +922,7 @@
       "fuente": "Cobertura local Manabí, ago-2026",
       "estado": "preliminar",
       "nivel": "Medium",
-      "nota": "Alianza Sí Podemos (72) + Nuevo Rumbo (111). Sin descalificación reportada al 13-sep-2026; su candidatura a la Alcaldía de Manta fue oficializada en agosto. No confundir con Jaime Estrada Medranda (asambleísta), postulado a la Prefectura de Manabí por Sí Podemos con auspicio correísta, a quien el CNE no calificó (12-sep-2026, con voto dirimente del presidente del CNE José Cabrera; aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep). Fuentes: El Mercurio / La Marea (ago-2026, oficialización); Primicias / Vistazo / El Universo / Expreso (12-sep-2026, caso Medranda)."
+      "nota": "Alianza Sí Podemos (72) + Nuevo Rumbo (111). Sin descalificación reportada en las verificaciones al 20-sep-2026; su candidatura a la Alcaldía de Manta fue oficializada en agosto. No confundir con Jaime Estrada Medranda (asambleísta), postulado a la Prefectura de Manabí por Sí Podemos con auspicio correísta, a quien el CNE no calificó (12-sep-2026, con voto dirimente del presidente del CNE José Cabrera; aún puede recurrir al TCE, sin registro público de recurso presentado al 13-sep). Fuentes: El Mercurio / La Marea (ago-2026, oficialización); Primicias / Vistazo / El Universo / Expreso (12-sep-2026, caso Medranda)."
     }
   ],
   "bloqueados_cne": [
@@ -924,6 +933,9 @@
     "Amigo (16)"
   ],
   "notas_discrepancias": [
+    "RESUELTO 20-sep: Luisa González (Pachakutik, Prefectura Manabí) — el TCE negó el 16-sep-2026 la ampliación y aclaración pedida el 15-sep (último recurso disponible) y la sentencia quedó ejecutada; sin reclamos pendientes. Fuentes: Radio Govea / Primicias (17-sep-2026).",
+    "Agregado 20-sep: calificación nacional al 17-sep-2026 (preliminar): 25.880 de 53.530 candidaturas; 813 alcaldes en firme y 101 binomios de prefecto. Guayas: 45 alcaldías calificadas en 25 cantones (Guayaquil: Roche, Viteri, Icaza); Pichincha: 32; Quito: 10 en papeleta. Fuente: El Universo 19-sep-2026.",
+    "Pendiente 20-sep: Guayaquil — Susana Santistevan (CREO) y Mónica Luzárraga (PSE+Pachakutik) no aparecen en la lista preliminar de calificados al 17-sep-2026 (El Universo 19-sep-2026); verificar con el listado provincial del 24-sep-2026.",
     "RESUELTO 13-sep: Luisa González (Pachakutik, Prefectura Manabí) — el Pleno del TCE rechazó su apelación el 12-sep-2026 y ratificó la negativa de calificar su candidatura (cinco votos). Secuencia: JPE Manabí niega (~22-ago, impugnación de ADN/Mishel Mancheno) → CNE ratifica (28-ago, 3-2) → TCE rechaza la apelación (12-sep-2026). Excluida del mapa al corte; sin recursos adicionales registrados al 13-sep. Fuentes: El Universo, Vistazo, Expreso, DW, Primicias, Teleamazonas, Ecuavisa, La Hora (12-sep-2026).",
     "RESUELTO 13-sep: Carlos Falquez Aguilar — se postuló a la Alcaldía de Machala por CREO y quedó fuera por el retiro de respaldo del movimiento (Primicias; El Universo; Diario Correo); el Pleno del CNE ratificó la no calificación y él presentó recurso ante el TCE (vivo al 13-sep-2026). No migró a la Prefectura de El Oro. No estaba integrado en la base.",
     "RESUELTO 13-sep: Paola Pabón — descartó cualquier candidatura para las seccionales 2026 mediante anuncio propio (Expreso; fecha del anuncio por confirmar); RC no la inscribió. NO integrada, por decisión propia.",

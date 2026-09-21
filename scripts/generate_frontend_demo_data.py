@@ -503,8 +503,8 @@ FUENTES_DATOS = {
     },
     "candidaturas_y_planes": {
         "fuente": "CNE + Primicias + El Universo + El Comercio + Expreso + Ecuavisa + El Telégrafo + Vistazo + Diario Correo + El Diario",
-        "fecha_corte": "2026-09-13",
-        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Al corte 13-sep: el TCE ratificó (12-sep, unánime 5-0) la descalificación de Luisa González (Prefectura Manabí) y el CNE no calificó a Jaime Estrada Medranda para la misma dignidad; Plan 77 (El Oro) retiró candidaturas (28-ago): Darío Macas excluido (nivel Low)",
+        "fecha_corte": "2026-09-20",
+        "nota": "Solo se integraron candidaturas High/Medium. Ningún plan seccional completo está publicado aún (requisito CNE); los ejes provienen de cobertura confiable. Al corte 20-sep: la sentencia contra Luisa González quedó ejecutada (TCE negó el 16-sep su último recurso); el CNE no calificó a Jaime Estrada Medranda; calificación nacional al 17-sep: 25.880 de 53.530 candidaturas (813 alcaldes en firme, 101 binomios de prefecto); en Guayaquil constan calificadas Viteri-ADN, Roche-PSC e Icaza-PSE (reporte preliminar vía El Universo 19-sep-2026); Plan 77 (El Oro) retiró candidaturas (28-ago): Darío Macas excluido (nivel Low)",
         "archivo": "data/plans/planes_trabajo.json"
     },
     "prioridades_ciudadanas": {
